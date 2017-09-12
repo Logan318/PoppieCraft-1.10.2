@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "poppiecraft:blocks/Generator_block_advanced",
+        "north": "poppiecraft:blocks/Generator_block_advanced_front",
+        "south": "poppiecraft:blocks/Generator_block_advanced",
+        "east": "poppiecraft:blocks/Generator_block_advanced",
+        "west": "poppiecraft:blocks/Generator_block_advanced",
+        "up": "poppiecraft:blocks/Generator_block_advanced",
+        "down": "poppiecraft:blocks/Generator_block_advanced"
+
+    }
+}

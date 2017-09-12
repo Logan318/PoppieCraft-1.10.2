@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "poppiecraft:blocks/Generator_block_ultimate",
+        "north": "poppiecraft:blocks/Generator_block_ultimate_front",
+        "south": "poppiecraft:blocks/Generator_block_ultimate",
+        "east": "poppiecraft:blocks/Generator_block_ultimate",
+        "west": "poppiecraft:blocks/Generator_block_ultimate",
+        "up": "poppiecraft:blocks/Generator_block_ultimate",
+        "down": "poppiecraft:blocks/Generator_block_ultimate"
+
+    }
+}

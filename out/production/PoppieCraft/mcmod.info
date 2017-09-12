@@ -1,0 +1,16 @@
+[
+{
+  "modid": "poppiecraft",
+  "name": "PoppieCraft",
+  "description": "A beatiful adventure mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Logan_31"],
+  "credits": "A mod by PoppieTeam",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
