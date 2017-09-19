@@ -47,12 +47,21 @@ public class QuartzArmor extends ItemArmor {
 
     }
 
+    private void uneffectPlayer(EntityPlayer player) {
+        if(this.isWearingFullSet(player, ModArmor.Quartz_helmet, ModArmor.Quartz_chestplate, ModArmor.Quartz_leggings, ModArmor.Quartz_boots))
+            return;
+        else {
+
+            player.removePotionEffect(Potion.getPotionById(3));
+
+        }
+    }
 
     private void effectPlayer(EntityPlayer player, Potion potion, int amplifier, int duration)
 
     {
 
-        if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 225)
+        if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 230)
 
             player.addPotionEffect(new PotionEffect(potion , duration, amplifier, false, false));
 
@@ -61,8 +70,9 @@ public class QuartzArmor extends ItemArmor {
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
         if(this.isWearingFullSet(player, ModArmor.Quartz_helmet, ModArmor.Quartz_chestplate, ModArmor.Quartz_leggings, ModArmor.Quartz_boots)) {
-            this.effectPlayer(player, Potion.getPotionById(3), 1 , 230);
+            this.effectPlayer(player, Potion.getPotionById(3), 1 , 2147483647);
         }
+        this.uneffectPlayer(player);
     }
     @Override
     public boolean isRepairable() {

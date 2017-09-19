@@ -4,6 +4,7 @@ import net.logan31.poppiecraft.PoppieCraftMod;
 
 
 import net.logan31.poppiecraft.Utils.References;
+import net.logan31.poppiecraft.client.gui.GUIGeneratorBlock;
 import net.logan31.poppiecraft.client.gui.GUIHandler;
 import net.logan31.poppiecraft.init.*;
 import net.minecraft.client.renderer.block.model.ModelBakery;

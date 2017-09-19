@@ -47,12 +47,21 @@ public class LapisArmor extends ItemArmor {
 
     }
 
+    private void uneffectPlayer(EntityPlayer player) {
+        if(this.isWearingFullSet(player, ModArmor.Lapis_helmet, ModArmor.Lapis_chestplate, ModArmor.Lapis_leggings, ModArmor.Lapis_boots))
+            return;
+        else {
+
+            player.removePotionEffect(Potion.getPotionById(13));
+
+        }
+    }
 
     private void effectPlayer(EntityPlayer player, Potion potion, int amplifier, int duration)
 
     {
 
-        if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 225)
+        if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 230)
 
             player.addPotionEffect(new PotionEffect(potion , duration, amplifier, false, false));
 
@@ -61,9 +70,12 @@ public class LapisArmor extends ItemArmor {
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
         if(this.isWearingFullSet(player, ModArmor.Lapis_helmet, ModArmor.Lapis_chestplate, ModArmor.Lapis_leggings, ModArmor.Lapis_boots)) {
-            this.effectPlayer(player, Potion.getPotionById(13), 0 , 230);
+            this.effectPlayer(player, Potion.getPotionById(13), 0 , 2147483647);
         }
+        this.uneffectPlayer(player);
     }
+
+
     @Override
     public boolean isRepairable() {
         return true;

@@ -8,11 +8,14 @@ import net.logan31.poppiecraft.Utils.Utils;
 import net.logan31.poppiecraft.blocks.GeneratorBlock;
 import net.logan31.poppiecraft.client.gui.GUIGeneratorBlock;
 import net.logan31.poppiecraft.client.gui.GUIHandler;
+import net.logan31.poppiecraft.gen.OreGen;
 import net.logan31.poppiecraft.init.*;
 import net.logan31.poppiecraft.Utils.References;
+import net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlock;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -61,6 +64,11 @@ public class PoppieCraftMod {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
+        NetworkRegistry.INSTANCE.registerGuiHandler(PoppieCraftMod.instance, new GUIHandler());
+        new ModItems();
+        new ModBlocks();
+        new ModArmor();
+        GameRegistry.registerWorldGenerator(new OreGen(), 0);
         proxy.preInit();
         proxy.registerTileEntities();
 
@@ -70,10 +78,20 @@ public class PoppieCraftMod {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
+        new ModRecipes().registerCraftRecipes();
+        new ModRecipes().registerFurnaceRecipes();
+        new ModRecipes().registerBrewingRecipes();
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.Four_leaf_clover), 1);
+
         proxy.init();
 
     }
 
+    @Mod.EventHandler
+    public void registerTileEntities() {
+
+        GameRegistry.registerTileEntity(TileEntityGeneratorBlock.class, References.MODID + ":Generator_block");
+    }
 
 }
 

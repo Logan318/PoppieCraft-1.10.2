@@ -87,7 +87,7 @@ key_key.jei.showRecipe:21
 key_key.jei.showUses:22
 key_key.jei.recipeBack:14
 key_key.jei.toggleCheatMode:0
-soundCategory_master:0.47682118
+soundCategory_master:0.25165564
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

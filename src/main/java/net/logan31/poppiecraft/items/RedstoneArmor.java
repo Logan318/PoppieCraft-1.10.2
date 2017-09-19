@@ -50,11 +50,22 @@ int i = 0;
     }
 
 
+
+    private void uneffectPlayer(EntityPlayer player) {
+        if (this.isWearingFullSet(player, ModArmor.Redstone_helmet, ModArmor.Redstone_chestplate, ModArmor.Redstone_leggings, ModArmor.Redstone_boots))
+            return;
+        else {
+
+            player.removePotionEffect(Potion.getPotionById(12));
+
+        }
+    }
+
     private void effectPlayer(EntityPlayer player, Potion potion, int amplifier, int duration)
 
     {
 
-        if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 225)
+        if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 230)
 
             player.addPotionEffect(new PotionEffect(potion , duration, amplifier, false, false));
 
@@ -65,11 +76,11 @@ int i = 0;
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
         if (this.isWearingFullSet(player, ModArmor.Redstone_helmet, ModArmor.Redstone_chestplate, ModArmor.Redstone_leggings, ModArmor.Redstone_boots)) {
-            this.effectPlayer(player, Potion.getPotionById(12), 0, 230);
+            this.effectPlayer(player, Potion.getPotionById(12), 0, 2147483647);
 
         }
 
-
+this.uneffectPlayer(player);
 
 
     }

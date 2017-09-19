@@ -18,19 +18,14 @@ public class CommonProxy {
 
 
     public void preInit() {
-     new ModItems();
-        new ModBlocks();
-       new ModArmor();
-       GameRegistry.registerWorldGenerator(new OreGen(), 0);
+
 
 
     }
 
 
     public void init() {
-        new ModRecipes().registerCraftRecipes();
-        new ModRecipes().registerFurnaceRecipes();
-        new ModRecipes().registerBrewingRecipes();
+
 
     }
 
@@ -39,7 +34,7 @@ public class CommonProxy {
     }
 
     public void registerTileEntities() {
-        GameRegistry.registerTileEntity(TileEntityGeneratorBlock.class, References.MODID + ":Generator_block");
+
     }
 
 

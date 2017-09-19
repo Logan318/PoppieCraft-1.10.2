@@ -17,6 +17,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;
+import org.w3c.dom.css.CSSPageRule;
 
 public class ModItems {
     public ModItems() {
@@ -32,7 +33,7 @@ public class ModItems {
     public static Item Molten_iron, Compressed_iron, Carbon_stick, Renforced_string, Golden_string;
     public static Item Compressed_iron_bottle, Molten_carbon_bottle, Poppie_bottle, Steel_piece, Steel_nugget, Steel_ingot;
     public static Item Speed_fragment, Speed_element, Jump_fragment, Jump_element, Darkness_fragment, Darkness_element;
-    public static Item Steel_power, Loot_upgrade, Generator_power;
+    public static Item Steel_power, Loot_upgrade, Generator_power, Obsidian_gem, Four_leaf_clover, Coal_gem;
 
     public static final Item Redstone_sword = new Redstonesword("Redstone_sword", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Redstone_pickaxe = new Redstonepickaxe("Redstone_pickaxe", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
@@ -57,6 +58,24 @@ public class ModItems {
     public static final Item Glowstone_shovel = new Glowstoneshovel("Glowstone_shovel", ToolMaterials.glowstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Glowstone_hoe = new Glowstonehoe("Glowstone_hoe", ToolMaterials.glowstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Glowstone_axe = new Glowstoneaxe("Glowstone_axe", ToolMaterials.glowstoneMat, 8.0f, -3.1f).setCreativeTab(PoppieCraftMod.PoppieArmor);
+
+    public static final Item Obsidian_sword = new Obsidian_sword("Obsidian_sword", ToolMaterials.obsidianMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Obsidian_pickaxe = new Obsidian_pickaxe("Obsidian_pickaxe", ToolMaterials.obsidianMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Obsidian_shovel = new Obsidian_shovel("Obsidian_shovel", ToolMaterials.obsidianMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Obsidian_hoe = new Obsidian_hoe("Obsidian_hoe", ToolMaterials.obsidianMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Obsidian_axe = new Obsidian_axe("Obsidian_axe", ToolMaterials.obsidianMat, 8.0f, -3.1f).setCreativeTab(PoppieCraftMod.PoppieArmor);
+
+    public static final Item Four_leaf_clover_sword = new Four_leaf_clover_sword("Four_leaf_clover_sword", ToolMaterials.leafcloverMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Four_leaf_clover_pickaxe = new Four_leaf_clover_pickaxe("Four_leaf_clover_pickaxe", ToolMaterials.leafcloverMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Four_leaf_clover_shovel = new Four_leaf_clover_shovel("Four_leaf_clover_shovel", ToolMaterials.leafcloverMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Four_leaf_clover_hoe = new Four_leaf_clover_hoe("Four_leaf_clover_hoe", ToolMaterials.leafcloverMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Four_leaf_clover_axe = new Four_leaf_clover_axe("Four_leaf_clover_axe", ToolMaterials.leafcloverMat, 8.0f, -3.1f).setCreativeTab(PoppieCraftMod.PoppieArmor);
+
+    public static final Item Coal_sword = new Coal_sword("Coal_sword", ToolMaterials.coalMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Coal_pickaxe = new Coal_pickaxe("Coal_pickaxe", ToolMaterials.coalMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Coal_shovel = new Coal_shovel("Coal_shovel", ToolMaterials.coalMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Coal_hoe = new Coal_hoe("Coal_hoe", ToolMaterials.coalMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Coal_axe = new Coal_axe("Coal_axe", ToolMaterials.coalMat, 8.0f, -3.1f).setCreativeTab(PoppieCraftMod.PoppieArmor);
 
     public static final Item Emerald_sword = new Emeraldsword("Emerald_sword", ToolMaterials.emeraldMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Emerald_pickaxe = new Emeraldpickaxe("Emerald_pickaxe", ToolMaterials.emeraldMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
@@ -93,6 +112,10 @@ public class ModItems {
         Steel_power = new Steel_power("Steel_power");
         Loot_upgrade = new LootUpgrade("Loot_upgrade");
         Generator_power = new Generator_power("Generator_power");
+        Obsidian_gem = new Obsidian_gem("Obsidian_gem");
+        Four_leaf_clover = new Four_leaf_clover("Four_leaf_clover");
+
+        Coal_gem = new Coal_gem("Coal_gem");
 
         Redstone_gem = new Item().setRegistryName("Redstone_gem").setUnlocalizedName("Redstone_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
         Lapis_gem = new Item().setRegistryName("Lapis_gem").setUnlocalizedName("Lapis_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
@@ -159,6 +182,27 @@ public class ModItems {
         GameRegistry.register(Glowstone_hoe);
         GameRegistry.register(Glowstone_axe);
 
+        GameRegistry.register(Obsidian_gem);
+        GameRegistry.register(Obsidian_sword);
+        GameRegistry.register(Obsidian_pickaxe);
+        GameRegistry.register(Obsidian_shovel);
+        GameRegistry.register(Obsidian_hoe);
+        GameRegistry.register(Obsidian_axe);
+
+        GameRegistry.register(Four_leaf_clover);
+        GameRegistry.register(Four_leaf_clover_sword);
+        GameRegistry.register(Four_leaf_clover_pickaxe);
+        GameRegistry.register(Four_leaf_clover_shovel);
+        GameRegistry.register(Four_leaf_clover_hoe);
+        GameRegistry.register(Four_leaf_clover_axe);
+
+        GameRegistry.register(Coal_gem);
+        GameRegistry.register(Coal_sword);
+        GameRegistry.register(Coal_pickaxe);
+        GameRegistry.register(Coal_shovel);
+        GameRegistry.register(Coal_hoe);
+        GameRegistry.register(Coal_axe);
+
         GameRegistry.register(Emerald_sword);
         GameRegistry.register(Emerald_pickaxe);
         GameRegistry.register(Emerald_shovel);
@@ -203,6 +247,8 @@ public class ModItems {
         registerRender(Darkness_fragment);
         registerRender(Darkness_element);
         registerRender(Steel_power);
+        registerRender(Four_leaf_clover);
+        registerRender(Coal_gem);
 
         registerRender(Redstone_gem);
         registerRender(Redstone_sword);
@@ -231,6 +277,27 @@ public class ModItems {
         registerRender(Glowstone_shovel);
         registerRender(Glowstone_hoe);
         registerRender(Glowstone_axe);
+
+        registerRender(Obsidian_gem);
+        registerRender(Obsidian_sword);
+        registerRender(Obsidian_pickaxe);
+        registerRender(Obsidian_shovel);
+        registerRender(Obsidian_hoe);
+        registerRender(Obsidian_axe);
+
+        registerRender(Four_leaf_clover);
+        registerRender(Four_leaf_clover_sword);
+        registerRender(Four_leaf_clover_pickaxe);
+        registerRender(Four_leaf_clover_shovel);
+        registerRender(Four_leaf_clover_hoe);
+        registerRender(Four_leaf_clover_axe);
+
+        registerRender(Coal_gem);
+        registerRender(Coal_sword);
+        registerRender(Coal_pickaxe);
+        registerRender(Coal_shovel);
+        registerRender(Coal_hoe);
+        registerRender(Coal_axe);
 
         registerRender(Emerald_sword);
         registerRender(Emerald_pickaxe);
@@ -270,6 +337,9 @@ public class ModItems {
         public static final Item.ToolMaterial lapisMat = EnumHelper.addToolMaterial("lapisMat", 2, 250, 6.0f, 2.0f, 14);
         public static final Item.ToolMaterial quartzMat = EnumHelper.addToolMaterial("quartzMat", 2, 250, 6.0f, 2.0f, 14);
         public static final Item.ToolMaterial glowstoneMat = EnumHelper.addToolMaterial("glowstoneMat", 2, 250, 6.0f, 2.0f, 14);
+        public static final Item.ToolMaterial obsidianMat = EnumHelper.addToolMaterial("obsidianMat", 2, 400, 6.0f, 2.0f, 14);
+        public static final Item.ToolMaterial leafcloverMat = EnumHelper.addToolMaterial("leafcloverMat", 3, 175, 7.0f, 2.5f, 12);
+        public static final Item.ToolMaterial coalMat = EnumHelper.addToolMaterial("coalMat", 2, 175, 5.0f, 2.0f, 14);
         public static final Item.ToolMaterial emeraldMat = EnumHelper.addToolMaterial("emeraldMat", 4, 2000, 10.0f, 4.0f, 8);
 
     }
