@@ -4,6 +4,7 @@ import net.logan31.poppiecraft.PoppieCraftMod;
 
 import net.logan31.poppiecraft.blocks.*;
 import net.logan31.poppiecraft.blocks.item.ItemGeneratorBlock;
+import net.logan31.poppiecraft.blocks.item.ItemSacred_table;
 import net.logan31.poppiecraft.handler.EnumHandler;
 import net.minecraftforge.client.model.ModelLoader;
 import net.logan31.poppiecraft.Utils.References;
@@ -34,7 +35,7 @@ public class ModBlocks {
 
     public static Block Carbon_ore, Carbon_block, Compressed_iron_block, Melter, Pironnite_block, Pironnite_ore_OW;
     public static Block  Pironnite_ore_N, Poppie_block, Steel_block, Mefferite_ore, Alzanite_ore, Ragmarite_ore;
-    public static Block Generator_block;
+    public static Block Generator_block, Sacred_table;
 
     public static void init() {
 
@@ -51,6 +52,7 @@ public class ModBlocks {
         Alzanite_ore = new Alzanite_ore("Alzanite_ore");
         Ragmarite_ore = new Ragmarite_ore("Ragmarite_ore");
         Generator_block = new GeneratorBlock("Generator_block");
+        Sacred_table = new Sacred_table("Sacred_table");
     }
 
 
@@ -68,6 +70,7 @@ public class ModBlocks {
         registerBlock(Alzanite_ore);
         registerBlock(Ragmarite_ore);
         registerBlock(Generator_block, new ItemGeneratorBlock(Generator_block));
+
 
     }
 
@@ -87,6 +90,7 @@ public class ModBlocks {
         registerRender(Ragmarite_ore);
         for(int i = 0; i < EnumHandler.UpgradeTypes.values().length; i++) {
             registerRender(Generator_block, i, "Generator_block_" + EnumHandler.UpgradeTypes.values()[i].getName());
+
         }
     }
 

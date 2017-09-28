@@ -1,81 +1,81 @@
-[21:41:45] [main/INFO]: Extra: []
-[21:41:45] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, /Users/johanjulien/.gradle/caches/minecraft/assets, --assetIndex, 1.10, --accessToken{REDACTED}, --version, 1.10.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[21:41:45] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:41:45] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:41:45] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[21:41:45] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:41:45] [main/INFO]: Forge Mod Loader version 12.18.3.2185 for Minecraft 1.10.2 loading
-[21:41:45] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_25, running on Mac OS X:x86_64:10.12.6, installed at /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre
-[21:41:45] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[21:41:45] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[21:41:45] [main/INFO]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[21:41:45] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[21:41:45] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:41:45] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[21:41:45] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[21:41:45] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:41:45] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:41:45] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[21:41:46] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[21:41:50] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
-[21:41:50] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[21:41:50] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[21:41:52] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[21:41:54] [main/INFO]: Remapping AccessTransformer rules...
-[21:41:54] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[21:41:54] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[21:41:55] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[21:41:57] [Client thread/INFO]: Setting user: Player554
-[21:42:07] [Client thread/INFO]: LWJGL Version: 2.9.2
-[21:42:08] [Client thread/INFO]: MinecraftForge v12.18.3.2185 Initialized
-[21:42:08] [Client thread/INFO]: Replaced 231 ore recipes
-[21:42:09] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
-[21:42:09] [Client thread/INFO]: Searching /Users/johanjulien/Minecraft/PoppieCraft/run/mods for mods
-[21:42:15] [Client thread/WARN]: ****************************************
-[21:42:15] [Client thread/WARN]: * The modid JEI is not the same as it's lowercase version. Lowercasing will be enforced in 1.11
-[21:42:15] [Client thread/WARN]: *  at net.minecraftforge.fml.common.FMLModContainer.sanityCheckModId(FMLModContainer.java:143)
-[21:42:15] [Client thread/WARN]: *  at net.minecraftforge.fml.common.FMLModContainer.<init>(FMLModContainer.java:128)
-[21:42:15] [Client thread/WARN]: *  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-[21:42:15] [Client thread/WARN]: *  at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-[21:42:15] [Client thread/WARN]: *  at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-[21:42:15] [Client thread/WARN]: *  at java.lang.reflect.Constructor.newInstance(Constructor.java:408)...
-[21:42:15] [Client thread/WARN]: ****************************************
-[21:42:15] [Client thread/INFO]: Forge Mod Loader has identified 6 mods to load
-[21:42:15] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, poppiecraft, JEI, spawnercraft] at CLIENT
-[21:42:15] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, poppiecraft, JEI, spawnercraft] at SERVER
-[21:42:17] [Client thread/ERROR]: The mod poppiecraft appears to have an invalid event annotation EventHandler. This annotation can only apply to methods with recognized event arguments - it will not be called
-[21:42:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:PoppieCraft, FMLFileResourcePack:Just Enough Items, FMLFileResourcePack:SpawnerCraft
-[21:42:17] [Client thread/INFO]: Processing ObjectHolder annotations
-[21:42:17] [Client thread/INFO]: Found 423 ObjectHolder annotations
-[21:42:17] [Client thread/INFO]: Identifying ItemStackHolder annotations
-[21:42:17] [Client thread/INFO]: Found 0 ItemStackHolder annotations
-[21:42:17] [Client thread/INFO]: Applying holder lookups
-[21:42:17] [Client thread/INFO]: Holder lookups applied
-[21:42:17] [Client thread/INFO]: Applying holder lookups
-[21:42:17] [Client thread/INFO]: Holder lookups applied
-[21:42:17] [Client thread/INFO]: Applying holder lookups
-[21:42:17] [Client thread/INFO]: Holder lookups applied
-[21:42:17] [Client thread/INFO]: Configured a dormant chunk cache size of 0
-[21:42:17] [Forge Version Check/INFO]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[21:42:18] [Forge Version Check/INFO]: [Forge] Found status: UP_TO_DATE Target: null
-[21:42:18] [Client thread/INFO]: [SpawnerCraft] ConfigHandler initialized.
-[21:42:18] [Client thread/INFO]: [SpawnerCraft] Blocks initialized.
-[21:42:18] [Client thread/INFO]: [SpawnerCraft] Items initialized.
-[21:42:18] [Client thread/INFO]: [SpawnerCraft] Block models initialized.
-[21:42:18] [Client thread/INFO]: [SpawnerCraft] Item models initialized.
-[21:42:18] [Client thread/INFO]: [SpawnerCraft] preInit finished.
-[21:42:18] [Client thread/INFO]: Applying holder lookups
-[21:42:18] [Client thread/INFO]: Holder lookups applied
-[21:42:18] [Client thread/INFO]: Injecting itemstacks
-[21:42:18] [Client thread/INFO]: Itemstack injection complete
-[21:42:22] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[21:42:22] [Thread-6/INFO]: Initializing LWJGL OpenAL
-[21:42:22] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[21:42:22] [Thread-6/INFO]: OpenAL initialized.
-[21:42:22] [Sound Library Loader/INFO]: Sound engine started
-[21:42:28] [Client thread/INFO]: Max texture size: 8192
-[21:42:28] [Client thread/INFO]: Created: 16x16 textures-atlas
-[21:42:32] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=north,type=ultimate for blockstate "poppiecraft:Generator_block[activated=true,facing=north,type=ultimate]"
+[18:29:01] [main/INFO]: Extra: []
+[18:29:01] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, /Users/johanjulien/.gradle/caches/minecraft/assets, --assetIndex, 1.10, --accessToken{REDACTED}, --version, 1.10.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:29:02] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:29:02] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:29:02] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:29:02] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:29:02] [main/INFO]: Forge Mod Loader version 12.18.3.2185 for Minecraft 1.10.2 loading
+[18:29:02] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_25, running on Mac OS X:x86_64:10.12.6, installed at /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre
+[18:29:02] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[18:29:02] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:29:02] [main/INFO]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[18:29:02] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[18:29:02] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[18:29:02] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[18:29:02] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[18:29:02] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[18:29:02] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[18:29:02] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[18:29:04] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[18:29:13] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[18:29:13] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[18:29:13] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[18:29:16] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[18:29:21] [main/INFO]: Remapping AccessTransformer rules...
+[18:29:21] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[18:29:21] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[18:29:21] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[18:29:25] [Client thread/INFO]: Setting user: Player972
+[18:29:42] [Client thread/INFO]: LWJGL Version: 2.9.2
+[18:29:44] [Client thread/INFO]: MinecraftForge v12.18.3.2185 Initialized
+[18:29:44] [Client thread/INFO]: Replaced 231 ore recipes
+[18:29:46] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
+[18:29:46] [Client thread/INFO]: Searching /Users/johanjulien/Minecraft/PoppieCraft/run/mods for mods
+[18:29:59] [Client thread/WARN]: ****************************************
+[18:29:59] [Client thread/WARN]: * The modid JEI is not the same as it's lowercase version. Lowercasing will be enforced in 1.11
+[18:29:59] [Client thread/WARN]: *  at net.minecraftforge.fml.common.FMLModContainer.sanityCheckModId(FMLModContainer.java:143)
+[18:29:59] [Client thread/WARN]: *  at net.minecraftforge.fml.common.FMLModContainer.<init>(FMLModContainer.java:128)
+[18:29:59] [Client thread/WARN]: *  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+[18:29:59] [Client thread/WARN]: *  at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+[18:29:59] [Client thread/WARN]: *  at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+[18:29:59] [Client thread/WARN]: *  at java.lang.reflect.Constructor.newInstance(Constructor.java:408)...
+[18:29:59] [Client thread/WARN]: ****************************************
+[18:29:59] [Client thread/INFO]: Forge Mod Loader has identified 6 mods to load
+[18:30:00] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, poppiecraft, JEI, spawnercraft] at CLIENT
+[18:30:00] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, poppiecraft, JEI, spawnercraft] at SERVER
+[18:30:02] [Client thread/ERROR]: The mod poppiecraft appears to have an invalid event annotation EventHandler. This annotation can only apply to methods with recognized event arguments - it will not be called
+[18:30:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:PoppieCraft, FMLFileResourcePack:Just Enough Items, FMLFileResourcePack:SpawnerCraft
+[18:30:03] [Client thread/INFO]: Processing ObjectHolder annotations
+[18:30:03] [Client thread/INFO]: Found 423 ObjectHolder annotations
+[18:30:03] [Client thread/INFO]: Identifying ItemStackHolder annotations
+[18:30:03] [Client thread/INFO]: Found 0 ItemStackHolder annotations
+[18:30:03] [Client thread/INFO]: Applying holder lookups
+[18:30:03] [Client thread/INFO]: Holder lookups applied
+[18:30:03] [Client thread/INFO]: Applying holder lookups
+[18:30:03] [Client thread/INFO]: Holder lookups applied
+[18:30:03] [Client thread/INFO]: Applying holder lookups
+[18:30:03] [Client thread/INFO]: Holder lookups applied
+[18:30:03] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[18:30:03] [Forge Version Check/INFO]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[18:30:04] [Forge Version Check/INFO]: [Forge] Found status: UP_TO_DATE Target: null
+[18:30:05] [Client thread/INFO]: [SpawnerCraft] ConfigHandler initialized.
+[18:30:05] [Client thread/INFO]: [SpawnerCraft] Blocks initialized.
+[18:30:05] [Client thread/INFO]: [SpawnerCraft] Items initialized.
+[18:30:05] [Client thread/INFO]: [SpawnerCraft] Block models initialized.
+[18:30:05] [Client thread/INFO]: [SpawnerCraft] Item models initialized.
+[18:30:05] [Client thread/INFO]: [SpawnerCraft] preInit finished.
+[18:30:05] [Client thread/INFO]: Applying holder lookups
+[18:30:05] [Client thread/INFO]: Holder lookups applied
+[18:30:05] [Client thread/INFO]: Injecting itemstacks
+[18:30:05] [Client thread/INFO]: Itemstack injection complete
+[18:30:11] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:30:11] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[18:30:11] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:30:11] [Thread-6/INFO]: OpenAL initialized.
+[18:30:11] [Sound Library Loader/INFO]: Sound engine started
+[18:30:22] [Client thread/INFO]: Max texture size: 8192
+[18:30:22] [Client thread/INFO]: Created: 16x16 textures-atlas
+[18:30:25] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=north,type=ultimate for blockstate "poppiecraft:Generator_block[activated=true,facing=north,type=ultimate]"
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Generator_block#activated=true,facing=north,type=ultimate with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:241) ~[ModelLoader.class:?]
@@ -104,7 +104,7 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1184) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
 	... 21 more
-[21:42:32] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=north,type=advanced for blockstate "poppiecraft:Generator_block[activated=true,facing=north,type=advanced]"
+[18:30:25] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=north,type=advanced for blockstate "poppiecraft:Generator_block[activated=true,facing=north,type=advanced]"
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Generator_block#activated=true,facing=north,type=advanced with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:241) ~[ModelLoader.class:?]
@@ -145,7 +145,7 @@ Caused by: java.io.FileNotFoundException: poppiecraft:models/block/Generator_blo
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1185) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
 	... 21 more
-[21:42:32] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=east,type=basic for blockstate "poppiecraft:Generator_block[activated=true,facing=east,type=basic]"
+[18:30:25] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=east,type=basic for blockstate "poppiecraft:Generator_block[activated=true,facing=east,type=basic]"
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Generator_block#activated=true,facing=east,type=basic with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:241) ~[ModelLoader.class:?]
@@ -174,13 +174,43 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1184) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
 	... 21 more
-[21:42:32] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=west,type=basic for blockstate "poppiecraft:Generator_block[activated=true,facing=west,type=basic]"
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Generator_block#activated=true,facing=west,type=basic with loader VariantLoader.INSTANCE, skipping
+[18:30:25] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Speedster_flesh#inventory for item "poppiecraft:Speedster_flesh", normal location exception: 
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:item/Speedster_flesh with loader VanillaLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
-	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:241) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:145) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:229) ~[ModelLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:146) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:317) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:170) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:147) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:122) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:540) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:386) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_25]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_25]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.io.FileNotFoundException: poppiecraft:models/item/Speedster_flesh.json
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:68) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadModel(ModelBakery.java:311) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.access$1100(ModelLoader.java:118) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader$VanillaLoader.loadModel(ModelLoader.java:868) ~[ModelLoader$VanillaLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
+	... 20 more
+[18:30:25] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Speedster_flesh#inventory for item "poppiecraft:Speedster_flesh", blockstate location exception: 
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Speedster_flesh#inventory with loader VariantLoader.INSTANCE, skipping
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:325) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:170) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:147) ~[ModelLoader.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:122) [SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.Minecraft.startGame(Minecraft.java:540) [Minecraft.class:?]
@@ -202,41 +232,41 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:78) ~[ModelBlockDefinition.class:?]
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1184) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
-	... 21 more
-[21:42:32] [Client thread/ERROR]: Suppressed additional 4 model loading errors for domain poppiecraft
-[21:42:34] [Client thread/INFO]: [SpawnerCraft] Mob Aliases registered.
-[21:42:34] [Client thread/INFO]: [SpawnerCraft] Recipes registered.
-[21:42:34] [Client thread/INFO]: [SpawnerCraft] Item colors initialized.
-[21:42:34] [Client thread/INFO]: [SpawnerCraft] init finished.
-[21:42:34] [Client thread/INFO]: Injecting itemstacks
-[21:42:34] [Client thread/INFO]: Itemstack injection complete
-[21:42:34] [Client thread/INFO]: [SpawnerCraft] postInit finished.
-[21:42:34] [Client thread/INFO]: Starting JEI...
-[21:42:34] [Client thread/INFO]: Registering plugin: mezz.jei.plugins.vanilla.VanillaPlugin ...
-[21:42:35] [Client thread/INFO]: Registered  plugin: mezz.jei.plugins.vanilla.VanillaPlugin in 422 ms
-[21:42:35] [Client thread/INFO]: Registering plugin: mezz.jei.plugins.jei.JEIInternalPlugin ...
-[21:42:35] [Client thread/INFO]: Registered  plugin: mezz.jei.plugins.jei.JEIInternalPlugin in 18 ms
-[21:42:35] [Client thread/INFO]: Building recipe registry...
-[21:42:35] [Client thread/INFO]: Built    recipe registry in 247 ms
-[21:42:35] [Client thread/INFO]: Building item filter...
-[21:42:36] [Client thread/INFO]: Built	item filter in 888 ms
-[21:42:36] [Client thread/INFO]: Building runtime...
-[21:42:36] [Client thread/INFO]: Built    runtime in 153 ms
-[21:42:36] [Client thread/INFO]: Sending runtime to plugin: mezz.jei.plugins.vanilla.VanillaPlugin ...
-[21:42:36] [Client thread/INFO]: Sending runtime to plugin: mezz.jei.plugins.jei.JEIInternalPlugin ...
-[21:42:36] [Client thread/INFO]: Finished Starting JEI in 2332 ms
-[21:42:36] [Client thread/INFO]: Forge Mod Loader has successfully loaded 6 mods
-[21:42:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:PoppieCraft, FMLFileResourcePack:Just Enough Items, FMLFileResourcePack:SpawnerCraft
-[21:42:39] [Client thread/INFO]: SoundSystem shutting down...
-[21:42:40] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[21:42:40] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[21:42:40] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[21:42:40] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[21:42:40] [Thread-8/INFO]: OpenAL initialized.
-[21:42:40] [Sound Library Loader/INFO]: Sound engine started
-[21:42:44] [Client thread/INFO]: Max texture size: 8192
-[21:42:44] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[21:42:46] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=north,type=ultimate for blockstate "poppiecraft:Generator_block[activated=true,facing=north,type=ultimate]"
+	... 20 more
+[18:30:25] [Client thread/ERROR]: Suppressed additional 5 model loading errors for domain poppiecraft
+[18:30:30] [Client thread/INFO]: [SpawnerCraft] Mob Aliases registered.
+[18:30:30] [Client thread/INFO]: [SpawnerCraft] Recipes registered.
+[18:30:30] [Client thread/INFO]: [SpawnerCraft] Item colors initialized.
+[18:30:30] [Client thread/INFO]: [SpawnerCraft] init finished.
+[18:30:30] [Client thread/INFO]: Injecting itemstacks
+[18:30:30] [Client thread/INFO]: Itemstack injection complete
+[18:30:30] [Client thread/INFO]: [SpawnerCraft] postInit finished.
+[18:30:30] [Client thread/INFO]: Starting JEI...
+[18:30:30] [Client thread/INFO]: Registering plugin: mezz.jei.plugins.vanilla.VanillaPlugin ...
+[18:30:31] [Client thread/INFO]: Registered  plugin: mezz.jei.plugins.vanilla.VanillaPlugin in 613 ms
+[18:30:31] [Client thread/INFO]: Registering plugin: mezz.jei.plugins.jei.JEIInternalPlugin ...
+[18:30:31] [Client thread/INFO]: Registered  plugin: mezz.jei.plugins.jei.JEIInternalPlugin in 15 ms
+[18:30:31] [Client thread/INFO]: Building recipe registry...
+[18:30:31] [Client thread/INFO]: Built    recipe registry in 432 ms
+[18:30:31] [Client thread/INFO]: Building item filter...
+[18:30:33] [Client thread/INFO]: Built	item filter in 1117 ms
+[18:30:33] [Client thread/INFO]: Building runtime...
+[18:30:33] [Client thread/INFO]: Built    runtime in 264 ms
+[18:30:33] [Client thread/INFO]: Sending runtime to plugin: mezz.jei.plugins.vanilla.VanillaPlugin ...
+[18:30:33] [Client thread/INFO]: Sending runtime to plugin: mezz.jei.plugins.jei.JEIInternalPlugin ...
+[18:30:33] [Client thread/INFO]: Finished Starting JEI in 3066 ms
+[18:30:33] [Client thread/INFO]: Forge Mod Loader has successfully loaded 6 mods
+[18:30:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:PoppieCraft, FMLFileResourcePack:Just Enough Items, FMLFileResourcePack:SpawnerCraft
+[18:30:38] [Client thread/INFO]: SoundSystem shutting down...
+[18:30:38] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:30:38] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:30:38] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[18:30:38] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:30:38] [Thread-8/INFO]: OpenAL initialized.
+[18:30:39] [Sound Library Loader/INFO]: Sound engine started
+[18:30:46] [Client thread/INFO]: Max texture size: 8192
+[18:30:46] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[18:30:51] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=north,type=ultimate for blockstate "poppiecraft:Generator_block[activated=true,facing=north,type=ultimate]"
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Generator_block#activated=true,facing=north,type=ultimate with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:241) ~[ModelLoader.class:?]
@@ -268,7 +298,7 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1184) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
 	... 24 more
-[21:42:46] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=north,type=advanced for blockstate "poppiecraft:Generator_block[activated=true,facing=north,type=advanced]"
+[18:30:51] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=north,type=advanced for blockstate "poppiecraft:Generator_block[activated=true,facing=north,type=advanced]"
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Generator_block#activated=true,facing=north,type=advanced with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:241) ~[ModelLoader.class:?]
@@ -312,7 +342,7 @@ Caused by: java.io.FileNotFoundException: poppiecraft:models/block/Generator_blo
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1185) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
 	... 24 more
-[21:42:46] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=east,type=basic for blockstate "poppiecraft:Generator_block[activated=true,facing=east,type=basic]"
+[18:30:51] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=east,type=basic for blockstate "poppiecraft:Generator_block[activated=true,facing=east,type=basic]"
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Generator_block#activated=true,facing=east,type=basic with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:241) ~[ModelLoader.class:?]
@@ -344,13 +374,46 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1184) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
 	... 24 more
-[21:42:46] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Generator_block#activated=true,facing=west,type=basic for blockstate "poppiecraft:Generator_block[activated=true,facing=west,type=basic]"
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Generator_block#activated=true,facing=west,type=basic with loader VariantLoader.INSTANCE, skipping
+[18:30:51] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Speedster_flesh#inventory for item "poppiecraft:Speedster_flesh", normal location exception: 
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:item/Speedster_flesh with loader VanillaLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
-	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:241) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:145) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:229) ~[ModelLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:146) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:317) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:170) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:147) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:132) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:113) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:799) [Minecraft.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:340) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:561) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:386) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_25]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_25]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.io.FileNotFoundException: poppiecraft:models/item/Speedster_flesh.json
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:68) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadModel(ModelBakery.java:311) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.access$1100(ModelLoader.java:118) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader$VanillaLoader.loadModel(ModelLoader.java:868) ~[ModelLoader$VanillaLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
+	... 23 more
+[18:30:51] [Client thread/ERROR]: Exception loading model for variant poppiecraft:Speedster_flesh#inventory for item "poppiecraft:Speedster_flesh", blockstate location exception: 
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model poppiecraft:Speedster_flesh#inventory with loader VariantLoader.INSTANCE, skipping
+	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:153) ~[ModelLoaderRegistry.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:325) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:170) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:147) ~[ModelLoader.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:132) [SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:113) [SimpleReloadableResourceManager.class:?]
@@ -375,71 +438,73 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:78) ~[ModelBlockDefinition.class:?]
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1184) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:149) ~[ModelLoaderRegistry.class:?]
-	... 24 more
-[21:42:46] [Client thread/ERROR]: Suppressed additional 4 model loading errors for domain poppiecraft
-[21:42:47] [Client thread/ERROR]: ########## GL ERROR ##########
-[21:42:47] [Client thread/ERROR]: @ Post startup
-[21:42:47] [Client thread/ERROR]: 1281: Invalid value
-[21:42:50] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[21:47:28] [Server thread/INFO]: Starting integrated minecraft server version 1.10.2
-[21:47:28] [Server thread/INFO]: Generating keypair
-[21:47:29] [Server thread/INFO]: Injecting existing block and item data into this server instance
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:grid
-[21:47:29] [Server thread/INFO]: Found a missing id from the world poppiecraft:PironniteoreN
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:interface
-[21:47:29] [Server thread/INFO]: Found a missing id from the world poppiecraft:Poppieblock
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:detector
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:network_receiver
-[21:47:29] [Server thread/INFO]: Found a missing id from the world poppiecraft:Carbonblock
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:wireless_transmitter
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:disk_drive
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:network_transmitter
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:processing_pattern_encoder
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:constructor
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:destructor
-[21:47:29] [Server thread/INFO]: Found a missing id from the world poppiecraft:PironniteoreOW
-[21:47:29] [Server thread/INFO]: Found a missing id from the world poppiecraft:PironniteoreOV
-[21:47:29] [Server thread/INFO]: Found a missing id from the world poppiecraft:Compressedironblock
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:disk_manipulator
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:reader
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:solderer
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:external_storage
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:relay
-[21:47:29] [Server thread/INFO]: Found a missing id from the world mcmultipart:multipart
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:exporter
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:fluid_interface
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:cable
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:controller
-[21:47:29] [Server thread/INFO]: Found a missing id from the world poppiecraft:Carbonore
-[21:47:29] [Server thread/INFO]: Found a missing id from the world poppiecraft:Pironniteblock
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:storage
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:crafting_monitor
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:writer
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:fluid_storage
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:importer
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:machine_casing
-[21:47:29] [Server thread/INFO]: Found a missing id from the world refinedstorage:crafter
-[21:47:29] [Server thread/INFO]: Applying holder lookups
-[21:47:29] [Server thread/INFO]: Holder lookups applied
-[21:47:29] [Server thread/INFO]: Loading dimension 0 (PoppieCraft) (net.minecraft.server.integrated.IntegratedServer@2b2ab53)
-[21:47:30] [Server thread/INFO]: Loading dimension 1 (PoppieCraft) (net.minecraft.server.integrated.IntegratedServer@2b2ab53)
-[21:47:30] [Server thread/INFO]: Loading dimension -1 (PoppieCraft) (net.minecraft.server.integrated.IntegratedServer@2b2ab53)
-[21:47:30] [Server thread/INFO]: Preparing start region for level 0
-[21:47:31] [Server thread/INFO]: Preparing spawn area: 68%
-[21:47:31] [Server thread/INFO]: Changing view distance to 12, from 10
-[21:47:33] [Netty Local Client IO #0/INFO]: Server protocol version 2
-[21:47:33] [Netty Server IO #1/INFO]: Client protocol version 2
-[21:47:33] [Netty Server IO #1/INFO]: Client attempting to join with 6 mods : FML@8.0.99.99,Forge@12.18.3.2185,mcp@9.19,spawnercraft@3.1,poppiecraft@1.0,JEI@3.14.7.420
-[21:47:33] [Netty Local Client IO #0/INFO]: [Netty Local Client IO #0] Client side modded connection established
-[21:47:33] [Server thread/INFO]: [Server thread] Server side modded connection established
-[21:47:33] [Server thread/INFO]: Player554[local:E:8e95c92e] logged in with entity id 89 at (-1600.3123042182506, 56.0, 369.4906159953752)
-[21:47:33] [Server thread/INFO]: Player554 joined the game
-[21:47:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2124ms behind, skipping 42 tick(s)
-[21:47:36] [Server thread/INFO]: Saving and pausing game...
-[21:47:36] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Overworld
-[21:47:36] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Nether
-[21:47:36] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/The End
-[21:47:36] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@625b3231[id=1217a77c-23b0-3185-a8fb-c1d093f65cc0,name=Player554,properties={},legacy=false]
+	... 23 more
+[18:30:51] [Client thread/ERROR]: Suppressed additional 5 model loading errors for domain poppiecraft
+[18:30:51] [Client thread/ERROR]: ########## GL ERROR ##########
+[18:30:51] [Client thread/ERROR]: @ Post startup
+[18:30:51] [Client thread/ERROR]: 1281: Invalid value
+[18:30:54] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[19:07:09] [Server thread/INFO]: Starting integrated minecraft server version 1.10.2
+[19:07:09] [Server thread/INFO]: Generating keypair
+[19:07:09] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:grid
+[19:07:10] [Server thread/INFO]: Found a missing id from the world poppiecraft:PironniteoreN
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:interface
+[19:07:10] [Server thread/INFO]: Found a missing id from the world poppiecraft:Poppieblock
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:detector
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:network_receiver
+[19:07:10] [Server thread/INFO]: Found a missing id from the world poppiecraft:Carbonblock
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:wireless_transmitter
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:disk_drive
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:network_transmitter
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:processing_pattern_encoder
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:constructor
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:destructor
+[19:07:10] [Server thread/INFO]: Found a missing id from the world poppiecraft:PironniteoreOW
+[19:07:10] [Server thread/INFO]: Found a missing id from the world poppiecraft:PironniteoreOV
+[19:07:10] [Server thread/INFO]: Found a missing id from the world poppiecraft:Compressedironblock
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:disk_manipulator
+[19:07:10] [Server thread/INFO]: Found a missing id from the world poppiecraft:Sacred_table
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:reader
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:solderer
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:external_storage
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:relay
+[19:07:10] [Server thread/INFO]: Found a missing id from the world mcmultipart:multipart
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:exporter
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:fluid_interface
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:cable
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:controller
+[19:07:10] [Server thread/INFO]: Found a missing id from the world poppiecraft:Carbonore
+[19:07:10] [Server thread/INFO]: Found a missing id from the world poppiecraft:Pironniteblock
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:storage
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:crafting_monitor
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:writer
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:fluid_storage
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:importer
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:machine_casing
+[19:07:10] [Server thread/INFO]: Found a missing id from the world refinedstorage:crafter
+[19:07:10] [Server thread/INFO]: Applying holder lookups
+[19:07:10] [Server thread/INFO]: Holder lookups applied
+[19:07:10] [Server thread/INFO]: Loading dimension 0 (PoppieCraft) (net.minecraft.server.integrated.IntegratedServer@6f603410)
+[19:07:11] [Server thread/INFO]: Loading dimension 1 (PoppieCraft) (net.minecraft.server.integrated.IntegratedServer@6f603410)
+[19:07:11] [Server thread/INFO]: Loading dimension -1 (PoppieCraft) (net.minecraft.server.integrated.IntegratedServer@6f603410)
+[19:07:11] [Server thread/INFO]: Preparing start region for level 0
+[19:07:12] [Server thread/INFO]: Preparing spawn area: 28%
+[19:07:13] [Server thread/INFO]: Preparing spawn area: 68%
+[19:07:14] [Server thread/INFO]: Changing view distance to 12, from 10
+[19:07:16] [Netty Local Client IO #0/INFO]: Server protocol version 2
+[19:07:16] [Netty Server IO #1/INFO]: Client protocol version 2
+[19:07:16] [Netty Server IO #1/INFO]: Client attempting to join with 6 mods : FML@8.0.99.99,Forge@12.18.3.2185,mcp@9.19,spawnercraft@3.1,poppiecraft@1.0,JEI@3.14.7.420
+[19:07:16] [Netty Local Client IO #0/INFO]: [Netty Local Client IO #0] Client side modded connection established
+[19:07:16] [Server thread/INFO]: [Server thread] Server side modded connection established
+[19:07:16] [Server thread/INFO]: Player972[local:E:3f1746f2] logged in with entity id 89 at (-1595.6162264067384, 56.0, 372.8153949352905)
+[19:07:16] [Server thread/INFO]: Player972 joined the game
+[19:07:21] [Server thread/INFO]: Saving and pausing game...
+[19:07:21] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Overworld
+[19:07:21] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Nether
+[19:07:21] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/The End
+[19:07:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2917ms behind, skipping 58 tick(s)
+[19:07:22] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@778fdb85[id=494e218c-ed3e-3c18-87a9-972128e58cab,name=Player972,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
@@ -461,74 +526,23 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_25]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_25]
 	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_25]
-[21:47:39] [Server thread/INFO]: Player554 has just earned the achievement [Taking Inventory]
-[21:47:39] [Client thread/INFO]: [CHAT] Player554 has just earned the achievement [Taking Inventory]
-[21:48:00] [Client thread/INFO]: [CHAT] MinecartChest, EyeOfEnderSignal, ItemFrame, SpectralArrow, MinecartCommandBlock, Item, EntityHorse, Fireball, EnderDragon, DragonFireball, MinecartTNT, Villager, ThrownPotion, Guardian, SnowMan, LeashKnot, Arrow, MushroomCow, LavaSlime, Zombie, MinecartSpawner, EnderCrystal, Snowball, Enderman, CaveSpider, MinecartHopper, XPOrb, ThrownExpBottle, FireworksRocketEntity, Chicken, FallingSand, Giant, VillagerGolem, PrimedTnt, Endermite, Creeper, Rabbit, ThrownEnderpearl, Silverfish, ShulkerBullet, Shulker, ArmorStand, Squid, Skeleton, SmallFireball, MinecartRideable, Wolf, Witch, PolarBear, Ozelot, ThrownEgg, Cow, AreaEffectCloud, Slime, Painting, Pig, MinecartFurnace, Bat, Blaze, WitherBoss, PigZombie, Spider, Ghast, Sheep, WitherSkull, Boat, LightningBolt
-[21:48:04] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:04] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:05] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:05] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:06] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:06] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:07] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:07] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:08] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:08] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:09] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:09] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:10] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:10] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:11] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:11] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:11] [Client thread/INFO]: [CHAT] SpectralArrow, SnowMan, Snowball, Silverfish, ShulkerBullet, Shulker, Squid, Skeleton, SmallFireball, Slime, Spider, Sheep
-[21:48:12] [Server thread/INFO]: Saving and pausing game...
-[21:48:12] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Overworld
-[21:48:12] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Nether
-[21:48:12] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/The End
-[22:22:48] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:22:56] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:22:57] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:22:57] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:22:58] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:22:59] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:22:59] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:00] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:00] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:01] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:02] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:05] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:05] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:06] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:07] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:09] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:09] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:10] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:11] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:11] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:12] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:13] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:15] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:16] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:22] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:22] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:23] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:24] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:23:24] [Client thread/INFO]: [CHAT] minecraft:nausea, minecraft:regeneration, minecraft:glowing, minecraft:invisibility, minecraft:poison, minecraft:water_breathing, minecraft:jump_boost, minecraft:blindness, minecraft:saturation, minecraft:luck, minecraft:night_vision, minecraft:absorption, minecraft:fire_resistance, minecraft:instant_damage, minecraft:levitation, minecraft:speed, minecraft:wither, minecraft:slowness, minecraft:unluck, minecraft:weakness, minecraft:hunger, minecraft:instant_health, minecraft:mining_fatigue, minecraft:strength, minecraft:health_boost, minecraft:resistance, minecraft:haste
-[22:24:19] [Server thread/INFO]: Saving and pausing game...
-[22:24:19] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Overworld
-[22:24:19] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Nether
-[22:24:19] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/The End
-[23:16:09] [Server thread/INFO]: Stopping server
-[23:16:09] [Server thread/INFO]: Saving players
-[23:16:09] [Server thread/INFO]: Saving worlds
-[23:16:09] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Overworld
-[23:16:09] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Nether
-[23:16:09] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/The End
-[23:16:09] [Server thread/INFO]: Unloading dimension 0
-[23:16:09] [Server thread/INFO]: Unloading dimension -1
-[23:16:09] [Server thread/INFO]: Unloading dimension 1
-[23:16:12] [Server thread/INFO]: Applying holder lookups
-[23:16:12] [Server thread/INFO]: Holder lookups applied
-[23:16:13] [Client thread/INFO]: Stopping!
-[23:16:13] [Client thread/INFO]: SoundSystem shutting down...
-[23:16:13] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[19:07:23] [Server thread/INFO]: Saving and pausing game...
+[19:07:23] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Overworld
+[19:07:23] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Nether
+[19:07:23] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/The End
+[19:07:38] [Server thread/INFO]: Player972 has just earned the achievement [Taking Inventory]
+[19:07:39] [Client thread/INFO]: [CHAT] Player972 has just earned the achievement [Taking Inventory]
+[19:07:41] [Server thread/INFO]: [Player972: Given [item.Speedster_flesh.name] * 64 to Player972]
+[19:07:41] [Client thread/INFO]: [CHAT] Given [item.Speedster_flesh.name] * 64 to Player972
+[19:07:46] [Server thread/INFO]: Saving and pausing game...
+[19:07:46] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Overworld
+[19:07:46] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Nether
+[19:07:46] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/The End
+[19:17:59] [Client thread/INFO]: [CHAT] The number you have entered (20000) is too big, it must be at most 255
+[19:18:02] [Server thread/INFO]: [Player972: Given Hunger (ID 17) * 20 to Player972 for 20000 seconds]
+[19:18:02] [Client thread/INFO]: [CHAT] Given Hunger (ID 17) * 20 to Player972 for 20000 seconds
+[19:18:03] [Server thread/INFO]: Saving and pausing game...
+[19:18:03] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Overworld
+[19:18:03] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/Nether
+[19:18:03] [Server thread/INFO]: Saving chunks for level 'PoppieCraft'/The End
+[19:52:31] [Client Shutdown Thread/INFO]: Stopping server

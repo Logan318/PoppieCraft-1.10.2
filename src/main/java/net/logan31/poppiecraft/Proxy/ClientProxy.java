@@ -29,6 +29,7 @@ public class ClientProxy extends CommonProxy {
         ModItems.registerRenders();
         ModArmor.registerRenders();
 
+        ModEntities.RegisterEntities();
 
     }
 
@@ -42,9 +43,17 @@ public class ClientProxy extends CommonProxy {
     }
 
     @Override
+    public void postInit() {
+        ModEntities.RegisterEntitiesRenders();
+
+        super.postInit();
+    }
+
+    @Override
     public void registerModelBakeryStuff() {
         ModelBakery.registerItemVariants(ModItems.Loot_upgrade, new ResourceLocation(References.MODID, "Loot_upgrade_basic"), new ResourceLocation(References.MODID, "Loot_upgrade_advanced"), new ResourceLocation(References.MODID, "Loot_upgrade_ultimate"));
         ModelBakery.registerItemVariants(Item.getItemFromBlock(ModBlocks.Generator_block), new ResourceLocation(References.MODID, "Generator_block_basic"), new ResourceLocation(References.MODID, "Generator_block_advanced"), new ResourceLocation(References.MODID, "Generator_block_ultimate "));
+
     }
 
 }

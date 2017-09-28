@@ -12,6 +12,8 @@ import net.logan31.poppiecraft.Utils.References;
 import net.logan31.poppiecraft.handler.EnumHandler;
 import net.logan31.poppiecraft.items.*;
 import net.minecraft.item.Item;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -33,7 +35,7 @@ public class ModItems {
     public static Item Molten_iron, Compressed_iron, Carbon_stick, Renforced_string, Golden_string;
     public static Item Compressed_iron_bottle, Molten_carbon_bottle, Poppie_bottle, Steel_piece, Steel_nugget, Steel_ingot;
     public static Item Speed_fragment, Speed_element, Jump_fragment, Jump_element, Darkness_fragment, Darkness_element;
-    public static Item Steel_power, Loot_upgrade, Generator_power, Obsidian_gem, Four_leaf_clover, Coal_gem;
+    public static Item Steel_power, Loot_upgrade, Generator_power, Obsidian_gem, Four_leaf_clover, Coal_gem, Speedster_flesh;
 
     public static final Item Redstone_sword = new Redstonesword("Redstone_sword", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Redstone_pickaxe = new Redstonepickaxe("Redstone_pickaxe", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
@@ -114,8 +116,8 @@ public class ModItems {
         Generator_power = new Generator_power("Generator_power");
         Obsidian_gem = new Obsidian_gem("Obsidian_gem");
         Four_leaf_clover = new Four_leaf_clover("Four_leaf_clover");
-
         Coal_gem = new Coal_gem("Coal_gem");
+        Speedster_flesh = new ItemFoodMod("Speedster_flesh", 5, 4, true, new PotionEffect(Potion.getPotionById(1), 400, 2));
 
         Redstone_gem = new Item().setRegistryName("Redstone_gem").setUnlocalizedName("Redstone_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
         Lapis_gem = new Item().setRegistryName("Lapis_gem").setUnlocalizedName("Lapis_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
@@ -153,6 +155,7 @@ public class ModItems {
         registerItem(Steel_power);
         registerItem(Loot_upgrade);
         registerItem(Generator_power);
+        registerItem(Speedster_flesh);
 
         GameRegistry.register(Redstone_gem);
         GameRegistry.register(Redstone_sword);
@@ -249,6 +252,7 @@ public class ModItems {
         registerRender(Steel_power);
         registerRender(Four_leaf_clover);
         registerRender(Coal_gem);
+        registerRender(Speedster_flesh);
 
         registerRender(Redstone_gem);
         registerRender(Redstone_sword);

@@ -37,6 +37,8 @@ import java.lang.ref.Reference;
 public class PoppieCraftMod {
 
 
+
+
     @SidedProxy(clientSide = References.CLIENT_PROXY, serverSide = References.SERVER_PROXY)
     public static CommonProxy proxy;
 
@@ -85,6 +87,11 @@ public class PoppieCraftMod {
 
         proxy.init();
 
+    }
+
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent e) {
+        proxy.postInit();
     }
 
     @Mod.EventHandler
