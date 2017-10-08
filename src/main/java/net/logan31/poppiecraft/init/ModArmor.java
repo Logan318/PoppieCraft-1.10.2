@@ -31,7 +31,7 @@ public class ModArmor {
         public static ItemArmor.ArmorMaterial leafcloverMat = EnumHelper.addArmorMaterial("leafcloverMat", References.MODID + ":leafcloverArmor", 11, new int[]{3, 6, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
         public static ItemArmor.ArmorMaterial obsidianMat = EnumHelper.addArmorMaterial("obsidianMat", References.MODID + ":obsidianArmor", 18, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
         public static ItemArmor.ArmorMaterial coalMat = EnumHelper.addArmorMaterial("coalMat", References.MODID + ":coalArmor", 13, new int[]{2, 4, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
-        public static ItemArmor.ArmorMaterial emeraldMat = EnumHelper.addArmorMaterial("emeraldMat", References.MODID + ":emeraldArmor", 50, new int[]{4, 7, 10, 4}, 11, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0f);
+        public static ItemArmor.ArmorMaterial emeraldMat = EnumHelper.addArmorMaterial("emeraldMat", References.MODID + ":emeraldArmor", 50, new int[]{4, 7, 9, 4}, 11, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0f);
 
     public static ItemArmor Redstone_helmet, Redstone_chestplate, Redstone_leggings, Redstone_boots, Lapis_helmet;
     public static ItemArmor Lapis_chestplate, Lapis_leggings, Lapis_boots, Quartz_helmet, Quartz_chestplate, Quartz_leggings;

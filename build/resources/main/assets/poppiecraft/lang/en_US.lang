@@ -39,6 +39,17 @@ item.Steel_power.name=Steel power
 tile.Mefferite_ore.name=Mefferite ore
 tile.Alzanite_ore.name=Alzanite ore
 tile.Ragmarite_ore.name=Ragmarite ore
+item.Loot_upgrade_basic.name=Loot upgrade
+item.Loot_upgrade_advanced.name=Loot upgrade
+item.Loot_upgrade_ultimate.name=Loot upgrade
+tile.Generator_block_basic.name=Generator block basic
+tile.Generator_block_advanced.name=Generator block advanced
+tile.Generator_block_ultimate.name=Generator block ultimate
+item.Generator_power.name=Generator power
+item.Speedster_flesh.name=Speedster flesh
+item.Jumper_flesh.name=Jumper flesh
+item.Darker_flesh.name=Darker flesh
+item.Golden_feather.name=Golden feather
 
 item.Redstone_gem.name=Redstone gem
 item.Redstone_helmet.name=Redstone helmet
@@ -94,7 +105,67 @@ item.Emerald_shovel.name=Emerald shovel
 item.Emerald_hoe.name=Emerald hoe
 item.Emerald_axe.name=Emerald axe
 
+item.Obsidian_gem.name=Obsidian gem
+item.Obsidian_helmet.name=Obsidian helmet
+item.Obsidian_chestplate.name=Obsidian chestplate
+item.Obsidian_leggings.name=Obsidian leggings
+item.Obsidian_boots.name=Obsidian boots
+item.Obsidian_sword.name=Obsidian sword
+item.Obsidian_pickaxe.name=Obsidian pickaxe
+item.Obsidian_shovel.name=Obsidian shovel
+item.Obsidian_hoe.name=Obsidian hoe
+item.Obsidian_axe.name=Obsidian axe
+
+item.Four_leaf_clover.name=Four leaf clover
+item.Four_leaf_clover_helmet.name=Four leaf clover helmet
+item.Four_leaf_clover_chestplate.name=Four leaf clover chestplate
+item.Four_leaf_clover_leggings.name=Four leaf clover leggings
+item.Four_leaf_clover_boots.name=Four leaf clover boots
+item.Four_leaf_clover_sword.name=Four leaf clover sword
+item.Four_leaf_clover_pickaxe.name=Four leaf clover pickaxe
+item.Four_leaf_clover_shovel.name=Four leaf clover shovel
+item.Four_leaf_clover_hoe.name=Four leaf clover hoe
+item.Four_leaf_clover_axe.name=Four leaf clover axe
+
+item.Coal_gem.name=Coal_gem
+item.Coal_helmet.name=Coal helmet
+item.Coal_chestplate.name=Coal chestplate
+item.Coal_leggings.name=Coal leggings
+item.Coal_boots.name=Coal boots
+item.Coal_sword.name=Coal sword
+item.Coal_pickaxe.name=Coal pickaxe
+item.Coal_shovel.name=Coal shovel
+item.Coal_hoe.name=Coal hoe
+item.Coal_axe.name=Coal axe
+
 itemGroup.PoppieCraft=PoppieCraft
 itemGroup.PoppieArmor=PoppieArmor
 
 enchantment.Fragility=Fragility
+enchantment.Soul Stealer=Soul Stealer
+
+container.Generator_block=Generator block
+
+achievement.RedstoneArmor=The Redstone Armor
+achievement.RedstoneArmor.desc=Wear all the redstone armor
+achievement.LapisArmor=The Lapis Armor
+achievement.QuartzArmor.desc=Wear all the quartz armor
+achievement.QuartzArmor=The Quartz Armor
+achievement.GlowstinArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+
+
+entity.poppiecraft.Speedster.name=Speedster
+entity.poppiecraft.Jumper.name=Jumper
+entity.poppiecraft.Darker.name=Darker
+entity.poppiecraft.Golden_Chicken.name=Golden Chicken
+

@@ -27,6 +27,11 @@ public class ServerProxy extends CommonProxy {
 
         }
 
+        @Override
+        public void postInit() {
+            super.postInit();
+        }
+
     }
 
 

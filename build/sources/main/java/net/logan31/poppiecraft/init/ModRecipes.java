@@ -1,12 +1,11 @@
 package net.logan31.poppiecraft.init;
 
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.item.EntityMinecartEmpty;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.init.PotionTypes;
-import net.minecraft.item.ItemGlassBottle;
-import net.minecraft.item.ItemPotion;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.potion.Potion;
 import net.minecraft.util.datafix.fixes.PotionItems;
 import net.minecraftforge.common.brewing.BrewingRecipe;
@@ -21,6 +20,14 @@ public class ModRecipes {
 
     public void registerCraftRecipes() {
 
+
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Generator_power), new Object[]{"EGE", "GPG", "EGE", 'E', Items.EMERALD, 'G', Blocks.GOLD_BLOCK, 'P', Items.ENDER_PEARL});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Loot_upgrade, 1, 0), new Object[]{"CDC", "DBD", "CMC", 'C', ModBlocks.Carbon_block, 'D', Items.DIAMOND, 'M', Items.BLAZE_ROD, 'B', Items.BOOK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Loot_upgrade, 1, 1), new Object[]{"CDC", "DBD", "CMC", 'C', ModBlocks.Carbon_block, 'D', Items.EMERALD, 'M', Items.GHAST_TEAR, 'B', new ItemStack(ModItems.Loot_upgrade, 0, 0)});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Loot_upgrade, 1, 2), new Object[]{"CDC", "DBD", "CMC", 'C', ModBlocks.Carbon_block, 'D', Items.NETHER_STAR, 'M', new ItemStack(Items.SKULL, 1, 1), 'B', new ItemStack(ModItems.Loot_upgrade, 0, 1)});
+        GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.Generator_block, 1, 0), new Object[]{"CDC", "DBD", "CDC", 'C', Blocks.COAL_BLOCK, 'D', ModItems.Pironnite_ingot, 'B', ModItems.Generator_power});
+        GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.Generator_block, 1, 1), new Object[]{"CDC", "DBD", "CDC", 'C', Blocks.LAPIS_BLOCK, 'D', ModItems.Poppie_ingot, 'B', new ItemStack(ModBlocks.Generator_block, 1, 0)});
+        GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.Generator_block, 1, 2), new Object[]{"CDC", "DBD", "CDC", 'C', Blocks.DIAMOND_BLOCK, 'D', ModItems.Steel_ingot, 'B', new ItemStack(ModBlocks.Generator_block, 1, 1)});
         GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.Carbon_block), new Object[]{"CCC", "CCC", "CCC", 'C', ModItems.Carbon_ingot});
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Carbon_ingot, 9), new Object[] {ModBlocks.Carbon_block});
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.Pironnite_nugget), new Object[] {"PPP", "PPP", "PPP", 'P', ModItems.Pironnite_fragment});
@@ -131,6 +138,51 @@ public class ModRecipes {
         GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Glowstone_boots), new Object[]{"   ", "R R", "R R", 'R', ModItems.Glowstone_gem});
         GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Glowstone_boots), new Object[]{"R R", "R R", "   ", 'R', ModItems.Glowstone_gem});
 
+        //Obsidian
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Obsidian_helmet), new Object[]{"RRR", "R R", "   ", 'R', ModItems.Obsidian_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Obsidian_helmet), new Object[]{"   ", "RRR", "R R", 'R', ModItems.Obsidian_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Obsidian_chestplate), new Object[]{"R R", "RRR", "RRR", 'R', ModItems.Obsidian_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Obsidian_leggings), new Object[]{"RRR", "R R", "R R", 'R', ModItems.Obsidian_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Obsidian_boots), new Object[]{"   ", "R R", "R R", 'R', ModItems.Obsidian_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Obsidian_boots), new Object[]{"R R", "R R", "   ", 'R', ModItems.Obsidian_gem});
+        GameRegistry.addRecipe(new ItemStack(ModItems.Obsidian_sword), "R", "R", "S", 'R', ModItems.Obsidian_gem, 'S', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ModItems.Obsidian_shovel), "R", "S", "S", 'R', ModItems.Obsidian_gem, 'S', Items.STICK);
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Obsidian_hoe), new Object[]{"RR ", " S ", " S ", 'R', ModItems.Obsidian_gem, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Obsidian_hoe), new Object[]{" RR", " S ", " S ", 'R', ModItems.Obsidian_gem, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Obsidian_axe), new Object[]{" RR", " SR", " S ", 'R', ModItems.Obsidian_gem, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Obsidian_axe), new Object[]{"RR ", "RS ", " S ", 'R', ModItems.Obsidian_gem, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Obsidian_pickaxe), new Object[]{"RRR", " S ", " S ", 'R', ModItems.Obsidian_gem, 'S', Items.STICK});
+
+        //Four_leaf_clover
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Four_leaf_clover_helmet), new Object[]{"RRR", "R R", "   ", 'R', ModItems.Four_leaf_clover});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Four_leaf_clover_helmet), new Object[]{"   ", "RRR", "R R", 'R', ModItems.Four_leaf_clover});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Four_leaf_clover_chestplate), new Object[]{"R R", "RRR", "RRR", 'R', ModItems.Four_leaf_clover});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Four_leaf_clover_leggings), new Object[]{"RRR", "R R", "R R", 'R', ModItems.Four_leaf_clover});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Four_leaf_clover_boots), new Object[]{"   ", "R R", "R R", 'R', ModItems.Four_leaf_clover});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Four_leaf_clover_boots), new Object[]{"R R", "R R", "   ", 'R', ModItems.Four_leaf_clover});
+        GameRegistry.addRecipe(new ItemStack(ModItems.Four_leaf_clover_sword), "R", "R", "S", 'R', ModItems.Four_leaf_clover, 'S', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ModItems.Four_leaf_clover_shovel), "R", "S", "S", 'R', ModItems.Four_leaf_clover, 'S', Items.STICK);
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Four_leaf_clover_hoe), new Object[]{"RR ", " S ", " S ", 'R', ModItems.Four_leaf_clover, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Four_leaf_clover_hoe), new Object[]{" RR", " S ", " S ", 'R', ModItems.Four_leaf_clover, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Four_leaf_clover_axe), new Object[]{" RR", " SR", " S ", 'R', ModItems.Four_leaf_clover, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Four_leaf_clover_axe), new Object[]{"RR ", "RS ", " S ", 'R', ModItems.Four_leaf_clover, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Four_leaf_clover_pickaxe), new Object[]{"RRR", " S ", " S ", 'R', ModItems.Four_leaf_clover, 'S', Items.STICK});
+
+        //Coal
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Coal_helmet), new Object[]{"RRR", "R R", "   ", 'R', ModItems.Coal_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Coal_helmet), new Object[]{"   ", "RRR", "R R", 'R', ModItems.Coal_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Coal_chestplate), new Object[]{"R R", "RRR", "RRR", 'R', ModItems.Coal_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Coal_leggings), new Object[]{"RRR", "R R", "R R", 'R', ModItems.Coal_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Coal_boots), new Object[]{"   ", "R R", "R R", 'R', ModItems.Coal_gem});
+        GameRegistry.addShapedRecipe(new ItemStack(ModArmor.Coal_boots), new Object[]{"R R", "R R", "   ", 'R', ModItems.Coal_gem});
+        GameRegistry.addRecipe(new ItemStack(ModItems.Coal_sword), "R", "R", "S", 'R', ModItems.Coal_gem, 'S', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ModItems.Coal_shovel), "R", "S", "S", 'R', ModItems.Coal_gem, 'S', Items.STICK);
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Coal_hoe), new Object[]{"RR ", " S ", " S ", 'R', ModItems.Coal_gem, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Coal_hoe), new Object[]{" RR", " S ", " S ", 'R', ModItems.Coal_gem, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Coal_axe), new Object[]{" RR", " SR", " S ", 'R', ModItems.Coal_gem, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Coal_axe), new Object[]{"RR ", "RS ", " S ", 'R', ModItems.Coal_gem, 'S', Items.STICK});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.Coal_pickaxe), new Object[]{"RRR", " S ", " S ", 'R', ModItems.Coal_gem, 'S', Items.STICK});
+
         //Emerald
         GameRegistry.addRecipe(new ItemStack(ModItems.Emerald_sword), "R", "R", "S", 'R', Items.EMERALD, 'S', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(ModItems.Emerald_shovel), "R", "S", "S", 'R', Items.EMERALD, 'S', Items.STICK);
@@ -153,11 +205,10 @@ public class ModRecipes {
         GameRegistry.addSmelting(Blocks.LAPIS_BLOCK, new ItemStack(ModItems.Lapis_gem, 1), 0.7f);
         GameRegistry.addSmelting(Blocks.QUARTZ_BLOCK, new ItemStack(ModItems.Quartz_gem, 1), 0.7f);
         GameRegistry.addSmelting(Blocks.GLOWSTONE, new ItemStack(ModItems.Glowstone_gem, 1), 0.7f);
+        GameRegistry.addSmelting(Blocks.OBSIDIAN, new ItemStack(ModItems.Obsidian_gem, 1), 0.7f);
+        GameRegistry.addSmelting(Blocks.COAL_BLOCK, new ItemStack(ModItems.Coal_gem, 1), 0.7f);
         GameRegistry.addSmelting(ModBlocks.Carbon_ore, new ItemStack(ModItems.Carbon_ingot, 1), 0.7f);
-
         GameRegistry.addSmelting(Blocks.IRON_BLOCK, new ItemStack(ModItems.Molten_iron, 1), 0.7f);
-
-
 
     }
 

@@ -46,6 +46,10 @@ tile.Generator_block_basic.name=Generator block basic
 tile.Generator_block_advanced.name=Generator block advanced
 tile.Generator_block_ultimate.name=Generator block ultimate
 item.Generator_power.name=Generator power
+item.Speedster_flesh.name=Speedster flesh
+item.Jumper_flesh.name=Jumper flesh
+item.Darker_flesh.name=Darker flesh
+item.Golden_feather.name=Golden feather
 
 item.Redstone_gem.name=Redstone gem
 item.Redstone_helmet.name=Redstone helmet
@@ -138,5 +142,30 @@ itemGroup.PoppieCraft=PoppieCraft
 itemGroup.PoppieArmor=PoppieArmor
 
 enchantment.Fragility=Fragility
+enchantment.Soul Stealer=Soul Stealer
 
 container.Generator_block=Generator block
+
+achievement.RedstoneArmor=The Redstone Armor
+achievement.RedstoneArmor.desc=Wear all the redstone armor
+achievement.LapisArmor=The Lapis Armor
+achievement.QuartzArmor.desc=Wear all the quartz armor
+achievement.QuartzArmor=The Quartz Armor
+achievement.GlowstinArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+achievement.LapisArmor=The Lapis Armor
+achievement.LapisArmor.desc=Wear all the lapis armor
+
+
+entity.poppiecraft.Speedster.name=Speedster
+entity.poppiecraft.Jumper.name=Jumper
+entity.poppiecraft.Darker.name=Darker
+entity.poppiecraft.Golden_Chicken.name=Golden Chicken
+

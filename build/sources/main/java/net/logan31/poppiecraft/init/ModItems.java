@@ -9,13 +9,17 @@ package net.logan31.poppiecraft.init;
 
 import net.logan31.poppiecraft.PoppieCraftMod;
 import net.logan31.poppiecraft.Utils.References;
+import net.logan31.poppiecraft.handler.EnumHandler;
 import net.logan31.poppiecraft.items.*;
 import net.minecraft.item.Item;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;
+import org.w3c.dom.css.CSSPageRule;
 
 public class ModItems {
     public ModItems() {
@@ -31,7 +35,8 @@ public class ModItems {
     public static Item Molten_iron, Compressed_iron, Carbon_stick, Renforced_string, Golden_string;
     public static Item Compressed_iron_bottle, Molten_carbon_bottle, Poppie_bottle, Steel_piece, Steel_nugget, Steel_ingot;
     public static Item Speed_fragment, Speed_element, Jump_fragment, Jump_element, Darkness_fragment, Darkness_element;
-    public static Item Steel_power;
+    public static Item Steel_power, Loot_upgrade, Generator_power, Obsidian_gem, Four_leaf_clover, Coal_gem, Speedster_flesh;
+    public static Item Jumper_flesh, Darker_flesh, Golden_feather, Basic_soul, Advanced_soul, Ultimate_soul;
 
     public static final Item Redstone_sword = new Redstonesword("Redstone_sword", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Redstone_pickaxe = new Redstonepickaxe("Redstone_pickaxe", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
@@ -57,6 +62,24 @@ public class ModItems {
     public static final Item Glowstone_hoe = new Glowstonehoe("Glowstone_hoe", ToolMaterials.glowstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Glowstone_axe = new Glowstoneaxe("Glowstone_axe", ToolMaterials.glowstoneMat, 8.0f, -3.1f).setCreativeTab(PoppieCraftMod.PoppieArmor);
 
+    public static final Item Obsidian_sword = new Obsidian_sword("Obsidian_sword", ToolMaterials.obsidianMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Obsidian_pickaxe = new Obsidian_pickaxe("Obsidian_pickaxe", ToolMaterials.obsidianMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Obsidian_shovel = new Obsidian_shovel("Obsidian_shovel", ToolMaterials.obsidianMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Obsidian_hoe = new Obsidian_hoe("Obsidian_hoe", ToolMaterials.obsidianMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Obsidian_axe = new Obsidian_axe("Obsidian_axe", ToolMaterials.obsidianMat, 8.0f, -3.1f).setCreativeTab(PoppieCraftMod.PoppieArmor);
+
+    public static final Item Four_leaf_clover_sword = new Four_leaf_clover_sword("Four_leaf_clover_sword", ToolMaterials.leafcloverMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Four_leaf_clover_pickaxe = new Four_leaf_clover_pickaxe("Four_leaf_clover_pickaxe", ToolMaterials.leafcloverMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Four_leaf_clover_shovel = new Four_leaf_clover_shovel("Four_leaf_clover_shovel", ToolMaterials.leafcloverMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Four_leaf_clover_hoe = new Four_leaf_clover_hoe("Four_leaf_clover_hoe", ToolMaterials.leafcloverMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Four_leaf_clover_axe = new Four_leaf_clover_axe("Four_leaf_clover_axe", ToolMaterials.leafcloverMat, 8.0f, -3.1f).setCreativeTab(PoppieCraftMod.PoppieArmor);
+
+    public static final Item Coal_sword = new Coal_sword("Coal_sword", ToolMaterials.coalMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Coal_pickaxe = new Coal_pickaxe("Coal_pickaxe", ToolMaterials.coalMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Coal_shovel = new Coal_shovel("Coal_shovel", ToolMaterials.coalMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Coal_hoe = new Coal_hoe("Coal_hoe", ToolMaterials.coalMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
+    public static final Item Coal_axe = new Coal_axe("Coal_axe", ToolMaterials.coalMat, 8.0f, -3.1f).setCreativeTab(PoppieCraftMod.PoppieArmor);
+
     public static final Item Emerald_sword = new Emeraldsword("Emerald_sword", ToolMaterials.emeraldMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Emerald_pickaxe = new Emeraldpickaxe("Emerald_pickaxe", ToolMaterials.emeraldMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Emerald_shovel = new Emeraldshovel("Emerald_shovel", ToolMaterials.emeraldMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
@@ -65,37 +88,45 @@ public class ModItems {
 
 
     public static void initItems() {
-       Carbon_ingot = new Carbon_ingot("Carbon_ingot");
-        Molten_carbon = new Molten_carbon("Molten_carbon");
-        Pironnite_fragment = new Pironnite_fragment("Pironnite_fragment");
-        Pironnite_nugget = new Pironnite_nugget("Pironnite_nugget");
-        Pironnite_ingot = new Pironnite_ingot("Pironnite_ingot");
-        Poppie_nugget = new Poppie_nugget("Poppie_nugget");
-        Poppie_ingot = new Poppie_ingot("Poppie_ingot");
-        Molten_iron = new Molten_iron("Molten_iron");
-        Compressed_iron = new Compressed_iron("Compressed_iron");
-        Carbon_stick = new Carbon_stick("Carbon_stick");
-        Renforced_string = new Renforced_string("Renforced_string");
-        Golden_string = new Golden_string("Golden_string");
+       Carbon_ingot = new ItemMod("Carbon_ingot");
+        Molten_carbon = new ItemMod("Molten_carbon");
+        Pironnite_fragment = new ItemMod("Pironnite_fragment");
+        Pironnite_nugget = new ItemMod("Pironnite_nugget");
+        Pironnite_ingot = new ItemMod("Pironnite_ingot");
+        Poppie_nugget = new ItemMod("Poppie_nugget");
+        Poppie_ingot = new ItemMod("Poppie_ingot");
+        Molten_iron = new ItemMod("Molten_iron");
+        Compressed_iron = new ItemMod("Compressed_iron");
+        Carbon_stick = new ItemMod("Carbon_stick");
+        Renforced_string = new ItemMod("Renforced_string");
+        Golden_string = new ItemMod("Golden_string");
         Compressed_iron_bottle = new Compressed_iron_bottle("Compressed_iron_bottle");
         Molten_carbon_bottle = new Molten_carbon_bottle("Molten_carbon_bottle");
         Poppie_bottle = new Poppie_bottle("Poppie_bottle");
-        Steel_piece = new Steel_piece("Steel_piece");
-        Steel_nugget = new Steel_nugget("Steel_nugget");
-        Steel_ingot = new Steel_ingot("Steel_ingot");
-        Speed_fragment = new Speed_fragment("Speed_fragment");
-        Speed_element = new Speed_element("Speed_element");
-        Jump_fragment = new Jump_fragment("Jump_fragment");
-        Jump_element = new Jump_element("Jump_element");
-        Darkness_fragment = new Darkness_fragment("Darkness_fragment");
-        Darkness_element = new Darkness_element("Darkness_element");
-        Steel_power = new Steel_power("Steel_power");
-
-        Redstone_gem = new Item().setRegistryName("Redstone_gem").setUnlocalizedName("Redstone_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
-        Lapis_gem = new Item().setRegistryName("Lapis_gem").setUnlocalizedName("Lapis_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
-        Quartz_gem = new Item().setRegistryName("Quartz_gem").setUnlocalizedName("Quartz_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
-        Glowstone_gem = new Item().setRegistryName("Glowstone_gem").setUnlocalizedName("Glowstone_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
-
+        Steel_piece = new ItemMod("Steel_piece");
+        Steel_nugget = new ItemMod("Steel_nugget");
+        Steel_ingot = new ItemMod("Steel_ingot");
+        Speed_fragment = new ItemMod("Speed_fragment");
+        Speed_element = new ItemMod("Speed_element");
+        Jump_fragment = new ItemMod("Jump_fragment");
+        Jump_element = new ItemMod("Jump_element");
+        Darkness_fragment = new ItemMod("Darkness_fragment");
+        Darkness_element = new ItemMod("Darkness_element");
+        Steel_power = new ItemMod("Steel_power");
+        Loot_upgrade = new LootUpgrade("Loot_upgrade");
+        Generator_power = new ItemMod("Generator_power");
+        Obsidian_gem = new ItemMod("Obsidian_gem");
+        Four_leaf_clover = new ItemModPoppieArmor("Four_leaf_clover");
+        Coal_gem = new ItemModPoppieArmor("Coal_gem");
+        Speedster_flesh = new ItemFoodMod("Speedster_flesh", 5, 4, true, new PotionEffect(Potion.getPotionById(1), 400, 2));
+        Jumper_flesh = new ItemFoodMod("Jumper_flesh", 5, 4, true, new PotionEffect(Potion.getPotionById(8), 400, 2));
+        Darker_flesh = new ItemFoodMod("Darker_flesh", 8, 6, true, new PotionEffect(Potion.getPotionById(10), 200, 2));
+        Golden_feather = new ItemMod("Golden_feather");
+        Redstone_gem = new ItemModPoppieArmor("Redstone_gem");
+        Lapis_gem = new ItemModPoppieArmor("Lapis_gem");
+        Quartz_gem = new ItemModPoppieArmor("Quartz_gem");
+        Glowstone_gem = new ItemModPoppieArmor("Glowstone_gem");
+        Basic_soul = new Basic_soul("Basic_soul");
     }
 
 
@@ -125,6 +156,13 @@ public class ModItems {
         registerItem(Darkness_fragment);
         registerItem(Darkness_element);
         registerItem(Steel_power);
+        registerItem(Loot_upgrade);
+        registerItem(Generator_power);
+        registerItem(Speedster_flesh);
+        registerItem(Jumper_flesh);
+        registerItem(Darker_flesh);
+        registerItem(Golden_feather);
+        registerItem(Basic_soul);
 
         GameRegistry.register(Redstone_gem);
         GameRegistry.register(Redstone_sword);
@@ -154,6 +192,27 @@ public class ModItems {
         GameRegistry.register(Glowstone_hoe);
         GameRegistry.register(Glowstone_axe);
 
+        GameRegistry.register(Obsidian_gem);
+        GameRegistry.register(Obsidian_sword);
+        GameRegistry.register(Obsidian_pickaxe);
+        GameRegistry.register(Obsidian_shovel);
+        GameRegistry.register(Obsidian_hoe);
+        GameRegistry.register(Obsidian_axe);
+
+        GameRegistry.register(Four_leaf_clover);
+        GameRegistry.register(Four_leaf_clover_sword);
+        GameRegistry.register(Four_leaf_clover_pickaxe);
+        GameRegistry.register(Four_leaf_clover_shovel);
+        GameRegistry.register(Four_leaf_clover_hoe);
+        GameRegistry.register(Four_leaf_clover_axe);
+
+        GameRegistry.register(Coal_gem);
+        GameRegistry.register(Coal_sword);
+        GameRegistry.register(Coal_pickaxe);
+        GameRegistry.register(Coal_shovel);
+        GameRegistry.register(Coal_hoe);
+        GameRegistry.register(Coal_axe);
+
         GameRegistry.register(Emerald_sword);
         GameRegistry.register(Emerald_pickaxe);
         GameRegistry.register(Emerald_shovel);
@@ -165,69 +224,114 @@ public class ModItems {
 
 
     public static void registerRenders() {
-        registerRender(Carbon_ingot, 0);
-        registerRender(Molten_carbon, 0);
-        registerRender(Pironnite_fragment, 0);
-        registerRender(Pironnite_nugget, 0);
-        registerRender(Pironnite_ingot, 0);
-        registerRender(Poppie_nugget, 0);
-        registerRender(Poppie_ingot, 0);
-        registerRender(Molten_iron, 0);
-        registerRender(Compressed_iron, 0);
-        registerRender(Carbon_stick, 0);
-        registerRender(Renforced_string, 0);
-        registerRender(Golden_string, 0);
-        registerRender(Compressed_iron_bottle, 0);
+        registerRender(Carbon_ingot);
+        registerRender(Molten_carbon);
+        registerRender(Pironnite_fragment);
+        registerRender(Pironnite_nugget);
+        registerRender(Pironnite_ingot);
+        registerRender(Poppie_nugget);
+        registerRender(Poppie_ingot);
+        registerRender(Molten_iron);
+        registerRender(Compressed_iron);
+        registerRender(Carbon_stick);
+        registerRender(Renforced_string);
+        registerRender(Golden_string);
+        registerRender(Generator_power);
+        registerRender(Compressed_iron_bottle);
         registerRenderMeta(Molten_carbon_bottle, 0);
         registerRenderMeta(Molten_carbon_bottle, 1);
         registerRenderMeta(Molten_carbon_bottle, 2);
         registerRenderMeta(Poppie_bottle, 0);
         registerRenderMeta(Poppie_bottle, 1);
         registerRenderMeta(Poppie_bottle, 2);
-        registerRender(Steel_piece, 0);
-        registerRender(Steel_nugget, 0);
-        registerRender(Steel_ingot, 0);
-        registerRender(Speed_fragment, 0);
-        registerRender(Speed_element, 0);
-        registerRender(Jump_fragment, 0);
-        registerRender(Jump_element, 0);
-        registerRender(Darkness_fragment, 0);
-        registerRender(Darkness_element, 0);
-        registerRender(Steel_power, 0);
+        for(int i = 0; i < EnumHandler.UpgradeTypes.values().length; i++) {
+            registerRender(Loot_upgrade, i, "Loot_upgrade_" + EnumHandler.UpgradeTypes.values()[i].getName());
+        }
+        registerRender(Steel_piece);
+        registerRender(Steel_nugget);
+        registerRender(Steel_ingot);
+        registerRender(Speed_fragment);
+        registerRender(Speed_element);
+        registerRender(Jump_fragment);
+        registerRender(Jump_element);
+        registerRender(Darkness_fragment);
+        registerRender(Darkness_element);
+        registerRender(Steel_power);
+        registerRender(Four_leaf_clover);
+        registerRender(Coal_gem);
+        registerRender(Speedster_flesh);
+        registerRender(Jumper_flesh);
+        registerRender(Darker_flesh);
+        registerRender(Golden_feather);
+        registerRenderMeta(Basic_soul, 0);
+        registerRenderMeta(Basic_soul, 1);
+        registerRenderMeta(Basic_soul, 2);
+        registerRenderMeta(Basic_soul, 3);
+        registerRenderMeta(Basic_soul, 4);
+        registerRenderMeta(Basic_soul, 5);
+        registerRenderMeta(Basic_soul, 6);
+        registerRenderMeta(Basic_soul, 7);
+        registerRenderMeta(Basic_soul, 8);
+        registerRenderMeta(Basic_soul, 9);
+        registerRenderMeta(Basic_soul, 10);
+        registerRenderMeta(Basic_soul, 11);
+        registerRenderMeta(Basic_soul, 12);
+        registerRenderMeta(Basic_soul, 13);
 
-        registerRender(Redstone_gem, 0);
-        registerRender(Redstone_sword, 0);
-        registerRender(Redstone_pickaxe, 0);
-        registerRender(Redstone_shovel, 0);
-        registerRender(Redstone_hoe, 0);
-        registerRender(Redstone_axe, 0);
+        registerRender(Redstone_gem);
+        registerRender(Redstone_sword);
+        registerRender(Redstone_pickaxe);
+        registerRender(Redstone_shovel);
+        registerRender(Redstone_hoe);
+        registerRender(Redstone_axe);
 
-        registerRender(Lapis_gem, 0);
-        registerRender(Lapis_sword, 0);
-        registerRender(Lapis_pickaxe, 0);
-        registerRender(Lapis_shovel, 0);
-        registerRender(Lapis_hoe, 0);
-        registerRender(Lapis_axe, 0);
+        registerRender(Lapis_gem);
+        registerRender(Lapis_sword);
+        registerRender(Lapis_pickaxe);
+        registerRender(Lapis_shovel);
+        registerRender(Lapis_hoe);
+        registerRender(Lapis_axe);
 
-        registerRender(Quartz_gem, 0);
-        registerRender(Quartz_sword, 0);
-        registerRender(Quartz_pickaxe, 0);
-        registerRender(Quartz_shovel, 0);
-        registerRender(Quartz_hoe, 0);
-        registerRender(Quartz_axe, 0);
+        registerRender(Quartz_gem);
+        registerRender(Quartz_sword);
+        registerRender(Quartz_pickaxe);
+        registerRender(Quartz_shovel);
+        registerRender(Quartz_hoe);
+        registerRender(Quartz_axe);
 
-        registerRender(Glowstone_gem, 0);
-        registerRender(Glowstone_sword, 0);
-        registerRender(Glowstone_pickaxe, 0);
-        registerRender(Glowstone_shovel, 0);
-        registerRender(Glowstone_hoe, 0);
-        registerRender(Glowstone_axe, 0);
+        registerRender(Glowstone_gem);
+        registerRender(Glowstone_sword);
+        registerRender(Glowstone_pickaxe);
+        registerRender(Glowstone_shovel);
+        registerRender(Glowstone_hoe);
+        registerRender(Glowstone_axe);
 
-        registerRender(Emerald_sword, 0);
-        registerRender(Emerald_pickaxe, 0);
-        registerRender(Emerald_shovel, 0);
-        registerRender(Emerald_hoe, 0);
-        registerRender(Emerald_axe, 0);
+        registerRender(Obsidian_gem);
+        registerRender(Obsidian_sword);
+        registerRender(Obsidian_pickaxe);
+        registerRender(Obsidian_shovel);
+        registerRender(Obsidian_hoe);
+        registerRender(Obsidian_axe);
+
+        registerRender(Four_leaf_clover);
+        registerRender(Four_leaf_clover_sword);
+        registerRender(Four_leaf_clover_pickaxe);
+        registerRender(Four_leaf_clover_shovel);
+        registerRender(Four_leaf_clover_hoe);
+        registerRender(Four_leaf_clover_axe);
+
+        registerRender(Coal_gem);
+        registerRender(Coal_sword);
+        registerRender(Coal_pickaxe);
+        registerRender(Coal_shovel);
+        registerRender(Coal_hoe);
+        registerRender(Coal_axe);
+
+        registerRender(Emerald_sword);
+        registerRender(Emerald_pickaxe);
+        registerRender(Emerald_shovel);
+        registerRender(Emerald_hoe);
+        registerRender(Emerald_axe);
 
     }
 
@@ -238,11 +342,18 @@ public class ModItems {
     }
 
 
+
+
     public static void registerItem(Item item) {GameRegistry.register(item);
     }
 
-    private static void registerRender(Item item, int meta) {
-        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(new ResourceLocation(References.MODID, item.getUnlocalizedName().substring(5)), "inventory"));
+    private static void registerRender(Item item) {
+        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(new ResourceLocation(References.MODID, item.getUnlocalizedName().substring(5)), "inventory"));
+
+    }
+
+    private static void registerRender(Item item, int meta , String fileName) {
+        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(new ResourceLocation(References.MODID, fileName), "inventory"));
 
     }
 
@@ -254,6 +365,9 @@ public class ModItems {
         public static final Item.ToolMaterial lapisMat = EnumHelper.addToolMaterial("lapisMat", 2, 250, 6.0f, 2.0f, 14);
         public static final Item.ToolMaterial quartzMat = EnumHelper.addToolMaterial("quartzMat", 2, 250, 6.0f, 2.0f, 14);
         public static final Item.ToolMaterial glowstoneMat = EnumHelper.addToolMaterial("glowstoneMat", 2, 250, 6.0f, 2.0f, 14);
+        public static final Item.ToolMaterial obsidianMat = EnumHelper.addToolMaterial("obsidianMat", 2, 400, 6.0f, 2.0f, 14);
+        public static final Item.ToolMaterial leafcloverMat = EnumHelper.addToolMaterial("leafcloverMat", 3, 175, 7.0f, 2.5f, 12);
+        public static final Item.ToolMaterial coalMat = EnumHelper.addToolMaterial("coalMat", 2, 175, 5.0f, 2.0f, 14);
         public static final Item.ToolMaterial emeraldMat = EnumHelper.addToolMaterial("emeraldMat", 4, 2000, 10.0f, 4.0f, 8);
 
     }

@@ -19,4 +19,6 @@ public class Poppie_block extends Block {
         this.setHarvestLevel("pickaxe", 4);
         this.setCreativeTab(PoppieCraftMod.PoppieCraft);
     }
+
+
 }

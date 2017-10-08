@@ -3,6 +3,7 @@ package net.logan31.poppiecraft.items;
 import com.sun.prism.shader.FillRoundRect_LinearGradient_REFLECT_Loader;
 import net.logan31.poppiecraft.PoppieCraftMod;
 import net.logan31.poppiecraft.Utils.References;
+import net.logan31.poppiecraft.handler.AchievementHandler;
 import net.logan31.poppiecraft.init.ModArmor;
 import net.logan31.poppiecraft.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,6 +18,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.AnvilRepairEvent;
 import net.minecraftforge.fml.common.Mod;
+
+import java.util.Iterator;
 
 /**
  * Created by johanjulien on 06/07/2017.
@@ -78,6 +81,30 @@ int i = 0;
         if (this.isWearingFullSet(player, ModArmor.Redstone_helmet, ModArmor.Redstone_chestplate, ModArmor.Redstone_leggings, ModArmor.Redstone_boots)) {
             this.effectPlayer(player, Potion.getPotionById(12), 0, 2147483647);
 
+
+            int redstoneArmourPeices = 0;
+            if(player.getArmorInventoryList() != null) {
+                Iterator<ItemStack> iterator = player.getArmorInventoryList().iterator();
+                while(iterator.hasNext()) {
+                    ItemStack stack = iterator.next();
+                    if(stack != null) {
+                        if(stack.getItem() instanceof RedstoneArmor) {
+                            RedstoneArmor item = (RedstoneArmor) stack.getItem();
+                            if(item.getArmorMaterial() == ModArmor.redstoneMat) {
+                                redstoneArmourPeices++;
+                                continue;
+                            }
+                        }
+                    }
+                }
+            }
+            if(redstoneArmourPeices == 4) {
+                if(!player.hasAchievement(AchievementHandler.RedstoneArmor)) {
+                    player.addStat(AchievementHandler.RedstoneArmor);
+                }
+            }
+
+
         }
 
 this.uneffectPlayer(player);
@@ -97,6 +124,9 @@ this.uneffectPlayer(player);
     {
         return repair.getItem() == ModItems.Redstone_gem;
     }
+
+
+
 
 }
 

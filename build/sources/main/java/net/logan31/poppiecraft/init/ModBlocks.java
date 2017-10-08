@@ -3,6 +3,9 @@ package net.logan31.poppiecraft.init;
 import net.logan31.poppiecraft.PoppieCraftMod;
 
 import net.logan31.poppiecraft.blocks.*;
+import net.logan31.poppiecraft.blocks.item.ItemGeneratorBlock;
+import net.logan31.poppiecraft.blocks.item.ItemSacred_table;
+import net.logan31.poppiecraft.handler.EnumHandler;
 import net.minecraftforge.client.model.ModelLoader;
 import net.logan31.poppiecraft.Utils.References;
 import net.minecraft.block.Block;
@@ -24,14 +27,15 @@ import javax.tools.Tool;
 public class ModBlocks {
     public ModBlocks() {
         init();
-        registers();
-        registerItemBlocks();
+        register();
+
     }
 
 
 
     public static Block Carbon_ore, Carbon_block, Compressed_iron_block, Melter, Pironnite_block, Pironnite_ore_OW;
     public static Block  Pironnite_ore_N, Poppie_block, Steel_block, Mefferite_ore, Alzanite_ore, Ragmarite_ore;
+    public static Block Generator_block, Sacred_table;
 
     public static void init() {
 
@@ -47,74 +51,73 @@ public class ModBlocks {
         Mefferite_ore = new Mefferite_ore("Mefferite_ore");
         Alzanite_ore = new Alzanite_ore("Alzanite_ore");
         Ragmarite_ore = new Ragmarite_ore("Ragmarite_ore");
+        Generator_block = new GeneratorBlock("Generator_block");
+        Sacred_table = new Sacred_table("Sacred_table");
     }
 
 
-    public static void registers() {
-        register(Carbon_ore);
-        register(Carbon_block);
-        register(Compressed_iron_block);
-        register(Melter);
-        register(Pironnite_block);
-        register(Pironnite_ore_OW);
-        register(Pironnite_ore_N);
-        register(Poppie_block);
-        register(Steel_block);
-        register(Mefferite_ore);
-        register(Alzanite_ore);
-        register(Ragmarite_ore);
+    public static void register() {
+        registerBlock(Carbon_ore);
+        registerBlock(Carbon_block);
+        registerBlock(Compressed_iron_block);
+        registerBlock(Melter);
+        registerBlock(Pironnite_block);
+        registerBlock(Pironnite_ore_OW);
+        registerBlock(Pironnite_ore_N);
+        registerBlock(Poppie_block);
+        registerBlock(Steel_block);
+        registerBlock(Mefferite_ore);
+        registerBlock(Alzanite_ore);
+        registerBlock(Ragmarite_ore);
+        registerBlock(Generator_block, new ItemGeneratorBlock(Generator_block));
+
 
     }
 
 
     public static void registerRenders() {
-        registerRender(Carbon_ore, 0);
-        registerRender(Carbon_block, 0);
-        registerRender(Compressed_iron_block, 0);
-        registerRender(Melter, 0);
-        registerRender(Pironnite_block, 0);
-        registerRender(Pironnite_ore_OW, 0);
-        registerRender(Pironnite_ore_N, 0);
-        registerRender(Poppie_block, 0);
-        registerRender(Steel_block, 0);
-        registerRender(Mefferite_ore, 0);
-        registerRender(Alzanite_ore, 0);
-        registerRender(Ragmarite_ore, 0);
+        registerRender(Carbon_ore);
+        registerRender(Carbon_block);
+        registerRender(Compressed_iron_block);
+        registerRender(Melter);
+        registerRender(Pironnite_block);
+        registerRender(Pironnite_ore_OW);
+        registerRender(Pironnite_ore_N);
+        registerRender(Poppie_block);
+        registerRender(Steel_block);
+        registerRender(Mefferite_ore);
+        registerRender(Alzanite_ore);
+        registerRender(Ragmarite_ore);
+        for(int i = 0; i < EnumHandler.UpgradeTypes.values().length; i++) {
+            registerRender(Generator_block, i, "Generator_block_" + EnumHandler.UpgradeTypes.values()[i].getName());
+
+        }
     }
 
-    public static void registerItemBlocks() {
-            registerItemBlock(Carbon_ore);
-            registerItemBlock(Carbon_block);
-            registerItemBlock(Compressed_iron_block);
-            registerItemBlock(Melter);
-            registerItemBlock(Pironnite_block);
-            registerItemBlock(Pironnite_ore_OW);
-            registerItemBlock(Pironnite_ore_N);
-            registerItemBlock(Poppie_block);
-            registerItemBlock(Steel_block);
-            registerItemBlock(Mefferite_ore);
-            registerItemBlock(Alzanite_ore);
-            registerItemBlock(Ragmarite_ore);
-    }
 
 
     //-----------------------------------------------------------------------------------------------
 
 
-    public static void register(Block block) {
+    public static void registerBlock(Block block) {
         GameRegistry.register(block);
+        GameRegistry.register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
+
+    }
+
+    public static void registerBlock(Block block, ItemBlock itemBlock) {
+        GameRegistry.register(block);
+        GameRegistry.register(itemBlock.setRegistryName(block.getRegistryName()));
 
     }
 
 
-    private static void registerRender(Block block, int meta) {
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(new ResourceLocation(References.MODID, block.getUnlocalizedName().substring(5)), "inventory"));
+    private static void registerRender(Block block) {
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(new ResourceLocation(References.MODID, block.getUnlocalizedName().substring(5)), "inventory"));
     }
 
-    public static void registerItemBlock(Block block) {
-        ItemBlock ib = new ItemBlock(block);
-        ib.setRegistryName(block.getRegistryName());
-        GameRegistry.register(ib);
+    private static void registerRender(Block block, int meta, String fileName) {
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(new ResourceLocation(References.MODID, fileName), "inventory"));
     }
 
 }

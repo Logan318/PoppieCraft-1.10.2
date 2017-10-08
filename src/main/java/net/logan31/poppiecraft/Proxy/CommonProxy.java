@@ -3,6 +3,7 @@ package net.logan31.poppiecraft.Proxy;
 
 import net.logan31.poppiecraft.Utils.References;
 
+import net.logan31.poppiecraft.blocks.GeneratorBlock;
 import net.logan31.poppiecraft.gen.OreGen;
 import net.logan31.poppiecraft.init.*;
 
@@ -18,7 +19,7 @@ public class CommonProxy {
 
 
     public void preInit() {
-
+ModEntities.RegisterEntities();
 
 
     }
@@ -38,6 +39,7 @@ public class CommonProxy {
     }
 
     public void registerTileEntities() {
+            GameRegistry.registerTileEntity(TileEntityGeneratorBlock.class, References.MODID + ":GUIGeneratorBlock");
 
     }
 

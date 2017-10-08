@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "poppiecraft:speed_fragment",
+                    "name": "poppiecraft:Speed_fragment",
                     "weight": 1,
                     "functions": [
                         {
@@ -24,6 +24,32 @@
                 }
             ]
         },
+        {
+        "name": "flesh",
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "poppiecraft:Speedster_flesh",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+
 
 
         {
@@ -33,8 +59,8 @@
                 },
                 {
                     "condition": "random_chance_with_looting",
-                    "chance": 0.3,
-                    "looting_multiplier": 0.03
+                    "chance": 0.1,
+                    "looting_multiplier": 0.01
                 }
             ],
             "name": "element",

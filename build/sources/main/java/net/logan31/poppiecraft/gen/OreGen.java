@@ -52,13 +52,13 @@ public class OreGen implements IWorldGenerator {
         switch (world.provider.getDimension()) {
             case 0: //OverWorld
                 this.runGenerator(Carbon_ore, world, random, chunkX, chunkZ, 18, 5, 40);
-                this.runGenerator(Pironnite_ore_overworld, world, random, chunkX, chunkZ, 1, 5, 15);
-                this.runGenerator(Mefferite_ore, world, random, chunkX, chunkZ, 1, 5, 15);
+                this.runGenerator(Pironnite_ore_overworld, world, random, chunkX, chunkZ, 1, 9, 13);
+                this.runGenerator(Mefferite_ore, world, random, chunkX, chunkZ, 1, 8, 15);
             case 1: //End
-                this.runGenerator(Alzanite_ore, world, random, chunkX, chunkZ, 3, 5, 250);
+                this.runGenerator(Alzanite_ore, world, random, chunkX, chunkZ, 1, 5, 250);
             case -1: //Nether
                 this.runGenerator(Pironnite_ore_nether, world, random, chunkX, chunkZ, 50, 10, 250);
-                this.runGenerator(Ragmarite_ore, world, random, chunkX, chunkZ, 1, 5, 250);
+                this.runGenerator(Ragmarite_ore, world, random, chunkX, chunkZ, 1, 50, 150);
         }
     }
 }

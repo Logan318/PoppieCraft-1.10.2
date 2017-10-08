@@ -2,6 +2,7 @@ package net.logan31.poppiecraft.items;
 
 import net.logan31.poppiecraft.PoppieCraftMod;
 import net.logan31.poppiecraft.Utils.References;
+import net.logan31.poppiecraft.handler.AchievementHandler;
 import net.logan31.poppiecraft.init.ModArmor;
 import net.logan31.poppiecraft.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,6 +14,8 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+
+import java.util.Iterator;
 
 /**
  * Created by johanjulien on 06/07/2017.
@@ -70,6 +73,28 @@ public class GlowstoneArmor extends ItemArmor {
             this.effectPlayer(player, Potion.getPotionById(16), 0 , 2147483647);
         }
         this.uneffectPlayer(player);
+
+        int glowstoneArmourPeices = 0;
+        if(player.getArmorInventoryList() != null) {
+            Iterator<ItemStack> iterator = player.getArmorInventoryList().iterator();
+            while(iterator.hasNext()) {
+                ItemStack stack = iterator.next();
+                if(stack != null) {
+                    if(stack.getItem() instanceof GlowstoneArmor) {
+                        GlowstoneArmor item = (GlowstoneArmor) stack.getItem();
+                        if(item.getArmorMaterial() == ModArmor.glowstoneMat) {
+                            glowstoneArmourPeices++;
+                            continue;
+                        }
+                    }
+                }
+            }
+        }
+        if(glowstoneArmourPeices == 4) {
+            if(!player.hasAchievement(AchievementHandler.GlowstoneArmor)) {
+                player.addStat(AchievementHandler.GlowstoneArmor);
+            }
+        }
     }
 
 

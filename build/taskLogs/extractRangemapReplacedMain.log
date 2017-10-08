@@ -1,241 +1,415 @@
 Symbol range map extraction starting
-Processing 78 files
-startProcessing "net/logan31/poppiecraft/PoppieCraftMod.java" md5: 16819af186f725a10281f3eb35e46b27
+Processing 104 files
+startProcessing "net/logan31/poppiecraft/PoppieCraftMod.java" md5: b9f10afa54db46dfb15b015c0e2a47eb
 endProcessing "net/logan31/poppiecraft/PoppieCraftMod.java"
 
-startProcessing "net/logan31/poppiecraft/Proxy/ClientProxy.java" md5: 4aa13814238967f9bb85ab287e50a955
+startProcessing "net/logan31/poppiecraft/Proxy/ClientProxy.java" md5: ee96d2d55dcc6a3c91e184c7b90b178d
 endProcessing "net/logan31/poppiecraft/Proxy/ClientProxy.java"
 
-startProcessing "net/logan31/poppiecraft/Proxy/CommonProxy.java" md5: cf0371b420e2343606f47a279afeff30
+startProcessing "net/logan31/poppiecraft/Proxy/CommonProxy.java" md5: ed18d06fc824809bd6e1f7fb93b0170e
 endProcessing "net/logan31/poppiecraft/Proxy/CommonProxy.java"
 
-startProcessing "net/logan31/poppiecraft/Proxy/ServerProxy.java" md5: 572e9f4b85c6e6aef4ff38a174103eb2
+startProcessing "net/logan31/poppiecraft/Proxy/ServerProxy.java" md5: 94c1565a8c2f6326da012261b110ed94
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/Proxy/ServerProxy.java"
 
 startProcessing "net/logan31/poppiecraft/Utils/References.java" md5: 17667bfa8b177725d916407fd0547ea3
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/Utils/References.java"
 
+startProcessing "net/logan31/poppiecraft/Utils/Utils.java" md5: f62c9871a4dc64b801485a9009347bf4
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/Utils/Utils.java"
+
 startProcessing "net/logan31/poppiecraft/blocks/Alzanite_ore.java" md5: c220228d8cbb6ab4a5b7aa78ad41de48
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Alzanite_ore.java"
 
 startProcessing "net/logan31/poppiecraft/blocks/Compressed_iron_block.java" md5: 654ad47c98dc25a1b1fc6d882de64faf
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Compressed_iron_block.java"
 
+startProcessing "net/logan31/poppiecraft/blocks/GeneratorBlock.java" md5: 83fe8aac73e7f5d41ba88d76178a5c11
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/blocks/GeneratorBlock.java"
+
 startProcessing "net/logan31/poppiecraft/blocks/Mefferite_ore.java" md5: 833db6d664205b0bd9bbb61a63c868b0
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Mefferite_ore.java"
 
 startProcessing "net/logan31/poppiecraft/blocks/Melter.java" md5: 8c8f68077f3e0d23ab7b734b040aa073
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Melter.java"
 
 startProcessing "net/logan31/poppiecraft/blocks/Pironnite_block.java" md5: 8d923aed49db59bbd889547449f89724
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Pironnite_block.java"
 
 startProcessing "net/logan31/poppiecraft/blocks/Pironnite_ore_N.java" md5: f6539b41c610d0f24f1974c4fc859ff0
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Pironnite_ore_N.java"
 
 startProcessing "net/logan31/poppiecraft/blocks/Pironnite_ore_OW.java" md5: 829c13bda3511b5f1b35a8e99b433e5c
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Pironnite_ore_OW.java"
 
-startProcessing "net/logan31/poppiecraft/blocks/Poppie_block.java" md5: 208ab0a3971f6a7775b3bb2d7865d57b
+startProcessing "net/logan31/poppiecraft/blocks/Poppie_block.java" md5: 0b583947051af09c3cc30fc56275b3ca
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Poppie_block.java"
 
 startProcessing "net/logan31/poppiecraft/blocks/Ragmarite_ore.java" md5: bdace298f4e559a2a7ba44d2ede08fd7
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Ragmarite_ore.java"
 
+startProcessing "net/logan31/poppiecraft/blocks/Sacred_table.java" md5: f8d736c02ecddc0540f690d197cf1151
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/blocks/Sacred_table.java"
+
 startProcessing "net/logan31/poppiecraft/blocks/Steel_block.java" md5: 6171a251c8c8640e93c613c9fdf6fca0
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/blocks/Steel_block.java"
 
-startProcessing "net/logan31/poppiecraft/entity/Speedster.java" md5: 1f01980a559bd927aace36536e17ec20
+startProcessing "net/logan31/poppiecraft/blocks/item/IMetaBlockName.java" md5: a27b5a7077526085227589b8e0a07186
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/blocks/item/IMetaBlockName.java"
+
+startProcessing "net/logan31/poppiecraft/blocks/item/ItemGeneratorBlock.java" md5: 0636c3158ce32855189bf6beeaac11f7
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/blocks/item/ItemGeneratorBlock.java"
+
+startProcessing "net/logan31/poppiecraft/blocks/item/ItemSacred_table.java" md5: e677c72f99c36b11fd3f51ec4b73bd6c
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/blocks/item/ItemSacred_table.java"
+
+startProcessing "net/logan31/poppiecraft/client/gui/GUIGeneratorBlock.java" md5: cf8038248c3ce7920fa7dcc8d7996341
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/client/gui/GUIGeneratorBlock.java"
+
+startProcessing "net/logan31/poppiecraft/client/gui/GUIHandler.java" md5: 31a7c6147583e5f9df8d8e1b050daabe
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/client/gui/GUIHandler.java"
+
+startProcessing "net/logan31/poppiecraft/container/ContainerGeneratorBlock.java" md5: 7b6baf108bf383fc947fbdba14432666
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/container/ContainerGeneratorBlock.java"
+
+startProcessing "net/logan31/poppiecraft/enchant/EnchantmentSoulStealer.java" md5: 8470945ac80539ef5fb9dba17109c84b
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/enchant/EnchantmentSoulStealer.java"
+
+startProcessing "net/logan31/poppiecraft/entity/Darker.java" md5: b3b01b354644e3e4796314862a0ac9fd
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/entity/Darker.java"
+
+startProcessing "net/logan31/poppiecraft/entity/GoldenChicken.java" md5: 5d98692ec626700eb81973b061a0bf9f
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/entity/GoldenChicken.java"
+
+startProcessing "net/logan31/poppiecraft/entity/Jumper.java" md5: 46d2cfad61cb3c4ba747a2d915e9bdd0
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/entity/Jumper.java"
+
+startProcessing "net/logan31/poppiecraft/entity/Speedster.java" md5: eae6fd0716e6eda1e1c419532559a0db
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/entity/Speedster.java"
 
+startProcessing "net/logan31/poppiecraft/entity/render/RenderDarker.java" md5: 33431e899fd529646c8f039fba70c5d1
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/entity/render/RenderDarker.java"
+
+startProcessing "net/logan31/poppiecraft/entity/render/RenderGoldenChicken.java" md5: a06b686d86c227b4c83c568b720a18ec
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/entity/render/RenderGoldenChicken.java"
+
+startProcessing "net/logan31/poppiecraft/entity/render/RenderJumper.java" md5: 86dc8e6324aceb838bad7595313d8aa6
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/entity/render/RenderJumper.java"
+
+startProcessing "net/logan31/poppiecraft/entity/render/RenderSpeedster.java" md5: b2f082ea66a37b21c5b92103c489d153
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/entity/render/RenderSpeedster.java"
+
+startProcessing "net/logan31/poppiecraft/event/SoulStealerEvent.java" md5: 5888054b444eaf9330362185c2bbca83
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/event/SoulStealerEvent.java"
+
+startProcessing "net/logan31/poppiecraft/event/onTouchEntityEvent.java" md5: ec24551829216238a5b46634726ff8b2
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/event/onTouchEntityEvent.java"
+
 startProcessing "net/logan31/poppiecraft/gen/EndGenPredicate.java" md5: 356b1043d949736eb0d1236a47880645
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/gen/EndGenPredicate.java"
 
 startProcessing "net/logan31/poppiecraft/gen/NetherGenPredicate.java" md5: ea44b647cff5b0589f76c65d92408ee2
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/gen/NetherGenPredicate.java"
 
-startProcessing "net/logan31/poppiecraft/gen/OreGen.java" md5: b7958e691cf856f3c5fbd7f37096bc45
+startProcessing "net/logan31/poppiecraft/gen/OreGen.java" md5: 022155d55af6c93e63a6248103fa4abb
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/gen/OreGen.java"
 
-startProcessing "net/logan31/poppiecraft/init/ModArmor.java" md5: 110228ab6ff01bf06dc59e7f328e1f34
+startProcessing "net/logan31/poppiecraft/handler/AchievementHandler.java" md5: f6ba55c8c75fca81d9ba3b501a2dcf84
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/handler/AchievementHandler.java"
+
+startProcessing "net/logan31/poppiecraft/handler/EnumHandler.java" md5: 9b918e68455c11b11ef3ce24fc360fb2
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/handler/EnumHandler.java"
+
+startProcessing "net/logan31/poppiecraft/init/ModArmor.java" md5: 44388238ca57eed9bb36faea0195bd27
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/init/ModArmor.java"
 
-startProcessing "net/logan31/poppiecraft/init/ModBlocks.java" md5: 59eeb9081f7dbd96118cbe0997291715
+startProcessing "net/logan31/poppiecraft/init/ModBlocks.java" md5: c6824bcb819e1e2f434c88dcb0a7d4b7
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/init/ModBlocks.java"
 
-startProcessing "net/logan31/poppiecraft/init/ModItems.java" md5: 2f2bf45fd36056148677b73c19aeb5de
+startProcessing "net/logan31/poppiecraft/init/ModEnchantments.java" md5: 9daa1b3d790588f71fe30c6e90841d06
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/init/ModEnchantments.java"
+
+startProcessing "net/logan31/poppiecraft/init/ModEntities.java" md5: 79d4a029f86ad89c0c32541a7f518a6a
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/init/ModEntities.java"
+
+startProcessing "net/logan31/poppiecraft/init/ModItems.java" md5: 3b161a9aa98c48de4815d97233c871c6
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/init/ModItems.java"
 
-startProcessing "net/logan31/poppiecraft/init/ModRecipes.java" md5: 3bfe50848bb923ad94486e41bc1f0daa
+startProcessing "net/logan31/poppiecraft/init/ModRecipes.java" md5: 3635eea0dde4510a34bf3bdc95a4cac3
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/init/ModRecipes.java"
 
-startProcessing "net/logan31/poppiecraft/items/Carbon_ingot.java" md5: dc0e518302b09478787c974761ebaad1
-endProcessing "net/logan31/poppiecraft/items/Carbon_ingot.java"
+startProcessing "net/logan31/poppiecraft/items/Basic_soul.java" md5: bf0c0915abc8be4713ca2947dcc1f7db
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Basic_soul.java"
 
-startProcessing "net/logan31/poppiecraft/items/Carbon_stick.java" md5: b2e8645a0e6e4587b9f63726a3ca4a11
-endProcessing "net/logan31/poppiecraft/items/Carbon_stick.java"
+startProcessing "net/logan31/poppiecraft/items/CoalArmor.java" md5: 5750db4f54287161d27b689e5974e96a
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/CoalArmor.java"
 
-startProcessing "net/logan31/poppiecraft/items/Compressed_iron.java" md5: 2a61cfcc66600d9a1b577b2822397bd3
-endProcessing "net/logan31/poppiecraft/items/Compressed_iron.java"
+startProcessing "net/logan31/poppiecraft/items/Coal_axe.java" md5: 24fad11583db45b39e481ba54017e362
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Coal_axe.java"
+
+startProcessing "net/logan31/poppiecraft/items/Coal_hoe.java" md5: 64f201e08e79a8cfb060f0727bd19bf2
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Coal_hoe.java"
+
+startProcessing "net/logan31/poppiecraft/items/Coal_pickaxe.java" md5: adeda886b316eaad9106c7472dddeb34
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Coal_pickaxe.java"
+
+startProcessing "net/logan31/poppiecraft/items/Coal_shovel.java" md5: bad537bbfee4116c83b5c8c3ffe17723
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Coal_shovel.java"
+
+startProcessing "net/logan31/poppiecraft/items/Coal_sword.java" md5: e8eb97592ccf0493def7f7924062f18e
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Coal_sword.java"
 
 startProcessing "net/logan31/poppiecraft/items/Compressed_iron_bottle.java" md5: 1459c457f7f1862cfacaa59e6c09bb52
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Compressed_iron_bottle.java"
 
-startProcessing "net/logan31/poppiecraft/items/Darkness_element.java" md5: df0ee50183ad80fe43fac60397b5f198
-endProcessing "net/logan31/poppiecraft/items/Darkness_element.java"
-
-startProcessing "net/logan31/poppiecraft/items/Darkness_fragment.java" md5: ba709716dd5cdd59b99bbf3a2a641191
-endProcessing "net/logan31/poppiecraft/items/Darkness_fragment.java"
-
-startProcessing "net/logan31/poppiecraft/items/EmeraldArmor.java" md5: dfc6d128e395bff6929aa589189fa4b9
-    Compile Error! Pb(390) The import com.sun.prism cannot be resolved
+startProcessing "net/logan31/poppiecraft/items/EmeraldArmor.java" md5: 2d0a7f8866b9c9ded19d51a64d2af9f8
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/EmeraldArmor.java"
 
 startProcessing "net/logan31/poppiecraft/items/Emeraldaxe.java" md5: 6fd86c51acf7320b7605cabac3448722
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Emeraldaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Emeraldhoe.java" md5: d4997cacd9813931d94db9564e69253a
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Emeraldhoe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Emeraldpickaxe.java" md5: d10930e788a95d8caa71f36957b0f097
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Emeraldpickaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Emeraldshovel.java" md5: d6a198477189504ad015f220d622abe4
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Emeraldshovel.java"
 
 startProcessing "net/logan31/poppiecraft/items/Emeraldsword.java" md5: 6a2893b9c21d2758220da580e346db38
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Emeraldsword.java"
 
-startProcessing "net/logan31/poppiecraft/items/GlowstoneArmor.java" md5: 64c4be0be34136b9b0fd1deb80b8891b
-    Compile Error! Pb(390) The import com.sun.prism cannot be resolved
+startProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_axe.java" md5: 943758d9cff8a1dee508ac9221825940
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_axe.java"
+
+startProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_hoe.java" md5: 816de5db34b66fe182812415fc294802
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_hoe.java"
+
+startProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_pickaxe.java" md5: 1263306575be79089d726eaf9ef32356
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_pickaxe.java"
+
+startProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_shovel.java" md5: ec226f71c35c41a5b0f391a75b83824b
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_shovel.java"
+
+startProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_sword.java" md5: 3586114a05ece3385cd4d79305859615
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Four_leaf_clover_sword.java"
+
+startProcessing "net/logan31/poppiecraft/items/FourleafcloverArmor.java" md5: 8dee85665686f49c3334e2c9ea4cb237
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/FourleafcloverArmor.java"
+
+startProcessing "net/logan31/poppiecraft/items/GlowstoneArmor.java" md5: ec2c0ba3604f5bbe0c1946e75a77504b
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/GlowstoneArmor.java"
 
 startProcessing "net/logan31/poppiecraft/items/Glowstoneaxe.java" md5: 87efb52f949cb2b2327239ca559ee52c
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Glowstoneaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Glowstonehoe.java" md5: 5911ae121db97c15aaeefd92fa9f95db
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Glowstonehoe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Glowstonepickaxe.java" md5: 4e6e01446b2693bee3696b07f24a0b56
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Glowstonepickaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Glowstoneshovel.java" md5: d8a030dba4f2b5e229084e2806a43043
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Glowstoneshovel.java"
 
 startProcessing "net/logan31/poppiecraft/items/Glowstonesword.java" md5: c1b8cf1420fb203e64578c472a709333
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Glowstonesword.java"
 
-startProcessing "net/logan31/poppiecraft/items/Golden_string.java" md5: 2d8326b75fc9b1a481a7ad5395c2b499
-endProcessing "net/logan31/poppiecraft/items/Golden_string.java"
+startProcessing "net/logan31/poppiecraft/items/ItemFoodMod.java" md5: c995a1e9f8de708e8424a598cbde6c37
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/ItemFoodMod.java"
 
-startProcessing "net/logan31/poppiecraft/items/Jump_element.java" md5: aeccb62bc3cd4907e1a1982409d51fff
-endProcessing "net/logan31/poppiecraft/items/Jump_element.java"
+startProcessing "net/logan31/poppiecraft/items/ItemMod.java" md5: 645ec4e7a7ccd010405d228cfc1c415a
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/ItemMod.java"
 
-startProcessing "net/logan31/poppiecraft/items/Jump_fragment.java" md5: 376ed94c52e97472d5afda0510554d25
-endProcessing "net/logan31/poppiecraft/items/Jump_fragment.java"
+startProcessing "net/logan31/poppiecraft/items/ItemModPoppieArmor.java" md5: 65a69b94b0e1924a55369e1ec7c8fa86
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/ItemModPoppieArmor.java"
 
-startProcessing "net/logan31/poppiecraft/items/LapisArmor.java" md5: daa327bedee0479909db86216e747be2
-    Compile Error! Pb(390) The import com.sun.prism cannot be resolved
+startProcessing "net/logan31/poppiecraft/items/LapisArmor.java" md5: 78fcd3657cc122e6f2975783f99817f3
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/LapisArmor.java"
 
 startProcessing "net/logan31/poppiecraft/items/Lapisaxe.java" md5: 4c03222e90c1188afe0e2265f241a154
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Lapisaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Lapishoe.java" md5: ae1605e8e83c125ac49eaba23bbe5b3b
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Lapishoe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Lapispickaxe.java" md5: b9bbd8a99ec951c69f2bce3e0f54782b
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Lapispickaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Lapisshovel.java" md5: 3e389542785f50c894d94957988c72b3
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Lapisshovel.java"
 
 startProcessing "net/logan31/poppiecraft/items/Lapissword.java" md5: 3ca49b4c56b1bde6ce107d6a82c69595
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Lapissword.java"
 
-startProcessing "net/logan31/poppiecraft/items/Molten_carbon.java" md5: 3c235d60a66500ec73344a007e3661af
-endProcessing "net/logan31/poppiecraft/items/Molten_carbon.java"
+startProcessing "net/logan31/poppiecraft/items/LootUpgrade.java" md5: b7d6cbef391c052d60c618d53682a808
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/LootUpgrade.java"
 
 startProcessing "net/logan31/poppiecraft/items/Molten_carbon_bottle.java" md5: b34859e1b9ad1237e665a5270b0b6496
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Molten_carbon_bottle.java"
 
-startProcessing "net/logan31/poppiecraft/items/Molten_iron.java" md5: 309c106c67c7e316b968566390f51757
-endProcessing "net/logan31/poppiecraft/items/Molten_iron.java"
+startProcessing "net/logan31/poppiecraft/items/ObsidianArmor.java" md5: b8def4bda2e862ff00564f58a237d84c
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/ObsidianArmor.java"
 
-startProcessing "net/logan31/poppiecraft/items/Pironnite_fragment.java" md5: fa657dff77882fd0e52e0405356739e5
-endProcessing "net/logan31/poppiecraft/items/Pironnite_fragment.java"
+startProcessing "net/logan31/poppiecraft/items/Obsidian_axe.java" md5: 35c3c3cdefa7e242290ed4922d28ca4e
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Obsidian_axe.java"
 
-startProcessing "net/logan31/poppiecraft/items/Pironnite_ingot.java" md5: dcc91469e3bebe133ade80c7ac568545
-endProcessing "net/logan31/poppiecraft/items/Pironnite_ingot.java"
+startProcessing "net/logan31/poppiecraft/items/Obsidian_gem.java" md5: 58cbbc38831bbbe1aa067150806cb01d
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Obsidian_gem.java"
 
-startProcessing "net/logan31/poppiecraft/items/Pironnite_nugget.java" md5: e3c90b7f45d7012e036bdc5b50108c60
-endProcessing "net/logan31/poppiecraft/items/Pironnite_nugget.java"
+startProcessing "net/logan31/poppiecraft/items/Obsidian_hoe.java" md5: 5e9efda0c5101adae917413559790122
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Obsidian_hoe.java"
+
+startProcessing "net/logan31/poppiecraft/items/Obsidian_pickaxe.java" md5: 3022e0f0f9266da82e2cb34087158efa
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Obsidian_pickaxe.java"
+
+startProcessing "net/logan31/poppiecraft/items/Obsidian_shovel.java" md5: ca2b5880e43bc5b41c5b0f08c07b662e
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Obsidian_shovel.java"
+
+startProcessing "net/logan31/poppiecraft/items/Obsidian_sword.java" md5: db4d7f5c340cf1c4387a1f94dbdc01d1
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/items/Obsidian_sword.java"
 
 startProcessing "net/logan31/poppiecraft/items/Poppie_bottle.java" md5: 9e9c72cebbb8ad739e87b7a92ec9f6ea
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Poppie_bottle.java"
 
-startProcessing "net/logan31/poppiecraft/items/Poppie_ingot.java" md5: cdbc88a4b2777b030efc0142dfb8e544
-endProcessing "net/logan31/poppiecraft/items/Poppie_ingot.java"
-
-startProcessing "net/logan31/poppiecraft/items/Poppie_nugget.java" md5: c93bd81141521f92f809eae96837504f
-endProcessing "net/logan31/poppiecraft/items/Poppie_nugget.java"
-
-startProcessing "net/logan31/poppiecraft/items/QuartzArmor.java" md5: b1803381476b9e2099496cccddbf58ff
-    Compile Error! Pb(390) The import com.sun.prism cannot be resolved
+startProcessing "net/logan31/poppiecraft/items/QuartzArmor.java" md5: e8d3567b81dec6f0d26324ed2f0a22db
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/QuartzArmor.java"
 
 startProcessing "net/logan31/poppiecraft/items/Quartzaxe.java" md5: 027af6a36d38375232df4da1a8b3e676
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Quartzaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Quartzhoe.java" md5: 387eef7f112c1feb6008980ea89c00fc
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Quartzhoe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Quartzpickaxe.java" md5: c72c060b6c1a1aaf6de8a35b4e99cd08
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Quartzpickaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Quartzshovel.java" md5: 3cdb28e2a6e292b6aa17586e0a2af690
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Quartzshovel.java"
 
 startProcessing "net/logan31/poppiecraft/items/Quartzsword.java" md5: 1aef4b9a1f7e6c50789b085fa3cef6f1
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Quartzsword.java"
 
-startProcessing "net/logan31/poppiecraft/items/RedstoneArmor.java" md5: ad7979326b2c6b91bb9881d180bff186
-    Compile Error! Pb(390) The import com.sun.prism cannot be resolved
+startProcessing "net/logan31/poppiecraft/items/RedstoneArmor.java" md5: 33f5fa0cdbafe9519fbae5703a5dd136
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/RedstoneArmor.java"
 
 startProcessing "net/logan31/poppiecraft/items/Redstoneaxe.java" md5: 05655259cb973272aa377a3b855065aa
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Redstoneaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Redstonehoe.java" md5: 559d0f6162c57ae41ae9a38eff5bc8e0
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Redstonehoe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Redstonepickaxe.java" md5: 5bc0e4418cdc55d738cb92b6ceefecd3
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Redstonepickaxe.java"
 
 startProcessing "net/logan31/poppiecraft/items/Redstoneshovel.java" md5: 95a1c1af995043046c4520d32f5fe9fc
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Redstoneshovel.java"
 
 startProcessing "net/logan31/poppiecraft/items/Redstonesword.java" md5: 1f861dfc97ce5a79c37cd7478e08163a
+Cache Hit!
 endProcessing "net/logan31/poppiecraft/items/Redstonesword.java"
 
-startProcessing "net/logan31/poppiecraft/items/Renforced_string.java" md5: d2c004701f0f8631531462efd6eb3348
-endProcessing "net/logan31/poppiecraft/items/Renforced_string.java"
-
-startProcessing "net/logan31/poppiecraft/items/Speed_element.java" md5: 4b83db7f621eaa143ac63b12b98e3d00
-endProcessing "net/logan31/poppiecraft/items/Speed_element.java"
-
-startProcessing "net/logan31/poppiecraft/items/Speed_fragment.java" md5: 2da2a56c301865725a62a92a0b499f9a
-endProcessing "net/logan31/poppiecraft/items/Speed_fragment.java"
-
-startProcessing "net/logan31/poppiecraft/items/Steel_ingot.java" md5: c46618616a9872d5731a4480cd23f695
-endProcessing "net/logan31/poppiecraft/items/Steel_ingot.java"
-
-startProcessing "net/logan31/poppiecraft/items/Steel_nugget.java" md5: 0970f10446e57f966895f462929668ac
-endProcessing "net/logan31/poppiecraft/items/Steel_nugget.java"
-
-startProcessing "net/logan31/poppiecraft/items/Steel_piece.java" md5: 24ec3836614eab085f30c16200563112
-endProcessing "net/logan31/poppiecraft/items/Steel_piece.java"
-
-startProcessing "net/logan31/poppiecraft/items/Steel_power.java" md5: b5542eb9c6f97e35bcb59bfe2a12bd70
-endProcessing "net/logan31/poppiecraft/items/Steel_power.java"
+startProcessing "net/logan31/poppiecraft/tileentity/TileEntityGeneratorBlock.java" md5: bb326c97681aa12621a8a5cd53eb3ea2
+Cache Hit!
+endProcessing "net/logan31/poppiecraft/tileentity/TileEntityGeneratorBlock.java"
 

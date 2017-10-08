@@ -36,6 +36,7 @@ public class ModItems {
     public static Item Compressed_iron_bottle, Molten_carbon_bottle, Poppie_bottle, Steel_piece, Steel_nugget, Steel_ingot;
     public static Item Speed_fragment, Speed_element, Jump_fragment, Jump_element, Darkness_fragment, Darkness_element;
     public static Item Steel_power, Loot_upgrade, Generator_power, Obsidian_gem, Four_leaf_clover, Coal_gem, Speedster_flesh;
+    public static Item Jumper_flesh, Darker_flesh, Golden_feather, Basic_soul, Advanced_soul, Ultimate_soul;
 
     public static final Item Redstone_sword = new Redstonesword("Redstone_sword", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Redstone_pickaxe = new Redstonepickaxe("Redstone_pickaxe", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
@@ -87,43 +88,45 @@ public class ModItems {
 
 
     public static void initItems() {
-       Carbon_ingot = new Carbon_ingot("Carbon_ingot");
-        Molten_carbon = new Molten_carbon("Molten_carbon");
-        Pironnite_fragment = new Pironnite_fragment("Pironnite_fragment");
-        Pironnite_nugget = new Pironnite_nugget("Pironnite_nugget");
-        Pironnite_ingot = new Pironnite_ingot("Pironnite_ingot");
-        Poppie_nugget = new Poppie_nugget("Poppie_nugget");
-        Poppie_ingot = new Poppie_ingot("Poppie_ingot");
-        Molten_iron = new Molten_iron("Molten_iron");
-        Compressed_iron = new Compressed_iron("Compressed_iron");
-        Carbon_stick = new Carbon_stick("Carbon_stick");
-        Renforced_string = new Renforced_string("Renforced_string");
-        Golden_string = new Golden_string("Golden_string");
+       Carbon_ingot = new ItemMod("Carbon_ingot");
+        Molten_carbon = new ItemMod("Molten_carbon");
+        Pironnite_fragment = new ItemMod("Pironnite_fragment");
+        Pironnite_nugget = new ItemMod("Pironnite_nugget");
+        Pironnite_ingot = new ItemMod("Pironnite_ingot");
+        Poppie_nugget = new ItemMod("Poppie_nugget");
+        Poppie_ingot = new ItemMod("Poppie_ingot");
+        Molten_iron = new ItemMod("Molten_iron");
+        Compressed_iron = new ItemMod("Compressed_iron");
+        Carbon_stick = new ItemMod("Carbon_stick");
+        Renforced_string = new ItemMod("Renforced_string");
+        Golden_string = new ItemMod("Golden_string");
         Compressed_iron_bottle = new Compressed_iron_bottle("Compressed_iron_bottle");
         Molten_carbon_bottle = new Molten_carbon_bottle("Molten_carbon_bottle");
         Poppie_bottle = new Poppie_bottle("Poppie_bottle");
-        Steel_piece = new Steel_piece("Steel_piece");
-        Steel_nugget = new Steel_nugget("Steel_nugget");
-        Steel_ingot = new Steel_ingot("Steel_ingot");
-        Speed_fragment = new Speed_fragment("Speed_fragment");
-        Speed_element = new Speed_element("Speed_element");
-        Jump_fragment = new Jump_fragment("Jump_fragment");
-        Jump_element = new Jump_element("Jump_element");
-        Darkness_fragment = new Darkness_fragment("Darkness_fragment");
-        Darkness_element = new Darkness_element("Darkness_element");
-        Steel_power = new Steel_power("Steel_power");
+        Steel_piece = new ItemMod("Steel_piece");
+        Steel_nugget = new ItemMod("Steel_nugget");
+        Steel_ingot = new ItemMod("Steel_ingot");
+        Speed_fragment = new ItemMod("Speed_fragment");
+        Speed_element = new ItemMod("Speed_element");
+        Jump_fragment = new ItemMod("Jump_fragment");
+        Jump_element = new ItemMod("Jump_element");
+        Darkness_fragment = new ItemMod("Darkness_fragment");
+        Darkness_element = new ItemMod("Darkness_element");
+        Steel_power = new ItemMod("Steel_power");
         Loot_upgrade = new LootUpgrade("Loot_upgrade");
-        Generator_power = new Generator_power("Generator_power");
-        Obsidian_gem = new Obsidian_gem("Obsidian_gem");
-        Four_leaf_clover = new Four_leaf_clover("Four_leaf_clover");
-        Coal_gem = new Coal_gem("Coal_gem");
+        Generator_power = new ItemMod("Generator_power");
+        Obsidian_gem = new ItemMod("Obsidian_gem");
+        Four_leaf_clover = new ItemModPoppieArmor("Four_leaf_clover");
+        Coal_gem = new ItemModPoppieArmor("Coal_gem");
         Speedster_flesh = new ItemFoodMod("Speedster_flesh", 5, 4, true, new PotionEffect(Potion.getPotionById(1), 400, 2));
-
-        Redstone_gem = new Item().setRegistryName("Redstone_gem").setUnlocalizedName("Redstone_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
-        Lapis_gem = new Item().setRegistryName("Lapis_gem").setUnlocalizedName("Lapis_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
-        Quartz_gem = new Item().setRegistryName("Quartz_gem").setUnlocalizedName("Quartz_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
-        Glowstone_gem = new Item().setRegistryName("Glowstone_gem").setUnlocalizedName("Glowstone_gem").setCreativeTab(PoppieCraftMod.PoppieArmor);
-
+        Jumper_flesh = new ItemFoodMod("Jumper_flesh", 5, 4, true, new PotionEffect(Potion.getPotionById(8), 400, 2));
+        Darker_flesh = new ItemFoodMod("Darker_flesh", 8, 6, true, new PotionEffect(Potion.getPotionById(10), 200, 2));
+        Golden_feather = new ItemMod("Golden_feather");
+        Redstone_gem = new ItemModPoppieArmor("Redstone_gem");
+        Lapis_gem = new ItemModPoppieArmor("Lapis_gem");
+        Quartz_gem = new ItemModPoppieArmor("Quartz_gem");
+        Glowstone_gem = new ItemModPoppieArmor("Glowstone_gem");
+        Basic_soul = new Basic_soul("Basic_soul");
     }
 
 
@@ -156,6 +159,10 @@ public class ModItems {
         registerItem(Loot_upgrade);
         registerItem(Generator_power);
         registerItem(Speedster_flesh);
+        registerItem(Jumper_flesh);
+        registerItem(Darker_flesh);
+        registerItem(Golden_feather);
+        registerItem(Basic_soul);
 
         GameRegistry.register(Redstone_gem);
         GameRegistry.register(Redstone_sword);
@@ -253,6 +260,23 @@ public class ModItems {
         registerRender(Four_leaf_clover);
         registerRender(Coal_gem);
         registerRender(Speedster_flesh);
+        registerRender(Jumper_flesh);
+        registerRender(Darker_flesh);
+        registerRender(Golden_feather);
+        registerRenderMeta(Basic_soul, 0);
+        registerRenderMeta(Basic_soul, 1);
+        registerRenderMeta(Basic_soul, 2);
+        registerRenderMeta(Basic_soul, 3);
+        registerRenderMeta(Basic_soul, 4);
+        registerRenderMeta(Basic_soul, 5);
+        registerRenderMeta(Basic_soul, 6);
+        registerRenderMeta(Basic_soul, 7);
+        registerRenderMeta(Basic_soul, 8);
+        registerRenderMeta(Basic_soul, 9);
+        registerRenderMeta(Basic_soul, 10);
+        registerRenderMeta(Basic_soul, 11);
+        registerRenderMeta(Basic_soul, 12);
+        registerRenderMeta(Basic_soul, 13);
 
         registerRender(Redstone_gem);
         registerRender(Redstone_sword);
