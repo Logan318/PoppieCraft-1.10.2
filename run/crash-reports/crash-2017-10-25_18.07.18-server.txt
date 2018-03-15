@@ -1,0 +1,80 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 25/10/17 18:07
+Description: Ticking block entity
+
+java.lang.NullPointerException: Ticking block entity
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.generateItem(TileEntityGeneratorBlockBasic.java:95)
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.update(TileEntityGeneratorBlockBasic.java:366)
+	at net.minecraft.world.World.updateEntities(World.java:1952)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:647)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:784)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:688)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:537)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.generateItem(TileEntityGeneratorBlockBasic.java:95)
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.update(TileEntityGeneratorBlockBasic.java:366)
+
+-- Block entity being ticked --
+Details:
+	Name: poppiecraft:GeneratorBlockBasic // net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic
+	Block type: ID #267 (tile.Generator_basic // net.logan31.poppiecraft.blocks.Generator_block_basic)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (-1606,56,371), Chunk: (at 10,3,3 in -101,23; contains blocks -1616,0,368 to -1601,255,383), Region: (-4,0; contains chunks -128,0 to -97,31, blocks -2048,0,0 to -1537,255,511)
+	Actual block type: ID #267 (tile.Generator_basic // net.logan31.poppiecraft.blocks.Generator_block_basic)
+	Actual block data value: 0 / 0x0 / 0b0000
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1952)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:647)
+
+-- Affected level --
+Details:
+	Level name: PoppieCraft
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: 3924677923655465790
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 3;minecraft:bedrock,3*minecraft:stone,52*minecraft:quartz_block;2;
+	Level spawn location: World: (-1608,4,373), Chunk: (at 8,0,5 in -101,23; contains blocks -1616,0,368 to -1601,255,383), Region: (-4,0; contains chunks -128,0 to -97,31, blocks -2048,0,0 to -1537,255,511)
+	Level time: 1803717 game time, 5000 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 11228 (now: false), thunder time: 36689 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:784)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:688)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:537)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Mac OS X (x86_64) version 10.12.6
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 204267696 bytes (194 MB) / 584056832 bytes (557 MB) up to 954728448 bytes (910 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.32 Powered by Forge 12.18.3.2185 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	Forge{12.18.3.2185} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	poppiecraft{1.0} [PoppieCraft] (PoppieCraft) 
+	Loaded coremods (and transformers): 
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "facing=north": { "model": "poppiecraft:Lit_foundry" },
+        "facing=south": { "model": "poppiecraft:Lit_foundry", "y": 180 },
+        "facing=west":  { "model": "poppiecraft:Lit_foundry", "y": 270 },
+        "facing=east":  { "model": "poppiecraft:Lit_foundry", "y": 90 },
+        "facing=up":  { "model": "poppiecraft:Lit_foundry", "x": 270 },
+        "facing=down":  { "model": "poppiecraft:Lit_foundry", "x": 90 }
+
+    }
+}

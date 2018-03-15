@@ -14,6 +14,8 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Iterator;
 
@@ -35,14 +37,15 @@ public class GlowstoneArmor extends ItemArmor {
     private boolean isWearingFullSet(EntityPlayer player, Item helmet, Item chestplate, Item leggings, Item boots)
 
     {
+        System.out.print("Wearing Full Set" + helmet + chestplate + leggings + boots);
 
-        return player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(3).getItem() == helmet
+        return player.inventory.armorInventory[3] != null && player.inventory.armorInventory[3].getItem() == helmet
 
-                && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(2).getItem() == chestplate
+                && player.inventory.armorInventory[2] != null && player.inventory.armorInventory[2].getItem() == chestplate
 
-                && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(1).getItem() == leggings
+                && player.inventory.armorInventory[1] != null && player.inventory.armorInventory[1].getItem() == leggings
 
-                && player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(0).getItem() == boots;
+                && player.inventory.armorInventory[0] != null && player.inventory.armorInventory[0].getItem() == boots;
 
     }
 
@@ -69,8 +72,18 @@ public class GlowstoneArmor extends ItemArmor {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-        if(this.isWearingFullSet(player, ModArmor.Glowstone_helmet, ModArmor.Glowstone_chestplate, ModArmor.Glowstone_leggings, ModArmor.Glowstone_boots)) {
-            this.effectPlayer(player, Potion.getPotionById(16), 0 , 2147483647);
+
+        ItemArmor helmet;
+        ItemArmor chestplate;
+        ItemArmor leggings;
+        ItemArmor boots;
+
+        helmet = ModArmor.Glowstone_helmet;
+        chestplate = ModArmor.Glowstone_chestplate;
+        leggings = ModArmor.Glowstone_leggings;
+        boots = ModArmor.Glowstone_boots;
+
+        if(isWearingFullSet(player, helmet, chestplate, leggings, boots)) {    this.effectPlayer(player, Potion.getPotionById(16), 0 , 230);
         }
         this.uneffectPlayer(player);
 

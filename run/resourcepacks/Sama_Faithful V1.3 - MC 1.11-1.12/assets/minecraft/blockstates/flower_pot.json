@@ -1,0 +1,173 @@
+{
+	"__comment": "by ErGT",
+	"variants": {
+		"contents=empty": [
+					{ "model": "flower_pot/pot" },
+					{ "model": "flower_pot/pot1" },
+					{ "model": "flower_pot/pot2" },
+					{ "model": "flower_pot/pot3" }
+				],
+		"contents=cactus": [
+					{ "model": "flower_pot/cactus" },
+					{ "model": "flower_pot/cactus1" },
+					{ "model": "flower_pot/cactus2" },
+					{ "model": "flower_pot/cactus3" }
+				],
+		"contents=rose": [
+					{ "model": "flower_pot/flower/rose_pot_pot" },
+					{ "model": "flower_pot/flower/rose_pot_pot1" },
+					{ "model": "flower_pot/flower/rose_pot_pot2" },
+					{ "model": "flower_pot/flower/rose_pot_pot3" },
+					{ "model": "flower_pot/flower/rose_pot1_pot" },
+					{ "model": "flower_pot/flower/rose_pot1_pot1" },
+					{ "model": "flower_pot/flower/rose_pot1_pot2" },
+					{ "model": "flower_pot/flower/rose_pot1_pot3" },
+					{ "model": "flower_pot/flower/rose_pot2_pot" },
+					{ "model": "flower_pot/flower/rose_pot2_pot1" },
+					{ "model": "flower_pot/flower/rose_pot2_pot2" },
+					{ "model": "flower_pot/flower/rose_pot2_pot3" },
+					{ "model": "flower_pot/flower/rose_pot3_pot" },
+					{ "model": "flower_pot/flower/rose_pot3_pot1" },
+					{ "model": "flower_pot/flower/rose_pot3_pot2" },
+					{ "model": "flower_pot/flower/rose_pot3_pot3" },
+					{ "model": "flower_pot/flower/rose_pot4_pot" },
+					{ "model": "flower_pot/flower/rose_pot4_pot1" },
+					{ "model": "flower_pot/flower/rose_pot4_pot2" },
+					{ "model": "flower_pot/flower/rose_pot4_pot3" }
+				],
+		"contents=blue_orchid": [
+					{ "model": "flower_pot/flower/blue_orchid_pot" },
+					{ "model": "flower_pot/flower/blue_orchid_pot1" },
+					{ "model": "flower_pot/flower/blue_orchid_pot2" },
+					{ "model": "flower_pot/flower/blue_orchid_pot3" }
+				],
+		"contents=allium": [
+					{ "model": "flower_pot/flower/allium_pot" },
+					{ "model": "flower_pot/flower/allium_pot1" },
+					{ "model": "flower_pot/flower/allium_pot2" },
+					{ "model": "flower_pot/flower/allium_pot3" }
+				],
+		"contents=houstonia": [
+					{ "model": "flower_pot/flower/houstonia_pot" },
+					{ "model": "flower_pot/flower/houstonia_pot1" },
+					{ "model": "flower_pot/flower/houstonia_pot2" },
+					{ "model": "flower_pot/flower/houstonia_pot3" }
+				],
+		"contents=red_tulip": [
+					{ "model": "flower_pot/flower/red_tulip_pot" },
+					{ "model": "flower_pot/flower/red_tulip_pot1" },
+					{ "model": "flower_pot/flower/red_tulip_pot2" },
+					{ "model": "flower_pot/flower/red_tulip_pot3" }
+				],
+		"contents=orange_tulip": [
+					{ "model": "flower_pot/flower/orange_tulip_pot" },
+					{ "model": "flower_pot/flower/orange_tulip_pot1" },
+					{ "model": "flower_pot/flower/orange_tulip_pot2" },
+					{ "model": "flower_pot/flower/orange_tulip_pot3" }
+				],
+		"contents=white_tulip": [
+					{ "model": "flower_pot/flower/white_tulip_pot" },
+					{ "model": "flower_pot/flower/white_tulip_pot1" },
+					{ "model": "flower_pot/flower/white_tulip_pot2" },
+					{ "model": "flower_pot/flower/white_tulip_pot3" }
+				],
+		"contents=pink_tulip": [
+					{ "model": "flower_pot/flower/pink_tulip_pot" },
+					{ "model": "flower_pot/flower/pink_tulip_pot1" },
+					{ "model": "flower_pot/flower/pink_tulip_pot2" },
+					{ "model": "flower_pot/flower/pink_tulip_pot3" }
+				],
+		"contents=oxeye_daisy": [
+					{ "model": "flower_pot/flower/oxeye_daisy_pot" },
+					{ "model": "flower_pot/flower/oxeye_daisy_pot1" },
+					{ "model": "flower_pot/flower/oxeye_daisy_pot2" },
+					{ "model": "flower_pot/flower/oxeye_daisy_pot3" }
+				],
+		"contents=dandelion": [
+					{ "model": "flower_pot/flower/dandelion_pot_pot" },
+					{ "model": "flower_pot/flower/dandelion_pot_pot1" },
+					{ "model": "flower_pot/flower/dandelion_pot_pot2" },
+					{ "model": "flower_pot/flower/dandelion_pot_pot3" },
+					{ "model": "flower_pot/flower/dandelion_pot1_pot" },
+					{ "model": "flower_pot/flower/dandelion_pot1_pot1" },
+					{ "model": "flower_pot/flower/dandelion_pot1_pot2" },
+					{ "model": "flower_pot/flower/dandelion_pot1_pot3" },
+					{ "model": "flower_pot/flower/dandelion_pot2_pot" },
+					{ "model": "flower_pot/flower/dandelion_pot2_pot1" },
+					{ "model": "flower_pot/flower/dandelion_pot2_pot2" },
+					{ "model": "flower_pot/flower/dandelion_pot2_pot3" },
+					{ "model": "flower_pot/flower/dandelion_pot3_pot" },
+					{ "model": "flower_pot/flower/dandelion_pot3_pot1" },
+					{ "model": "flower_pot/flower/dandelion_pot3_pot2" },
+					{ "model": "flower_pot/flower/dandelion_pot3_pot3" },
+					{ "model": "flower_pot/flower/dandelion_pot4_pot" },
+					{ "model": "flower_pot/flower/dandelion_pot4_pot1" },
+					{ "model": "flower_pot/flower/dandelion_pot4_pot2" },
+					{ "model": "flower_pot/flower/dandelion_pot4_pot3" },
+					{ "model": "flower_pot/flower/dandelion_pot5_pot" },
+					{ "model": "flower_pot/flower/dandelion_pot5_pot1" },
+					{ "model": "flower_pot/flower/dandelion_pot5_pot2" },
+					{ "model": "flower_pot/flower/dandelion_pot5_pot3" }
+				],
+		"contents=oak_sapling": [
+					{ "model": "flower_pot/sapling/oak_pot" },
+					{ "model": "flower_pot/sapling/oak_pot1" },
+					{ "model": "flower_pot/sapling/oak_pot2" },
+					{ "model": "flower_pot/sapling/oak_pot3" }
+				],
+		"contents=spruce_sapling": [
+					{ "model": "flower_pot/sapling/spruce_pot" },
+					{ "model": "flower_pot/sapling/spruce_pot1" },
+					{ "model": "flower_pot/sapling/spruce_pot2" },
+					{ "model": "flower_pot/sapling/spruce_pot3" }
+				],
+		"contents=birch_sapling": [
+					{ "model": "flower_pot/sapling/birch_pot" },
+					{ "model": "flower_pot/sapling/birch_pot1" },
+					{ "model": "flower_pot/sapling/birch_pot2" },
+					{ "model": "flower_pot/sapling/birch_pot3" }
+				],
+		"contents=jungle_sapling": [
+					{ "model": "flower_pot/sapling/jungle_pot" },
+					{ "model": "flower_pot/sapling/jungle_pot1" },
+					{ "model": "flower_pot/sapling/jungle_pot2" },
+					{ "model": "flower_pot/sapling/jungle_pot3" }
+				],
+		"contents=acacia_sapling": [
+					{ "model": "flower_pot/sapling/acacia_pot" },
+					{ "model": "flower_pot/sapling/acacia_pot1" },
+					{ "model": "flower_pot/sapling/acacia_pot2" },
+					{ "model": "flower_pot/sapling/acacia_pot3" }
+				],
+		"contents=dark_oak_sapling": [
+					{ "model": "flower_pot/sapling/dark_oak_pot" },
+					{ "model": "flower_pot/sapling/dark_oak_pot1" },
+					{ "model": "flower_pot/sapling/dark_oak_pot2" },
+					{ "model": "flower_pot/sapling/dark_oak_pot3" }
+				],
+		"contents=mushroom_red": [
+					{ "model": "flower_pot/misc/mushroom_red_pot" },
+					{ "model": "flower_pot/misc/mushroom_red_pot1" },
+					{ "model": "flower_pot/misc/mushroom_red_pot2" },
+					{ "model": "flower_pot/misc/mushroom_red_pot3" }
+				],
+		"contents=mushroom_brown": [
+					{ "model": "flower_pot/misc/mushroom_brown_pot" },
+					{ "model": "flower_pot/misc/mushroom_brown_pot1" },
+					{ "model": "flower_pot/misc/mushroom_brown_pot2" },
+					{ "model": "flower_pot/misc/mushroom_brown_pot3" }
+				],
+		"contents=dead_bush": [
+					{ "model": "flower_pot/misc/dead_bush_pot" },
+					{ "model": "flower_pot/misc/dead_bush_pot1" },
+					{ "model": "flower_pot/misc/dead_bush_pot2" },
+					{ "model": "flower_pot/misc/dead_bush_pot3" }
+				],
+		"contents=fern": [
+					{ "model": "flower_pot/misc/fern_pot" },
+					{ "model": "flower_pot/misc/fern_pot1" },
+					{ "model": "flower_pot/misc/fern_pot2" },
+					{ "model": "flower_pot/misc/fern_pot3" }
+				]
+	}
+}

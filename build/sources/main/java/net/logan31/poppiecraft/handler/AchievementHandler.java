@@ -29,6 +29,7 @@ public class AchievementHandler  {
     public static Achievement CoalArmor = createAchievement("CoalArmor", 2, -1, ModArmor.Coal_helmet, AchievementList.BUILD_BETTER_PICKAXE);
     public static Achievement LeafCloverArmor = createAchievement("LeafCloverArmor", 1, -2, ModArmor.Four_leaf_clover_helmet, AchievementList.BUILD_BETTER_PICKAXE);
     public static Achievement EmeraldArmor = createAchievement("EmeraldArmor", -2, -1, ModArmor.Emerald_helmet, AchievementList.BUILD_BETTER_PICKAXE);
+    public static Achievement KillWildlings = createAchievement("KillWildlings", -6, -3, ModItems.Jump_fragment, AchievementList.KILL_ENEMY);
 
 
 

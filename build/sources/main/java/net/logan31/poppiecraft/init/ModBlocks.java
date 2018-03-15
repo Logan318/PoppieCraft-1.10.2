@@ -3,7 +3,8 @@ package net.logan31.poppiecraft.init;
 import net.logan31.poppiecraft.PoppieCraftMod;
 
 import net.logan31.poppiecraft.blocks.*;
-import net.logan31.poppiecraft.blocks.item.ItemGeneratorBlock;
+
+import net.logan31.poppiecraft.blocks.item.ItemGeneratorBlockBasic;
 import net.logan31.poppiecraft.blocks.item.ItemSacred_table;
 import net.logan31.poppiecraft.handler.EnumHandler;
 import net.minecraftforge.client.model.ModelLoader;
@@ -33,16 +34,16 @@ public class ModBlocks {
 
 
 
-    public static Block Carbon_ore, Carbon_block, Compressed_iron_block, Melter, Pironnite_block, Pironnite_ore_OW;
-    public static Block  Pironnite_ore_N, Poppie_block, Steel_block, Mefferite_ore, Alzanite_ore, Ragmarite_ore;
-    public static Block Generator_block, Sacred_table;
+    public static Block Carbon_ore, Carbon_block, Compressed_carbon_block, Compressed_iron_block, Melter, Pironnite_block;
+    public static Block Pironnite_ore_OW, Pironnite_ore_N, Poppie_block, Steel_block, Mefferite_ore, Alzanite_ore, Ragmarite_ore;
+    public static Block Generator_block_basic, Generator_block_advanced, Generator_block_ultimate;
 
     public static void init() {
 
         Carbon_ore = new Block(Material.ROCK).setRegistryName("Carbon_ore").setUnlocalizedName("Carbon_ore").setHardness(3.0f).setResistance(25f).setCreativeTab(PoppieCraftMod.PoppieCraft);
         Carbon_block = new Block(Material.IRON).setRegistryName("Carbon_block").setUnlocalizedName("Carbon_block").setHardness(3.0f).setResistance(25f).setCreativeTab(PoppieCraftMod.PoppieCraft);
-        Compressed_iron_block = new Compressed_iron_block("Compressed_iron_block", "Compressed_iron_block");
-        Melter = new Melter("Melter", "Melter");
+        Compressed_carbon_block = new Compressed_iron_block("Compressed_carbon_block");
+        Compressed_iron_block = new Compressed_iron_block("Compressed_iron_block");
         Pironnite_block = new Pironnite_block("Pironnite_block", "Pironnite_block");
         Pironnite_ore_OW = new Pironnite_ore_OW("Pironnite_ore_OW", "Pironnite_ore_OW");
         Pironnite_ore_N = new Pironnite_ore_N("Pironnite_ore_N", "Pironnite_ore_N");
@@ -51,16 +52,18 @@ public class ModBlocks {
         Mefferite_ore = new Mefferite_ore("Mefferite_ore");
         Alzanite_ore = new Alzanite_ore("Alzanite_ore");
         Ragmarite_ore = new Ragmarite_ore("Ragmarite_ore");
-        Generator_block = new GeneratorBlock("Generator_block");
-        Sacred_table = new Sacred_table("Sacred_table");
+        Generator_block_basic = new Generator_block_basic("Generator_block_basic");
+        Generator_block_advanced = new Generator_block_advanced("Generator_block_advanced");
+        Generator_block_ultimate = new Generator_block_ultimate( "Generator_block_ultimate" );
+
     }
 
 
     public static void register() {
         registerBlock(Carbon_ore);
         registerBlock(Carbon_block);
+        registerBlock( Compressed_carbon_block );
         registerBlock(Compressed_iron_block);
-        registerBlock(Melter);
         registerBlock(Pironnite_block);
         registerBlock(Pironnite_ore_OW);
         registerBlock(Pironnite_ore_N);
@@ -69,7 +72,9 @@ public class ModBlocks {
         registerBlock(Mefferite_ore);
         registerBlock(Alzanite_ore);
         registerBlock(Ragmarite_ore);
-        registerBlock(Generator_block, new ItemGeneratorBlock(Generator_block));
+        registerBlock(Generator_block_basic);
+        registerBlock(Generator_block_advanced);
+        registerBlock( Generator_block_ultimate );
 
 
     }
@@ -78,8 +83,8 @@ public class ModBlocks {
     public static void registerRenders() {
         registerRender(Carbon_ore);
         registerRender(Carbon_block);
+        registerRender( Compressed_carbon_block );
         registerRender(Compressed_iron_block);
-        registerRender(Melter);
         registerRender(Pironnite_block);
         registerRender(Pironnite_ore_OW);
         registerRender(Pironnite_ore_N);
@@ -88,10 +93,11 @@ public class ModBlocks {
         registerRender(Mefferite_ore);
         registerRender(Alzanite_ore);
         registerRender(Ragmarite_ore);
-        for(int i = 0; i < EnumHandler.UpgradeTypes.values().length; i++) {
-            registerRender(Generator_block, i, "Generator_block_" + EnumHandler.UpgradeTypes.values()[i].getName());
+        registerRender(Generator_block_basic);
+        registerRender(Generator_block_advanced);
+        registerRender( Generator_block_ultimate );
+        
 
-        }
     }
 
 
@@ -114,6 +120,10 @@ public class ModBlocks {
 
     private static void registerRender(Block block) {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(new ResourceLocation(References.MODID, block.getUnlocalizedName().substring(5)), "inventory"));
+    }
+
+    private static void registerRenderMeta(Block block, int meta) {
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(new ResourceLocation(References.MODID, block.getUnlocalizedName().substring(5)), "inventory"));
     }
 
     private static void registerRender(Block block, int meta, String fileName) {

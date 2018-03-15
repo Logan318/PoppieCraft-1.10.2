@@ -45,7 +45,6 @@ public class Darker extends EntityMob {
         this.isImmuneToFire = true;
         this.setSize(0.6F, 1.95F);
         this.canDamagePlayer();
-        this.attackEntityAsMob(this);
         EntityPlayer attackingPlayer = this.attackingPlayer;
 
 
@@ -280,5 +279,6 @@ public class Darker extends EntityMob {
             ENTITY_PLACEMENTS.put(Darker.class, SpawnPlacementType.ON_GROUND);
 
         }
+
 
 }

@@ -6,6 +6,7 @@ import net.logan31.poppiecraft.Utils.References;
 import net.logan31.poppiecraft.handler.AchievementHandler;
 import net.logan31.poppiecraft.init.ModArmor;
 import net.logan31.poppiecraft.init.ModItems;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
@@ -19,6 +20,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.AnvilRepairEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Iterator;
 
@@ -27,6 +30,12 @@ import java.util.Iterator;
  */
 public class EmeraldArmor extends ItemArmor {
 
+
+    private Iterable<ItemStack> listArmor;
+
+    public Iterable<ItemStack> getListArmor() {
+        return listArmor;
+    }
 
     public EmeraldArmor(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, String unlocalizedName) {
         super(materialIn, renderIndexIn, equipmentSlotIn);
@@ -37,19 +46,23 @@ public class EmeraldArmor extends ItemArmor {
 
 
 
-    private boolean isWearingFullSet(EntityPlayer player, Item helmet, Item chestplate, Item leggings, Item boots)
+    private boolean isWearingFullSet(EntityPlayer player, ItemArmor helmet, ItemArmor chestplate, ItemArmor leggings, ItemArmor boots)
 
-    {
+        {
+            System.out.print("Wearing Full Set" + helmet + chestplate + leggings + boots);
 
-        return player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(3).getItem() == helmet
+            return player.inventory.armorInventory[3] != null && player.inventory.armorInventory[3].getItem() == helmet
 
-                && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(2).getItem() == chestplate
+                    && player.inventory.armorInventory[2] != null && player.inventory.armorInventory[2].getItem() == chestplate
 
-                && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(1).getItem() == leggings
+                    && player.inventory.armorInventory[1] != null && player.inventory.armorInventory[1].getItem() == leggings
 
-                && player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(0).getItem() == boots;
+                    && player.inventory.armorInventory[0] != null && player.inventory.armorInventory[0].getItem() == boots;
+  }
 
-    }
+
+
+
 
 
     private void uneffectPlayer(EntityPlayer player) {
@@ -74,8 +87,19 @@ public class EmeraldArmor extends ItemArmor {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-        if(this.isWearingFullSet(player, ModArmor.Emerald_helmet, ModArmor.Emerald_chestplate, ModArmor.Emerald_leggings, ModArmor.Emerald_boots)) {
-            this.effectPlayer(player, Potion.getPotionById(5), 1 , 2147483647);
+
+        ItemArmor helmet;
+        ItemArmor chestplate;
+        ItemArmor leggings;
+        ItemArmor boots;
+
+        helmet = ModArmor.Emerald_helmet;
+        chestplate = ModArmor.Emerald_chestplate;
+        leggings = ModArmor.Emerald_leggings;
+        boots = ModArmor.Emerald_boots;
+
+        if(isWearingFullSet(player, helmet, chestplate, leggings, boots)) {
+            this.effectPlayer(player, Potion.getPotionById(5), 1 , 230);
         }
         this.uneffectPlayer(player);
 

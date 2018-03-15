@@ -28,9 +28,6 @@ public class onTouchEntityEvent {
             EntityPlayer player = e.getEntityPlayer();
 
 
-            ItemStack stack = player.getHeldItem(EnumHand.MAIN_HAND);
-
-
             if(e.getTarget() != null) {
                 Entity entity = e.getTarget();
 

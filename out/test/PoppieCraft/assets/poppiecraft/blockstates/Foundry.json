@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "facing=north": { "model": "poppiecraft:Foundry" },
+        "facing=south": { "model": "poppiecraft:Foundry", "y": 180 },
+        "facing=west":  { "model": "poppiecraft:Foundry", "y": 270 },
+        "facing=east":  { "model": "poppiecraft:Foundry", "y": 90 },
+        "facing=up":  { "model": "poppiecraft:Foundry", "x": 270 },
+        "facing=down":  { "model": "poppiecraft:Foundry", "x": 90 }
+
+    }
+}

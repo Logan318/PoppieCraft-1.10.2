@@ -19,6 +19,7 @@ public class LootUpgrade extends Item {
         this.setRegistryName(new ResourceLocation(References.MODID, unlocalizedName));
         this.setCreativeTab(PoppieCraftMod.PoppieCraft);
         this.setHasSubtypes(true);
+        this.setMaxStackSize(1);
     }
 
     @Override

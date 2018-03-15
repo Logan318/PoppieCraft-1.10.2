@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "poppiecraft:blocks/Melter_top",
-        "front": "poppiecraft:blocks/Melter_front_off",
-        "side": "poppiecraft:blocks/Melter_side"
-    }
-}

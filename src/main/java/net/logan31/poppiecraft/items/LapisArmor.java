@@ -6,6 +6,7 @@ import net.logan31.poppiecraft.Utils.References;
 import net.logan31.poppiecraft.handler.AchievementHandler;
 import net.logan31.poppiecraft.init.ModArmor;
 import net.logan31.poppiecraft.init.ModItems;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -18,6 +19,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.AnvilRepairEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Iterator;
 
@@ -26,13 +30,16 @@ import java.util.Iterator;
  */
 public class LapisArmor extends ItemArmor {
 
+int i = 0;
 
     public LapisArmor(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, String unlocalizedName) {
         super(materialIn, renderIndexIn, equipmentSlotIn);
         this.setUnlocalizedName(unlocalizedName);
         this.setRegistryName(new ResourceLocation(References.MODID, unlocalizedName));
         this.setCreativeTab(PoppieCraftMod.PoppieArmor);
+
     }
+
 
 
 
@@ -40,13 +47,16 @@ public class LapisArmor extends ItemArmor {
 
     {
 
-        return player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(3).getItem() == helmet
+        System.out.print("Wearing Full Set" + helmet + chestplate + leggings + boots);
 
-                && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(2).getItem() == chestplate
+        return player.inventory.armorInventory[3] != null && player.inventory.armorInventory[3].getItem() == helmet
 
-                && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(1).getItem() == leggings
+                && player.inventory.armorInventory[2] != null && player.inventory.armorInventory[2].getItem() == chestplate
 
-                && player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(0).getItem() == boots;
+                && player.inventory.armorInventory[1] != null && player.inventory.armorInventory[1].getItem() == leggings
+
+                && player.inventory.armorInventory[0] != null && player.inventory.armorInventory[0].getItem() == boots;
+
 
     }
 
@@ -72,10 +82,26 @@ public class LapisArmor extends ItemArmor {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-        if(this.isWearingFullSet(player, ModArmor.Lapis_helmet, ModArmor.Lapis_chestplate, ModArmor.Lapis_leggings, ModArmor.Lapis_boots)) {
-            this.effectPlayer(player, Potion.getPotionById(13), 0 , 2147483647);
+
+        ItemArmor helmet;
+        ItemArmor chestplate;
+        ItemArmor leggings;
+        ItemArmor boots;
+
+        helmet = ModArmor.Lapis_helmet;
+        chestplate = ModArmor.Lapis_chestplate;
+        leggings = ModArmor.Lapis_leggings;
+        boots = ModArmor.Lapis_boots;
+
+
+
+        if(isWearingFullSet(player, helmet, chestplate, leggings, boots)) {
+
+            this.effectPlayer(player, Potion.getPotionById(13), 0, 230);
+
         }
         this.uneffectPlayer(player);
+
 
         int lapisArmourPeices = 0;
         if(player.getArmorInventoryList() != null) {
@@ -98,7 +124,14 @@ public class LapisArmor extends ItemArmor {
                 player.addStat(AchievementHandler.LapisArmor);
             }
         }
+
+
+
+
+
     }
+
+
 
 
     @Override

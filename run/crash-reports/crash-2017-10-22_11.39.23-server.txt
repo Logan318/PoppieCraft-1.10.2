@@ -1,0 +1,45 @@
+---- Minecraft Crash Report ----
+// I feel sad now :(
+
+Time: 22/10/17 11:39
+Description: Exception in server tick loop
+
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1429)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at java.util.AbstractCollection.addAll(AbstractCollection.java:343)
+	at net.minecraft.entity.ai.attributes.ModifiableAttributeInstance.getModifiers(ModifiableAttributeInstance.java:72)
+	at net.minecraft.network.play.server.SPacketEntityProperties.<init>(SPacketEntityProperties.java:31)
+	at net.minecraft.entity.EntityTrackerEntry.sendMetadataToAllAssociatedPlayers(EntityTrackerEntry.java:334)
+	at net.minecraft.entity.EntityTrackerEntry.updatePlayerList(EntityTrackerEntry.java:276)
+	at net.minecraft.entity.EntityTracker.updateTrackedEntities(EntityTracker.java:287)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:796)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:688)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:537)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Mac OS X (x86_64) version 10.12.6
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 206207728 bytes (196 MB) / 661651456 bytes (631 MB) up to 954728448 bytes (910 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.32 Powered by Forge 12.18.3.2185 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	Forge{12.18.3.2185} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	poppiecraft{1.0} [PoppieCraft] (PoppieCraft) 
+	Loaded coremods (and transformers): 
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player472'/82, l='PoppieCraft', x=-1593,53, y=56,00, z=370,82]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

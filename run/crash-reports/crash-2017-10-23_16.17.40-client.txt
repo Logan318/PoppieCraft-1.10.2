@@ -1,0 +1,114 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 23/10/17 16:17
+Description: Ticking block entity
+
+java.lang.NullPointerException: Ticking block entity
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.update(TileEntityGeneratorBlockBasic.java:98)
+	at net.minecraft.world.World.updateEntities(World.java:1952)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1886)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1118)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:406)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.update(TileEntityGeneratorBlockBasic.java:98)
+
+-- Block entity being ticked --
+Details:
+	Name: poppiecraft:GeneratorBlockBasic // net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic
+	Block type: ID #267 (tile.Generator_basic // net.logan31.poppiecraft.blocks.Generator_block_basic)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (-1596,56,365), Chunk: (at 4,3,13 in -100,22; contains blocks -1600,0,352 to -1585,255,367), Region: (-4,0; contains chunks -128,0 to -97,31, blocks -2048,0,0 to -1537,255,511)
+	Actual block type: ID #267 (tile.Generator_basic // net.logan31.poppiecraft.blocks.Generator_block_basic)
+	Actual block data value: 0 / 0x0 / 0b0000
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1952)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player211'/81, l='MpServer', x=-1595,05, y=56,00, z=363,55]]
+	Chunk stats: MultiplayerChunkCache: 625, 625
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-1608,4,373), Chunk: (at 8,0,5 in -101,23; contains blocks -1616,0,368 to -1601,255,383), Region: (-4,0; contains chunks -128,0 to -97,31, blocks -2048,0,0 to -1537,255,511)
+	Level time: 1682288 game time, 5000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 82 total; [EntityItemFrame['entity.ItemFrame.name'/0, l='MpServer', x=-1609,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/1, l='MpServer', x=-1609,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/2, l='MpServer', x=-1609,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/3, l='MpServer', x=-1609,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/4, l='MpServer', x=-1608,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/5, l='MpServer', x=-1608,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/6, l='MpServer', x=-1608,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/7, l='MpServer', x=-1608,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/8, l='MpServer', x=-1607,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/9, l='MpServer', x=-1607,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/10, l='MpServer', x=-1607,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/11, l='MpServer', x=-1607,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/12, l='MpServer', x=-1606,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/13, l='MpServer', x=-1605,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/14, l='MpServer', x=-1604,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/15, l='MpServer', x=-1604,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/16, l='MpServer', x=-1605,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/17, l='MpServer', x=-1606,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/18, l='MpServer', x=-1606,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/19, l='MpServer', x=-1605,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/20, l='MpServer', x=-1604,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/21, l='MpServer', x=-1605,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/22, l='MpServer', x=-1606,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/23, l='MpServer', x=-1604,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/24, l='MpServer', x=-1603,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/25, l='MpServer', x=-1602,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/26, l='MpServer', x=-1601,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/27, l='MpServer', x=-1600,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/28, l='MpServer', x=-1600,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/29, l='MpServer', x=-1601,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/30, l='MpServer', x=-1602,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/31, l='MpServer', x=-1603,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/32, l='MpServer', x=-1603,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/33, l='MpServer', x=-1603,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/34, l='MpServer', x=-1602,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/35, l='MpServer', x=-1602,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/36, l='MpServer', x=-1601,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/37, l='MpServer', x=-1601,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/38, l='MpServer', x=-1600,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/39, l='MpServer', x=-1600,50, y=56,50, z=361,03], EntityChicken['Chicken'/40, l='MpServer', x=-1591,79, y=56,00, z=311,58], EntityItemFrame['entity.ItemFrame.name'/41, l='MpServer', x=-1599,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/42, l='MpServer', x=-1598,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/43, l='MpServer', x=-1597,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/44, l='MpServer', x=-1596,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/45, l='MpServer', x=-1595,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/46, l='MpServer', x=-1594,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/47, l='MpServer', x=-1593,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/48, l='MpServer', x=-1592,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/49, l='MpServer', x=-1591,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/50, l='MpServer', x=-1590,50, y=59,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/51, l='MpServer', x=-1590,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/52, l='MpServer', x=-1591,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/53, l='MpServer', x=-1592,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/54, l='MpServer', x=-1593,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/55, l='MpServer', x=-1594,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/56, l='MpServer', x=-1595,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/57, l='MpServer', x=-1596,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/58, l='MpServer', x=-1597,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/59, l='MpServer', x=-1598,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/60, l='MpServer', x=-1599,50, y=58,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/61, l='MpServer', x=-1599,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/62, l='MpServer', x=-1598,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/63, l='MpServer', x=-1597,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/64, l='MpServer', x=-1596,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/65, l='MpServer', x=-1595,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/66, l='MpServer', x=-1594,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/67, l='MpServer', x=-1593,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/68, l='MpServer', x=-1592,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/69, l='MpServer', x=-1591,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/70, l='MpServer', x=-1590,50, y=56,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/71, l='MpServer', x=-1591,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/72, l='MpServer', x=-1590,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/73, l='MpServer', x=-1592,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/74, l='MpServer', x=-1593,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/75, l='MpServer', x=-1594,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/76, l='MpServer', x=-1595,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/77, l='MpServer', x=-1596,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/78, l='MpServer', x=-1597,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/79, l='MpServer', x=-1598,50, y=57,50, z=361,03], EntityItemFrame['entity.ItemFrame.name'/80, l='MpServer', x=-1599,50, y=57,50, z=361,03], EntityPlayerSP['Player211'/81, l='MpServer', x=-1595,05, y=56,00, z=363,55]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:456)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2779)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:427)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Mac OS X (x86_64) version 10.12.6
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 256975344 bytes (245 MB) / 625475584 bytes (596 MB) up to 954728448 bytes (910 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.32 Powered by Forge 12.18.3.2185 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	Forge{12.18.3.2185} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	poppiecraft{1.0} [PoppieCraft] (PoppieCraft) 
+	Loaded coremods (and transformers): 
+	Launched Version: 1.10.2
+	LWJGL: 2.9.2
+	OpenGL: Intel HD Graphics 3000 OpenGL Engine GL version 2.1 INTEL-10.2.37, Intel Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: Xray Ultimate 1.12 v2.2.1.zip (incompatible)
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-2415M CPU @ 2.30GHz

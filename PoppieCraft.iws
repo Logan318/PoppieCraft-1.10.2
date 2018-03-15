@@ -12,6 +12,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/PoppieCraft$Minecraft_Client.coverage" NAME="Minecraft Client Coverage Results" MODIFIED="1509563248407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
     <option name="REVERSE_PATCH" value="false" />
@@ -55,31 +58,84 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClientProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/Proxy/ClientProxy.java">
+      <file leaf-file-name="TileEntityFoundry.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/tileentity/TileEntityFoundry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="61" column="46" lean-forward="false" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
+            <state relative-caret-position="-1313">
+              <caret line="89" column="50" lean-forward="false" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
+              <folding>
+                <element signature="method#TileEntityFoundry#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#readFromNBT#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#writeToNBT#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#shouldRefresh#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#getItemCraft#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#getCapability#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#hasCapability#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#setInventorySlotContents#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#isUseableByPlayer#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#openInventory#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#closeInventory#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#getField#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#setField#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#clear#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#canExtractItem#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#getUpdatePacket#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#onDataPacket#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#getUpdateTag#0;class#TileEntityFoundry#0" expanded="false" />
+                <element signature="method#getTileData#0;class#TileEntityFoundry#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Foundry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/blocks/Foundry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+              <folding>
+                <element signature="e#1954#1955#0" expanded="true" />
+                <element signature="e#2014#2015#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModBlocks.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModBlocks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="80" column="40" lean-forward="false" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PoppieCraftMod.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/PoppieCraftMod.java">
+      <file leaf-file-name="TileEntityFurnace.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/tileentity/TileEntityFurnace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="2685">
+              <caret line="233" column="21" lean-forward="false" selection-start-line="233" selection-start-column="21" selection-end-line="233" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/Proxy/CommonProxy.java">
+      <file leaf-file-name="BlockFurnace.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/block/BlockFurnace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Block.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/block/Block.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32055">
+              <caret line="2383" column="57" lean-forward="false" selection-start-line="2383" selection-start-column="57" selection-end-line="2383" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -98,6 +154,40 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>registerItem</find>
+      <find>Mefferite</find>
+      <find>Loot_upgrade</find>
+      <find>meta</find>
+      <find>Meta</find>
+      <find>tile</find>
+      <find>setBlockstate</find>
+      <find>GUIFoundry</find>
+      <find>burning</find>
+      <find>init</find>
+      <find>isBurning</find>
+      <find>inventory.getField</find>
+      <find>inventory</find>
+      <find>isBurni</find>
+      <find>System</find>
+      <find>IInventory</find>
+      <find>getField</find>
+      <find>get</find>
+      <find>power</find>
+      <find>onblock</find>
+      <find>Steel</find>
+      <find>levelFoundry</find>
+      <find>print</find>
+      <find>durationSmelting</find>
+      <find>5</find>
+      <find>getTileDa</find>
+      <find>cooldown</find>
+      <find>Foundry</find>
+      <find>lit</find>
+      <find>durationSmelting = 0</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/PoppieCraft" />
   </component>
@@ -109,57 +199,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntitySpider.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntitySilverfish.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityMagmaCube.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/loot_tables/SpeedsterLoot.json" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntitySkeleton.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntitySlime.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityWitch.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityShulker.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityCaveSpider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/Jumepr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/render/RenderJumper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/render/RenderDarker.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/enchantment/EnchantmentDurability.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/EntitySpawnPlacementRegistry.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/EntityTracker.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/EntityTrackerEntry.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/world/WorldEntitySpawner.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/loot_tables/JumperLoot.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/loot_tables/DarkerLoot.json" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/EntityList.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/Entity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModEnchantements.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/enchant/EnchantmentSoulStealer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModArmor.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/passive/EntityChicken.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/EntityLivingBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/render/RenderGoldenChicken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/onKillEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/onTouchEvent.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185.jar!/assets/minecraft/loot_tables/entities/enderman.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/block/Alzanite_block.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Mefferite_block.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Ragmarite_block.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Alzanite_block.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_ingot.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/blockstates/Medolite_block.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/block/Medolite_block.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_block.json" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModRecipes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/blocks/Alzanite_ore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/blocks/Mefferite_ore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/blocks/Ragmarite_ore.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Enchantment_power.json" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/blocks/Generator_block_basic.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/blockstates/Foundry.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power1.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power0.json" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/SteelPower.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power2.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power3.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power4.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power5.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power6.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power7.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power8.json" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/FoundryPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModItems.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/Basic_soul.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/SoulStealerEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/FragilityEnchant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/enchant/FragilityEnchant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/FragilityEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModEnchantments.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/lang/en_US.lang" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/onHurtEvent.java" />
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/SkeletonType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/Darker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/Jumper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/loot_tables/GoldenChickenLoot.json" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/GoldenChicken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/Speedster.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mcmod.info" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/onTouchEntityEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModEntities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/PoppieCraftMod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/Proxy/ClientProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/Proxy/CommonProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/client/gui/GUIFoundry.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power0.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power1.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power2.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power3.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power4.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power5.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power6.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power7.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power8.json" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/handler/FuelHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/Slots/SlotPowerFoundry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/Slots/SlotFoundryUpgrade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/Slots/SlotFoundryOutput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/Slots/SlotFuelFoundry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/ContainerFoundry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/blockstates/Lit_foundry.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/block/Lit_foundry.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Lit_foundry.json" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/blocks/Foundry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/tileentity/TileEntityFoundry.java" />
       </list>
     </option>
   </component>
@@ -176,7 +266,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="714" />
+    <option name="height" value="721" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -202,6 +292,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,77 +383,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PoppieCraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forgeSrc-1.10.2-12.18.3.2185.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="minecraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PoppieCraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forgeSrc-1.10.2-12.18.3.2185.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="minecraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PoppieCraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forgeSrc-1.10.2-12.18.3.2185.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="block" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,11 +525,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="textures" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
+              <option name="myItemId" value="item" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -573,10 +596,6 @@
               <option name="myItemId" value="poppiecraft" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="loot_tables" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -641,38 +660,8 @@
               <option name="myItemId" value="poppiecraft" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PoppieCraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PoppieCraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logan31" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poppiecraft" />
+              <option name="myItemId" value="blockstates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -709,8 +698,42 @@
               <option name="myItemId" value="poppiecraft" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
+              <option name="myItemId" value="PoppieCraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PoppieCraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logan31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poppiecraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tileentity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -900,7 +923,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
+              <option name="myItemId" value="container" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -938,11 +961,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
+              <option name="myItemId" value="container" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="render" />
+              <option name="myItemId" value="Slots" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -980,15 +1003,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enchant" />
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PoppieCraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PoppieCraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logan31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poppiecraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1021,18 +1083,18 @@
       <recent name="net.logan31.poppiecraft.enchant" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/loot_tables" />
       <recent name="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item" />
       <recent name="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/block" />
       <recent name="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/blockstates" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/textures/blocks" />
       <recent name="$PROJECT_DIR$/src/main/resources/assets/poppiecraft/textures/items" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.logan31.poppiecraft.container.Slots" />
+      <recent name="net.logan31.poppiecraft.blocks" />
       <recent name="net.logan31.poppiecraft.items" />
-      <recent name="net.logan31.poppiecraft.event" />
-      <recent name="net.logan31.poppiecraft.entity" />
-      <recent name="net.logan31.poppiecraft.entity.render" />
-      <recent name="net.logan31.poppiecraft.blocks.item" />
+      <recent name="net.logan31.poppiecraft.tileentity" />
+      <recent name="net.logan31.poppiecraft.container" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="net.logan31.poppiecraft.items" />
@@ -1681,38 +1743,427 @@
       <workItem from="1507475073941" duration="1817000" />
       <workItem from="1507476976352" duration="1897000" />
       <workItem from="1507482309209" duration="426000" />
+      <workItem from="1507543563695" duration="1329000" />
+      <workItem from="1507545489089" duration="1057000" />
+      <workItem from="1507547807753" duration="460000" />
+      <workItem from="1507549712882" duration="1143000" />
+      <workItem from="1507551846729" duration="1506000" />
+      <workItem from="1507560719120" duration="495000" />
+      <workItem from="1507563298865" duration="801000" />
+      <workItem from="1507569676889" duration="670000" />
+      <workItem from="1507576971544" duration="1791000" />
+      <workItem from="1507578806129" duration="1769000" />
+      <workItem from="1507580658397" duration="1373000" />
+      <workItem from="1507616224095" duration="1452000" />
+      <workItem from="1507646849895" duration="1661000" />
+      <workItem from="1507648734074" duration="1734000" />
+      <workItem from="1507650536733" duration="1612000" />
+      <workItem from="1507652945206" duration="800000" />
+      <workItem from="1507655118003" duration="1065000" />
+      <workItem from="1507659260600" duration="1740000" />
+      <workItem from="1507661063330" duration="1548000" />
+      <workItem from="1507663293216" duration="1538000" />
+      <workItem from="1507703902390" duration="1673000" />
+      <workItem from="1507738114650" duration="1648000" />
+      <workItem from="1507739919376" duration="1750000" />
+      <workItem from="1507741798258" duration="1376000" />
+      <workItem from="1507743626605" duration="1739000" />
+      <workItem from="1507745477707" duration="2084000" />
+      <workItem from="1507747966759" duration="1962000" />
+      <workItem from="1507750080510" duration="1948000" />
+      <workItem from="1507752311558" duration="1995000" />
+      <workItem from="1507818683995" duration="1791000" />
+      <workItem from="1507820610467" duration="1610000" />
+      <workItem from="1507822622782" duration="1774000" />
+      <workItem from="1507825308454" duration="1505000" />
+      <workItem from="1507827489284" duration="1553000" />
+      <workItem from="1507917160050" duration="881000" />
+      <workItem from="1507919312104" duration="1659000" />
+      <workItem from="1507929774098" duration="873000" />
+      <workItem from="1507969243431" duration="2000" />
+      <workItem from="1507996469584" duration="1727000" />
+      <workItem from="1507998302870" duration="1576000" />
+      <workItem from="1508000122585" duration="748000" />
+      <workItem from="1508001206515" duration="481000" />
+      <workItem from="1508015015296" duration="844000" />
+      <workItem from="1508073330536" duration="1738000" />
+      <workItem from="1508075152309" duration="668000" />
+      <workItem from="1508079929358" duration="1765000" />
+      <workItem from="1508081882271" duration="1763000" />
+      <workItem from="1508083700804" duration="1751000" />
+      <workItem from="1508085504772" duration="1030000" />
+      <workItem from="1508256564531" duration="2077000" />
+      <workItem from="1508259585983" duration="1458000" />
+      <workItem from="1508262165670" duration="1737000" />
+      <workItem from="1508264021139" duration="1771000" />
+      <workItem from="1508266978092" duration="1145000" />
+      <workItem from="1508343062580" duration="1887000" />
+      <workItem from="1508345002199" duration="1222000" />
+      <workItem from="1508346857850" duration="1732000" />
+      <workItem from="1508348699612" duration="1786000" />
+      <workItem from="1508350542733" duration="1524000" />
+      <workItem from="1508356958635" duration="1677000" />
+      <workItem from="1508358799846" duration="639000" />
+      <workItem from="1508360782071" duration="242000" />
+      <workItem from="1508430813676" duration="319000" />
+      <workItem from="1508581517907" duration="1569000" />
+      <workItem from="1508583327222" duration="1989000" />
+      <workItem from="1508589924943" duration="1837000" />
+      <workItem from="1508591800050" duration="1850000" />
+      <workItem from="1508593693875" duration="959000" />
+      <workItem from="1508596544921" duration="2049000" />
+      <workItem from="1508612704307" duration="2311000" />
+      <workItem from="1508661257929" duration="2062000" />
+      <workItem from="1508663377219" duration="1776000" />
+      <workItem from="1508665207754" duration="624000" />
+      <workItem from="1508740692009" duration="1765000" />
+      <workItem from="1508742510731" duration="914000" />
+      <workItem from="1508744645462" duration="1602000" />
+      <workItem from="1508746695113" duration="428000" />
+      <workItem from="1508753222765" duration="1735000" />
+      <workItem from="1508755014551" duration="1057000" />
+      <workItem from="1508756829495" duration="1472000" />
+      <workItem from="1508758689103" duration="1678000" />
+      <workItem from="1508762401653" duration="1430000" />
+      <workItem from="1508764210865" duration="1591000" />
+      <workItem from="1508766037001" duration="1802000" />
+      <workItem from="1508767881886" duration="1744000" />
+      <workItem from="1508769931939" duration="889000" />
+      <workItem from="1508774768023" duration="794000" />
+      <workItem from="1508776873074" duration="839000" />
+      <workItem from="1508825409865" duration="1762000" />
+      <workItem from="1508827220863" duration="1764000" />
+      <workItem from="1508829037801" duration="1767000" />
+      <workItem from="1508830846183" duration="973000" />
+      <workItem from="1508832747928" duration="1418000" />
+      <workItem from="1508834679112" duration="727000" />
+      <workItem from="1508836547044" duration="1447000" />
+      <workItem from="1508838405781" duration="1348000" />
+      <workItem from="1508840380154" duration="1965000" />
+      <workItem from="1508854302760" duration="1781000" />
+      <workItem from="1508856261636" duration="1867000" />
+      <workItem from="1508858234638" duration="1822000" />
+      <workItem from="1508860231277" duration="1554000" />
+      <workItem from="1508862340475" duration="2208000" />
+      <workItem from="1508867766724" duration="1702000" />
+      <workItem from="1508869891935" duration="970000" />
+      <workItem from="1508912050361" duration="1760000" />
+      <workItem from="1508913874324" duration="1717000" />
+      <workItem from="1508915805212" duration="1900000" />
+      <workItem from="1508918102150" duration="1964000" />
+      <workItem from="1508920224197" duration="1765000" />
+      <workItem from="1508922238675" duration="1563000" />
+      <workItem from="1508924209700" duration="1661000" />
+      <workItem from="1508926053353" duration="1500000" />
+      <workItem from="1508928456067" duration="1256000" />
+      <workItem from="1508930363323" duration="1346000" />
+      <workItem from="1508932179820" duration="1720000" />
+      <workItem from="1508934044196" duration="1577000" />
+      <workItem from="1508936409005" duration="1909000" />
+      <workItem from="1508938486687" duration="1983000" />
+      <workItem from="1508940573324" duration="1613000" />
+      <workItem from="1508942378210" duration="1643000" />
+      <workItem from="1508944334793" duration="1615000" />
+      <workItem from="1508946134931" duration="1826000" />
+      <workItem from="1508948125265" duration="1724000" />
+      <workItem from="1508955337042" duration="1494000" />
+      <workItem from="1508961227495" duration="1741000" />
+      <workItem from="1508998413924" duration="1329000" />
+      <workItem from="1509000419393" duration="1281000" />
+      <workItem from="1509002253479" duration="1399000" />
+      <workItem from="1509014297428" duration="605000" />
+      <workItem from="1509017698299" duration="1335000" />
+      <workItem from="1509019630022" duration="1902000" />
+      <workItem from="1509021818754" duration="995000" />
+      <workItem from="1509024699800" duration="1553000" />
+      <workItem from="1509029669870" duration="1348000" />
+      <workItem from="1509032818220" duration="1231000" />
+      <workItem from="1509034622813" duration="1058000" />
+      <workItem from="1509036625508" duration="935000" />
+      <workItem from="1509050757825" duration="148000" />
+      <workItem from="1509087895238" duration="1771000" />
+      <workItem from="1509089704034" duration="1772000" />
+      <workItem from="1509091524890" duration="1664000" />
+      <workItem from="1509098081483" duration="1611000" />
+      <workItem from="1509108490068" duration="1739000" />
+      <workItem from="1509110369600" duration="1758000" />
+      <workItem from="1509112180677" duration="1847000" />
+      <workItem from="1509114073836" duration="1317000" />
+      <workItem from="1509115945794" duration="1799000" />
+      <workItem from="1509117852695" duration="1972000" />
+      <workItem from="1509122639964" duration="690000" />
+      <workItem from="1509195127361" duration="1801000" />
+      <workItem from="1509200454218" duration="1667000" />
+      <workItem from="1509202300075" duration="2272000" />
+      <workItem from="1509205874772" duration="1767000" />
+      <workItem from="1509207712375" duration="1538000" />
+      <workItem from="1509209672446" duration="1882000" />
+      <workItem from="1509268568873" duration="1831000" />
+      <workItem from="1509272805456" duration="1453000" />
+      <workItem from="1509274982371" duration="1557000" />
+      <workItem from="1509276959740" duration="1458000" />
+      <workItem from="1509349406951" duration="1445000" />
+      <workItem from="1509351256835" duration="389000" />
+      <workItem from="1509354335773" duration="1709000" />
+      <workItem from="1509356345577" duration="1362000" />
+      <workItem from="1509366525830" duration="1480000" />
+      <workItem from="1509368340078" duration="1794000" />
+      <workItem from="1509370372577" duration="1696000" />
+      <workItem from="1509372602299" duration="979000" />
+      <workItem from="1509383346479" duration="384000" />
+      <workItem from="1509385627092" duration="1756000" />
+      <workItem from="1509388439896" duration="409000" />
+      <workItem from="1509400525648" duration="510000" />
+      <workItem from="1509436157574" duration="1720000" />
+      <workItem from="1509438745102" duration="1051000" />
+      <workItem from="1509440846767" duration="672000" />
+      <workItem from="1509442734612" duration="527000" />
+      <workItem from="1509453585523" duration="1261000" />
+      <workItem from="1509455400246" duration="919000" />
+      <workItem from="1509458965452" duration="946000" />
+      <workItem from="1509469096992" duration="688000" />
+      <workItem from="1509473048930" duration="1014000" />
+      <workItem from="1509475002674" duration="724000" />
+      <workItem from="1509552261713" duration="1761000" />
+      <workItem from="1509554062443" duration="2039000" />
+      <workItem from="1509556148353" duration="1771000" />
+      <workItem from="1509557960898" duration="1872000" />
+      <workItem from="1509559877706" duration="1768000" />
+      <workItem from="1509561697207" duration="1849000" />
+      <workItem from="1509606602867" duration="1642000" />
+      <workItem from="1509608745073" duration="771000" />
+      <workItem from="1509611141319" duration="1191000" />
+      <workItem from="1509622666184" duration="1714000" />
+      <workItem from="1509624484821" duration="814000" />
+      <workItem from="1509626579462" duration="1734000" />
+      <workItem from="1509628429325" duration="1724000" />
+      <workItem from="1509630367930" duration="1675000" />
+      <workItem from="1509632308655" duration="1666000" />
+      <workItem from="1509634293829" duration="1773000" />
+      <workItem from="1509636490172" duration="1405000" />
+      <workItem from="1509638383490" duration="1503000" />
+      <workItem from="1509640295899" duration="1780000" />
+      <workItem from="1509642135792" duration="319000" />
+      <workItem from="1509642528575" duration="1770000" />
+      <workItem from="1509644356697" duration="85000" />
+      <workItem from="1509874653714" duration="1774000" />
+      <workItem from="1509876483632" duration="2148000" />
+      <workItem from="1509895684734" duration="1777000" />
+      <workItem from="1509897505628" duration="497000" />
+      <workItem from="1509966708494" duration="1305000" />
+      <workItem from="1509968586110" duration="748000" />
+      <workItem from="1509970399063" duration="1356000" />
+      <workItem from="1509972221049" duration="1662000" />
+      <workItem from="1509974213016" duration="1619000" />
+      <workItem from="1509976140674" duration="1455000" />
+      <workItem from="1509985611669" duration="1490000" />
+      <workItem from="1509987779805" duration="616000" />
+      <workItem from="1509989833459" duration="245000" />
+      <workItem from="1510046922725" duration="67000" />
+      <workItem from="1510072713911" duration="633000" />
+      <workItem from="1510412267225" duration="1180000" />
+      <workItem from="1510677696121" duration="1658000" />
+      <workItem from="1510679644305" duration="345000" />
+      <workItem from="1510683277933" duration="1573000" />
+      <workItem from="1510758886597" duration="1141000" />
+      <workItem from="1510761017058" duration="37000" />
+      <workItem from="1510765654007" duration="1317000" />
+      <workItem from="1510848676567" duration="622000" />
+      <workItem from="1510851216285" duration="780000" />
+      <workItem from="1510939932558" duration="654000" />
+      <workItem from="1511015879795" duration="443000" />
+      <workItem from="1511018871864" duration="729000" />
+      <workItem from="1511089906337" duration="1242000" />
+      <workItem from="1511182496929" duration="200000" />
+      <workItem from="1511184210944" duration="118000" />
+      <workItem from="1511186092920" duration="392000" />
+      <workItem from="1511194612264" duration="1515000" />
+      <workItem from="1511196605131" duration="1255000" />
+      <workItem from="1511281868060" duration="1511000" />
+      <workItem from="1511283949220" duration="385000" />
+      <workItem from="1511289067667" duration="644000" />
+      <workItem from="1511292311508" duration="273000" />
+      <workItem from="1511370653099" duration="1243000" />
+      <workItem from="1511375457337" duration="639000" />
+      <workItem from="1511377980613" duration="363000" />
+      <workItem from="1511445554137" duration="1183000" />
+      <workItem from="1511447353190" duration="1675000" />
+      <workItem from="1511449209839" duration="1731000" />
+      <workItem from="1511451023421" duration="874000" />
+      <workItem from="1511456827124" duration="1165000" />
+      <workItem from="1511469509749" duration="972000" />
+      <workItem from="1511691591506" duration="2349000" />
+      <workItem from="1511714877193" duration="1774000" />
+      <workItem from="1511716706946" duration="588000" />
+      <workItem from="1511782436332" duration="1916000" />
+      <workItem from="1511785109163" duration="1223000" />
+      <workItem from="1511799515064" duration="1555000" />
+      <workItem from="1511801344037" duration="1274000" />
+      <workItem from="1511803493902" duration="1902000" />
+      <workItem from="1511805496741" duration="1803000" />
+      <workItem from="1511853743720" duration="511000" />
+      <workItem from="1511855584475" duration="1135000" />
+      <workItem from="1511890275868" duration="172000" />
+      <workItem from="1511892091459" duration="1634000" />
+      <workItem from="1511894719204" duration="1762000" />
+      <workItem from="1511896547632" duration="1704000" />
+      <workItem from="1511898369285" duration="1416000" />
+      <workItem from="1511940160428" duration="1597000" />
+      <workItem from="1511967785164" duration="970000" />
+      <workItem from="1511969577555" duration="1825000" />
+      <workItem from="1511972066141" duration="2087000" />
+      <workItem from="1511974311197" duration="1606000" />
+      <workItem from="1511978213895" duration="1058000" />
+      <workItem from="1511983071358" duration="801000" />
+      <workItem from="1511986240533" duration="1718000" />
+      <workItem from="1511988075051" duration="1816000" />
+      <workItem from="1512062758031" duration="935000" />
+      <workItem from="1512146513016" duration="1465000" />
+      <workItem from="1512149343767" duration="1264000" />
+      <workItem from="1512157593774" duration="1484000" />
+      <workItem from="1512311467072" duration="1778000" />
+      <workItem from="1512313318345" duration="1837000" />
+      <workItem from="1512315343196" duration="1692000" />
+      <workItem from="1512317288801" duration="1940000" />
+      <workItem from="1512319276061" duration="1730000" />
+      <workItem from="1512322563985" duration="1758000" />
+      <workItem from="1512324378343" duration="1784000" />
+      <workItem from="1512371425885" duration="1131000" />
+      <workItem from="1512384880263" duration="1776000" />
+      <workItem from="1512386688310" duration="1777000" />
+      <workItem from="1512388508066" duration="1749000" />
+      <workItem from="1512404741886" duration="1466000" />
+      <workItem from="1512406869504" duration="1702000" />
+      <workItem from="1512408739637" duration="1769000" />
+      <workItem from="1512410569303" duration="1758000" />
+      <workItem from="1512412466183" duration="1764000" />
+      <workItem from="1512414323459" duration="1968000" />
+      <workItem from="1512418854038" duration="1762000" />
+      <workItem from="1512420713791" duration="1703000" />
+      <workItem from="1512422524148" duration="1891000" />
+      <workItem from="1512424456200" duration="1537000" />
+      <workItem from="1512457864785" duration="1524000" />
+      <workItem from="1512491698961" duration="1762000" />
+      <workItem from="1512493735720" duration="1885000" />
+      <workItem from="1512495693397" duration="505000" />
+      <workItem from="1512497905053" duration="660000" />
+      <workItem from="1512500814285" duration="1319000" />
+      <workItem from="1512503180313" duration="1757000" />
+      <workItem from="1512505049643" duration="838000" />
+      <workItem from="1512509620878" duration="132000" />
+      <workItem from="1512572857260" duration="1772000" />
+      <workItem from="1512574667416" duration="1674000" />
+      <workItem from="1512577264152" duration="1944000" />
+      <workItem from="1512581590098" duration="429000" />
+      <workItem from="1512583804704" duration="1774000" />
+      <workItem from="1512590397188" duration="1530000" />
+      <workItem from="1512592230157" duration="1284000" />
+      <workItem from="1512665797295" duration="1744000" />
+      <workItem from="1512672426839" duration="952000" />
+      <workItem from="1512677711485" duration="1770000" />
+      <workItem from="1512679685289" duration="1565000" />
+      <workItem from="1512681499225" duration="1666000" />
+      <workItem from="1512683307413" duration="1210000" />
+      <workItem from="1512753440981" duration="1787000" />
+      <workItem from="1512823369636" duration="1772000" />
+      <workItem from="1512825184285" duration="1241000" />
+      <workItem from="1512827286798" duration="1095000" />
+      <workItem from="1512829249632" duration="1554000" />
+      <workItem from="1512831052962" duration="785000" />
+      <workItem from="1512832899439" duration="1634000" />
+      <workItem from="1512836603484" duration="662000" />
+      <workItem from="1512841502795" duration="1102000" />
+      <workItem from="1513008178728" duration="1118000" />
+      <workItem from="1513009964286" duration="1415000" />
+      <workItem from="1513012479008" duration="1813000" />
+      <workItem from="1513015056029" duration="1438000" />
+      <workItem from="1513018509333" duration="1726000" />
+      <workItem from="1513020319932" duration="886000" />
+      <workItem from="1513064064056" duration="1750000" />
+      <workItem from="1513065958451" duration="1278000" />
+      <workItem from="1513096866902" duration="646000" />
+      <workItem from="1513099509180" duration="1718000" />
+      <workItem from="1513101349344" duration="1362000" />
+      <workItem from="1513103496018" duration="1760000" />
+      <workItem from="1513105318651" duration="539000" />
+      <workItem from="1513107768357" duration="899000" />
+      <workItem from="1513109694122" duration="102000" />
+      <workItem from="1513186243999" duration="1057000" />
+      <workItem from="1513189995496" duration="1398000" />
+      <workItem from="1513192746853" duration="1145000" />
+      <workItem from="1513196318222" duration="1373000" />
+      <workItem from="1513198487560" duration="550000" />
+      <workItem from="1513268460747" duration="1761000" />
+      <workItem from="1513270719995" duration="1743000" />
+      <workItem from="1513272544918" duration="1093000" />
+      <workItem from="1513356344060" duration="1751000" />
+      <workItem from="1513359098121" duration="1030000" />
+      <workItem from="1513426640720" duration="1657000" />
+      <workItem from="1513504113297" duration="1929000" />
+      <workItem from="1513506194198" duration="1559000" />
+      <workItem from="1513508020059" duration="1712000" />
+      <workItem from="1513520060856" duration="93000" />
+      <workItem from="1513528933023" duration="1891000" />
+      <workItem from="1513530929194" duration="1768000" />
+      <workItem from="1513532825736" duration="1697000" />
+      <workItem from="1513536236709" duration="1591000" />
+      <workItem from="1513607379837" duration="1777000" />
+      <workItem from="1513609251615" duration="1774000" />
+      <workItem from="1513611061132" duration="1776000" />
+      <workItem from="1513612877284" duration="2121000" />
+      <workItem from="1513617063291" duration="766000" />
+      <workItem from="1513619518212" duration="1749000" />
+      <workItem from="1513621579349" duration="1583000" />
+      <workItem from="1513623500228" duration="1910000" />
+      <workItem from="1513629009918" duration="1860000" />
+      <workItem from="1513631078687" duration="850000" />
+      <workItem from="1513669412096" duration="1722000" />
+      <workItem from="1513671212423" duration="720000" />
+      <workItem from="1513702247064" duration="1408000" />
+      <workItem from="1513704051172" duration="1652000" />
+      <workItem from="1513705887297" duration="1250000" />
+      <workItem from="1513709254641" duration="358000" />
+      <workItem from="1513781968225" duration="97000" />
+      <workItem from="1513783552711" duration="1476000" />
+      <workItem from="1513785711720" duration="1866000" />
+      <workItem from="1513787654671" duration="1477000" />
+      <workItem from="1513789813732" duration="1140000" />
+      <workItem from="1513791624601" duration="1322000" />
+      <workItem from="1513797013095" duration="1667000" />
+      <workItem from="1513799337323" duration="1566000" />
+      <workItem from="1513802143192" duration="1894000" />
+      <workItem from="1513842540234" duration="122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448630000" />
+    <option name="totallyTimeSpent" value="984281000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="714" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="721" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30542636" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2822086" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42635658" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27300614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1720,8 +2171,10 @@
       <window_info id="Palette " active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="7.8125E-4" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26533744" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271605" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="7.8125E-4" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32515338" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1736,15 +2189,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/tileentity/TileEntityGeneratorBlock.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1753,359 +2198,393 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Speedstertest/mod/mcreator/mcreator_VarListJacquie.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power0.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Speedstertest/mod/mcreator/mcreator_speedster$1.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/ContainerGeneratorBlockAdvanced.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="-248">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/EntityList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power2.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4690">
-          <caret line="83" column="13" lean-forward="false" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="45">
+          <caret line="3" column="70" lean-forward="false" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/Entity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power3.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45297">
-          <caret line="80" column="22" lean-forward="false" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        <state relative-caret-position="45">
+          <caret line="3" column="70" lean-forward="false" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/EntitySpawnPlacementRegistry.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power4.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="55" column="48" lean-forward="false" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+        <state relative-caret-position="45">
+          <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Speedstertest/mod/mcreator/mcreator_speedster.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power5.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="39" />
+        <state relative-caret-position="45">
+          <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Mods/mod 1.10/DrZhark's Mo'Creatures Mod-10.0.6/drzhark/mocreatures/entity/monster/MoCEntityRat.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power6.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-964">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Mods/mod 1.10/DrZhark's Mo'Creatures Mod-10.0.6/drzhark/mocreatures/entity/MoCEntityMob.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power7.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4429">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="61" lean-forward="false" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/loot_tables/DarkerLoot.json">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/textures/items/Steel_power_Extremely_Damaged.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Steel_power8.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="70" column="49" lean-forward="false" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+        <state relative-caret-position="45">
+          <caret line="3" column="66" lean-forward="false" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModArmor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/FoundryPower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="33" column="158" lean-forward="false" selection-start-line="33" selection-start-column="158" selection-end-line="33" selection-end-column="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/passive/EntityChicken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="34" column="47" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityPigZombie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="275" column="17" lean-forward="false" selection-start-line="275" selection-start-column="17" selection-end-line="275" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/EntityLivingBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15630">
-          <caret line="1159" column="39" lean-forward="false" selection-start-line="1159" selection-start-column="39" selection-end-line="1159" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185.jar!/assets/minecraft/loot_tables/entities/chicken.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="58" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/onTouchEvent.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185.jar!/assets/minecraft/loot_tables/entities/enderman.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityZombie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2313">
-          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="302" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityEnderman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-249">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/Compressed_iron_bottle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/Molten_carbon_bottle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3990">
-          <caret line="278" column="41" lean-forward="false" selection-start-line="278" selection-start-column="41" selection-end-line="278" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/Coal_sword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/Basic_soul.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/render/RenderJumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/render/RenderGoldenChicken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="131" lean-forward="false" selection-start-line="23" selection-start-column="131" selection-end-line="23" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/enchant/EnchantmentSoulStealer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/enchant/FragilityEnchant.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/enchantment/EnchantmentDurability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/FragilityEvent.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModEnchantments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="280">
+          <caret line="32" column="55" lean-forward="false" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/lang/en_US.lang">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2535">
-          <caret line="169" column="26" lean-forward="false" selection-start-line="169" selection-start-column="26" selection-end-line="169" selection-end-column="26" />
+        <state relative-caret-position="201">
+          <caret line="96" column="75" lean-forward="false" selection-start-line="96" selection-start-column="75" selection-end-line="96" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/onHurtEvent.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/SoulStealerEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/Advanced_soul.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="2" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="18" column="220" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="220" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/SkeletonType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/client/gui/GUIFoundry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-700">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="690">
+          <caret line="55" column="138" lean-forward="false" selection-start-line="55" selection-start-column="138" selection-end-line="55" selection-end-column="138" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityMob.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power copie.json" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power0.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power5.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power6.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power7.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Medolite_power8.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/tileentity/TileEntityGeneratorBlockAdvanced.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9094">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/tileentity/TileEntityGeneratorBlockUltimate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4897">
+          <caret line="686" column="5" lean-forward="true" selection-start-line="686" selection-start-column="5" selection-end-line="686" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityEnderman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7834">
+          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityZombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11749">
+          <caret line="60" column="13" lean-forward="false" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntitySpider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3184">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntityWitch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2824">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/entity/monster/EntitySkeleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="-5554">
           <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/items/FourleafcloverArmor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/handler/FuelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/Jumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="90" column="89" lean-forward="false" selection-start-line="90" selection-start-column="89" selection-end-line="90" selection-end-column="89" />
+        <state relative-caret-position="255">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/Speedster.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1730">
-          <caret line="236" column="21" lean-forward="false" selection-start-line="236" selection-start-column="21" selection-end-line="236" selection-end-column="21" />
-          <folding>
-            <element signature="e#4270#4271#0" expanded="true" />
-            <element signature="e#4348#4349#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="6015">
+          <caret line="412" column="55" lean-forward="false" selection-start-line="412" selection-start-column="55" selection-end-line="412" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/loot_tables/SpeedsterLoot.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/Slots/SlotPowerFoundry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/Slots/SlotFoundryUpgrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="73" lean-forward="false" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/Slots/SlotFoundryOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/Slots/SlotFuelFoundry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/container/ContainerFoundry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="44" column="51" lean-forward="false" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/tileentity/TileEntityGeneratorBlockBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1602">
+          <caret line="448" column="13" lean-forward="false" selection-start-line="448" selection-start-column="13" selection-end-line="448" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/blocks/Generator_block_basic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="937">
+          <caret line="95" column="44" lean-forward="false" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModArmor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/block/BlockFurnace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/block/Foundry.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/GoldenChicken.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/blockstates/Lit_foundry.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="88" column="86" lean-forward="false" selection-start-line="88" selection-start-column="86" selection-end-line="88" selection-end-column="86" />
+        <state relative-caret-position="105">
+          <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+          <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/block/Lit_foundry.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/models/item/Lit_foundry.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/tileentity/TileEntityFurnace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2685">
+          <caret line="233" column="21" lean-forward="false" selection-start-line="233" selection-start-column="21" selection-end-line="233" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/blocks/Foundry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding>
-            <element signature="e#3207#3208#0" expanded="true" />
-            <element signature="e#3289#3290#0" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#2014#2015#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/Darker.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.3.2185/snapshot/20161111/forgeSrc-1.10.2-12.18.3.2185-sources.jar!/net/minecraft/block/Block.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="94" column="89" lean-forward="false" selection-start-line="94" selection-start-column="89" selection-end-line="94" selection-end-column="89" />
+        <state relative-caret-position="32055">
+          <caret line="2383" column="57" lean-forward="false" selection-start-line="2383" selection-start-column="57" selection-end-line="2383" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/poppiecraft/loot_tables/GoldenChickenLoot.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModBlocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mcmod.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/event/onTouchEntityEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="42" column="91" lean-forward="false" selection-start-line="42" selection-start-column="91" selection-end-line="42" selection-end-column="91" />
+        <state relative-caret-position="570">
+          <caret line="80" column="40" lean-forward="false" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/Proxy/ServerProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/tileentity/TileEntityFoundry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="-1313">
+          <caret line="89" column="50" lean-forward="false" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
           <folding>
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
+            <element signature="method#TileEntityFoundry#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#readFromNBT#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#writeToNBT#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#shouldRefresh#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#getItemCraft#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#getCapability#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#hasCapability#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#setInventorySlotContents#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#isUseableByPlayer#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#openInventory#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#closeInventory#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#getField#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#setField#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#clear#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#canExtractItem#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#getUpdatePacket#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#onDataPacket#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#getUpdateTag#0;class#TileEntityFoundry#0" expanded="false" />
+            <element signature="method#getTileData#0;class#TileEntityFoundry#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/entity/render/RenderDarker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/Proxy/ClientProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="61" column="46" lean-forward="false" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/Proxy/CommonProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/init/ModEntities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/logan31/poppiecraft/PoppieCraftMod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

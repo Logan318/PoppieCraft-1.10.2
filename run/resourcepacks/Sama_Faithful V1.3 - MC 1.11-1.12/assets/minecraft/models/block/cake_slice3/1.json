@@ -1,0 +1,6 @@
+{
+	"parent": "block/cake_slice3",
+    "textures": {
+        "top": "ctm/cake_top/1"
+    }
+}

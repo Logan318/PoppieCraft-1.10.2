@@ -18,6 +18,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.AnvilRepairEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Iterator;
 
@@ -39,14 +41,15 @@ public class QuartzArmor extends ItemArmor {
     private boolean isWearingFullSet(EntityPlayer player, Item helmet, Item chestplate, Item leggings, Item boots)
 
     {
+        System.out.print("Wearing Full Set" + helmet + chestplate + leggings + boots);
 
-        return player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(3).getItem() == helmet
+        return player.inventory.armorInventory[3] != null && player.inventory.armorInventory[3].getItem() == helmet
 
-                && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(2).getItem() == chestplate
+                && player.inventory.armorInventory[2] != null && player.inventory.armorInventory[2].getItem() == chestplate
 
-                && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(1).getItem() == leggings
+                && player.inventory.armorInventory[1] != null && player.inventory.armorInventory[1].getItem() == leggings
 
-                && player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(0).getItem() == boots;
+                && player.inventory.armorInventory[0] != null && player.inventory.armorInventory[0].getItem() == boots;
 
     }
 
@@ -72,8 +75,18 @@ public class QuartzArmor extends ItemArmor {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-        if(this.isWearingFullSet(player, ModArmor.Quartz_helmet, ModArmor.Quartz_chestplate, ModArmor.Quartz_leggings, ModArmor.Quartz_boots)) {
-            this.effectPlayer(player, Potion.getPotionById(3), 1 , 2147483647);
+
+        ItemArmor helmet;
+        ItemArmor chestplate;
+        ItemArmor leggings;
+        ItemArmor boots;
+
+        helmet = ModArmor.Quartz_helmet;
+        chestplate = ModArmor.Quartz_chestplate;
+        leggings = ModArmor.Quartz_leggings;
+        boots = ModArmor.Quartz_boots;
+
+        if(isWearingFullSet(player, helmet, chestplate, leggings, boots)) {    this.effectPlayer(player, Potion.getPotionById(3), 1 , 230);
         }
         this.uneffectPlayer(player);
 

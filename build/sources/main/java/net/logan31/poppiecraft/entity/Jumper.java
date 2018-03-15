@@ -41,7 +41,7 @@ public class Jumper extends EntityMob {
         this.isImmuneToFire = true;
         this.setSize(0.6F, 1.95F);
         this.canDamagePlayer();
-        this.attackEntityAsMob(this);
+
         EntityPlayer attackingPlayer = this.attackingPlayer;
 
 
@@ -165,7 +165,7 @@ public class Jumper extends EntityMob {
 
         if (this.rand.nextFloat() < f * 0.05F)
         {
-            this.getEntityAttribute(SPAWN_REINFORCEMENTS_CHANCE).applyModifier(new AttributeModifier("Leader zombie bonus", this.rand.nextDouble() * 0.25D + 0.5D, 0));
+
             this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).applyModifier(new AttributeModifier("Leader zombie bonus", this.rand.nextDouble() * 3.0D + 1.0D, 2));
 
         }

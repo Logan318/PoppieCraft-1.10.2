@@ -1,5 +1,5 @@
 {
-    "parent": "item/generated",
+    "parent": "item/handheld",
     "textures": {
         "layer0": "poppiecraft:items/Four_leaf_clover_sword"
     }

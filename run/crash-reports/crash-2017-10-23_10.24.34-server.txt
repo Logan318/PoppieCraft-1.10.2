@@ -1,0 +1,78 @@
+---- Minecraft Crash Report ----
+// Ooh. Shiny.
+
+Time: 23/10/17 10:24
+Description: Ticking block entity
+
+java.lang.NullPointerException: Ticking block entity
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.update(TileEntityGeneratorBlockBasic.java:77)
+	at net.minecraft.world.World.updateEntities(World.java:1952)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:647)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:784)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:688)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:537)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.update(TileEntityGeneratorBlockBasic.java:77)
+
+-- Block entity being ticked --
+Details:
+	Name: poppiecraft:GeneratorBlockBasic // net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic
+	Block type: ID #232 (tile.Generator_basic // net.logan31.poppiecraft.blocks.Generator_block_basic)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (119,69,168), Chunk: (at 7,4,8 in 7,10; contains blocks 112,0,160 to 127,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Actual block type: ID #232 (tile.Generator_basic // net.logan31.poppiecraft.blocks.Generator_block_basic)
+	Actual block data value: 0 / 0x0 / 0b0000
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1952)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:647)
+
+-- Affected level --
+Details:
+	Level name: D
+	All players: 1 total; [EntityPlayerMP['Player881'/347, l='D', x=121,60, y=69,00, z=168,80]]
+	Chunk stats: ServerChunkCache: 627 Drop: 0
+	Level seed: 4546766704494712662
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (172,64,224), Chunk: (at 12,4,0 in 10,14; contains blocks 160,0,224 to 175,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 21681 game time, 8939 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 84113 (now: false), thunder time: 101104 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:784)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:688)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:537)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Mac OS X (x86_64) version 10.12.6
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 329395952 bytes (314 MB) / 666370048 bytes (635 MB) up to 954728448 bytes (910 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 94
+	FML: MCP 9.32 Powered by Forge 12.18.3.2185 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	Forge{12.18.3.2185} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	poppiecraft{1.0} [PoppieCraft] (PoppieCraft) 
+	Loaded coremods (and transformers): 
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player881'/347, l='D', x=121,60, y=69,00, z=168,80]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

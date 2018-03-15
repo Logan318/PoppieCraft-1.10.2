@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Basic_soul extends Item {
 
-    public static final String[] subTypes = new String[]{"Bat", "Chicken", "Cow", "Endermite", "Mooshroom", "Ocelot", "Pig", "PolarBear", "Rabbit", "Sheep", "Shulker", "Silverfish", "Squid", "Wolf"};
+    public static final String[] subTypes = new String[]{"Bat", "Chicken", "Cow", "Endermite", "Mooshroom", "Ocelot", "Pig", "Polar_Bear", "Rabbit", "Sheep", "Shulker", "Silverfish", "Squid", "Wolf"};
 
     public Basic_soul(String name) {
         this.setRegistryName(name);

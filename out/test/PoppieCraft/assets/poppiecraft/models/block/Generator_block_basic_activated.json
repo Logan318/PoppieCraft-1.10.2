@@ -8,6 +8,5 @@
         "west": "poppiecraft:blocks/Generator_block_basic",
         "up": "poppiecraft:blocks/Generator_block_basic",
         "down": "poppiecraft:blocks/Generator_block_basic"
-
     }
 }

@@ -1,0 +1,78 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 24/10/17 17:47
+Description: Ticking block entity
+
+java.lang.NullPointerException: Ticking block entity
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.update(TileEntityGeneratorBlockBasic.java:88)
+	at net.minecraft.world.World.updateEntities(World.java:1952)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:647)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:784)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:688)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:537)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic.update(TileEntityGeneratorBlockBasic.java:88)
+
+-- Block entity being ticked --
+Details:
+	Name: poppiecraft:GeneratorBlockBasic // net.logan31.poppiecraft.tileentity.TileEntityGeneratorBlockBasic
+	Block type: ID #307 (tile.Generator_basic // net.logan31.poppiecraft.blocks.Generator_block_basic)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (-514,105,-406), Chunk: (at 14,6,10 in -33,-26; contains blocks -528,0,-416 to -513,255,-401), Region: (-2,-1; contains chunks -64,-32 to -33,-1, blocks -1024,0,-512 to -513,255,-1)
+	Actual block type: ID #307 (tile.Generator_basic // net.logan31.poppiecraft.blocks.Generator_block_basic)
+	Actual block data value: 0 / 0x0 / 0b0000
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1952)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:647)
+
+-- Affected level --
+Details:
+	Level name: Spawner
+	All players: 1 total; [EntityPlayerMP['Player837'/25, l='Spawner', x=-514,60, y=105,00, z=-406,68]]
+	Chunk stats: ServerChunkCache: 881 Drop: 0
+	Level seed: -1732593512498252924
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-142,64,-292), Chunk: (at 2,4,12 in -9,-19; contains blocks -144,0,-304 to -129,255,-289), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Level time: 399622 game time, 231 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 47132 (now: false), thunder time: 46626 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:784)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:688)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:537)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Mac OS X (x86_64) version 10.12.6
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 116352264 bytes (110 MB) / 618659840 bytes (590 MB) up to 954728448 bytes (910 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.32 Powered by Forge 12.18.3.2185 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	Forge{12.18.3.2185} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	poppiecraft{1.0} [PoppieCraft] (PoppieCraft) 
+	Loaded coremods (and transformers): 
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player837'/25, l='Spawner', x=-514,60, y=105,00, z=-406,68]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

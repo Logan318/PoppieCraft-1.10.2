@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "poppiecraft:items/Medolite_power_Very_Slightly_Damaged2"
+    }
+}

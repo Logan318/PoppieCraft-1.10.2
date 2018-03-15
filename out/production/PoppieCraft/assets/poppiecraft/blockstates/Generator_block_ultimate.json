@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "activated=false,facing=north": { "model": "poppiecraft:Generator_block_ultimate" },
+        "activated=false,facing=south": { "model": "poppiecraft:Generator_block_ultimate", "y": 180 },
+        "activated=false,facing=west": { "model": "poppiecraft:Generator_block_ultimate", "y": 270 },
+        "activated=false,facing=east": { "model": "poppiecraft:Generator_block_ultimate", "y": 90 },
+        "activated=false,facing=up": { "model": "poppiecraft:Generator_block_ultimate", "x": 270 },
+        "activated=false,facing=down": { "model": "poppiecraft:Generator_block_ultimate", "x": 90  },
+
+        "activated=true,facing=north": { "model": "poppiecraft:Generator_block_ultimate_activated" },
+        "activated=true,facing=south": { "model": "poppiecraft:Generator_block_ultimate_activated", "y": 180 },
+        "activated=true,facing=west": { "model": "poppiecraft:Generator_block_ultimate_activated", "y": 270 },
+        "activated=true,facing=east": { "model": "poppiecraft:Generator_block_ultimate_activated", "y": 90 },
+        "activated=true,facing=up": { "model": "poppiecraft:Generator_block_ultimate_activated", "x": 270 },
+        "activated=true,facing=down": { "model": "poppiecraft:Generator_block_ultimate_activated", "x": 90  }
+
+    }
+}

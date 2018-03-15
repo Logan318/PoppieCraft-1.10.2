@@ -1,0 +1,9 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "oak_leaves", "weight": 99 },
+            { "model": "oak_leaves1", "weight": 1 }
+        ]
+    }
+}

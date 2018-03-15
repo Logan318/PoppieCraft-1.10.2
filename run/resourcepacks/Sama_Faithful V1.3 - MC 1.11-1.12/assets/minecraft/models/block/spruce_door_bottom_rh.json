@@ -1,0 +1,23 @@
+{
+"__comment": "Designed by Sphax with BDcraft Cubik PRO 0.76 Beta - http://bdcraft.net",
+"ambientocclusion": true,
+"textures": {
+    "particle": "blocks/door_spruce_upper",
+    "texture": "blocks/door_spruce_lower",
+    "planks_spruce": "blocks/planks_spruce"
+},
+"elements": [ 
+{
+    "from": [ 0, 0, 0 ],
+    "to": [ 3, 16, 16 ],
+    "faces": {
+        "down":  { "uv": [ 0, 3, 16, 0 ], "rotation": 90, "texture": "#texture" },
+        "up":    { "uv": [ 0, 0, 16, 3 ], "rotation": 90, "texture": "#texture" },
+        "north": { "uv": [ 16, 0, 0, 3.5 ], "rotation": 90, "texture": "#planks_spruce" },
+        "south": { "uv": [ 16, 0, 0, 3.5 ], "rotation": 90, "texture": "#planks_spruce" },
+        "west":  { "uv": [ 16, 0, 0, 16 ], "texture": "#texture" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+    }
+}
+]
+}

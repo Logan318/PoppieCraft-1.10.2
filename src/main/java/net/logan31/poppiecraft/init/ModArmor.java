@@ -28,10 +28,10 @@ public class ModArmor {
         public static ItemArmor.ArmorMaterial lapisMat = EnumHelper.addArmorMaterial("lapisMat", References.MODID + ":lapisArmor", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
         public static ItemArmor.ArmorMaterial quartzMat = EnumHelper.addArmorMaterial("quartzMat", References.MODID + ":quartzArmor", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
         public static ItemArmor.ArmorMaterial glowstoneMat = EnumHelper.addArmorMaterial("glowstoneMat", References.MODID + ":glowstoneArmor", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
-        public static ItemArmor.ArmorMaterial leafcloverMat = EnumHelper.addArmorMaterial("leafcloverMat", References.MODID + ":leafcloverArmor", 11, new int[]{3, 6, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
+        public static ItemArmor.ArmorMaterial leafcloverMat = EnumHelper.addArmorMaterial("leafcloverMat", References.MODID + ":leafcloverArmor", 11, new int[]{3, 5, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
         public static ItemArmor.ArmorMaterial obsidianMat = EnumHelper.addArmorMaterial("obsidianMat", References.MODID + ":obsidianArmor", 18, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
         public static ItemArmor.ArmorMaterial coalMat = EnumHelper.addArmorMaterial("coalMat", References.MODID + ":coalArmor", 13, new int[]{2, 4, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f);
-        public static ItemArmor.ArmorMaterial emeraldMat = EnumHelper.addArmorMaterial("emeraldMat", References.MODID + ":emeraldArmor", 50, new int[]{4, 7, 9, 4}, 11, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0f);
+        public static ItemArmor.ArmorMaterial emeraldMat = EnumHelper.addArmorMaterial("emeraldMat", References.MODID + ":emeraldArmor", 50, new int[]{4, 6, 9, 4}, 11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0f);
 
     public static ItemArmor Redstone_helmet, Redstone_chestplate, Redstone_leggings, Redstone_boots, Lapis_helmet;
     public static ItemArmor Lapis_chestplate, Lapis_leggings, Lapis_boots, Quartz_helmet, Quartz_chestplate, Quartz_leggings;
@@ -42,10 +42,10 @@ public class ModArmor {
     public static ItemArmor Coal_chestplate, Coal_leggings, Coal_boots;
 
     public static void init() {
-        Redstone_helmet = new RedstoneArmor(redstoneMat, 1, EntityEquipmentSlot.HEAD, "Redstone_helmet");
-        Redstone_chestplate = new RedstoneArmor(redstoneMat, 1, EntityEquipmentSlot.CHEST, "Redstone_chestplate");
-        Redstone_leggings = new RedstoneArmor(redstoneMat, 1, EntityEquipmentSlot.LEGS, "Redstone_leggings");
-        Redstone_boots = new RedstoneArmor(redstoneMat, 1, EntityEquipmentSlot.FEET, "Redstone_boots");
+        Redstone_helmet = new RedstoneArmor("Redstone_helmet", redstoneMat, EntityEquipmentSlot.HEAD);
+        Redstone_chestplate = new RedstoneArmor("Redstone_chestplate", redstoneMat, EntityEquipmentSlot.CHEST);
+        Redstone_leggings = new RedstoneArmor("Redstone_leggings", redstoneMat, EntityEquipmentSlot.LEGS);
+        Redstone_boots = new RedstoneArmor("Redstone_boots", redstoneMat, EntityEquipmentSlot.FEET);
 
         Lapis_helmet = new LapisArmor(lapisMat, 1, EntityEquipmentSlot.HEAD, "Lapis_helmet");
         Lapis_chestplate = new LapisArmor(lapisMat, 1, EntityEquipmentSlot.CHEST, "Lapis_chestplate");

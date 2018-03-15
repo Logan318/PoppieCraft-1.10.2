@@ -19,7 +19,6 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;
-import org.w3c.dom.css.CSSPageRule;
 
 public class ModItems {
     public ModItems() {
@@ -30,13 +29,23 @@ public class ModItems {
 
 
 
-    public static Item Carbon_ingot, Molten_carbon, Redstone_gem, Lapis_gem, Quartz_gem, Glowstone_gem;
-    public static Item Pironnite_fragment, Pironnite_nugget, Pironnite_ingot, Poppie_nugget, Poppie_ingot;
-    public static Item Molten_iron, Compressed_iron, Carbon_stick, Renforced_string, Golden_string;
-    public static Item Compressed_iron_bottle, Molten_carbon_bottle, Poppie_bottle, Steel_piece, Steel_nugget, Steel_ingot;
-    public static Item Speed_fragment, Speed_element, Jump_fragment, Jump_element, Darkness_fragment, Darkness_element;
-    public static Item Steel_power, Loot_upgrade, Generator_power, Obsidian_gem, Four_leaf_clover, Coal_gem, Speedster_flesh;
-    public static Item Jumper_flesh, Darker_flesh, Golden_feather, Basic_soul, Advanced_soul, Ultimate_soul;
+    public static Item Carbon_ingot, Molten_carbon, Redstone_gem, Lapis_gem, Quartz_gem, Glowstone_gem, Pironnite_fragment,
+            Pironnite_nugget, Pironnite_ingot, Poppie_nugget, Poppie_ingot, Molten_iron, Compressed_iron, Carbon_stick,
+            Renforced_string, Golden_string, Compressed_iron_bottle, Molten_carbon_bottle, Poppie_bottle, Steel_piece,
+            Steel_nugget, Steel_ingot, Speed_fragment, Speed_element, Jump_fragment, Jump_element, Darkness_fragment,
+            Darkness_element, Steel_power, Loot_upgrade, Generator_power, Obsidian_gem, Four_leaf_clover, Coal_gem,
+            Speedster_flesh, Jumper_flesh, Darker_flesh, Golden_feather, Basic_soul, Advanced_soul, Ultimate_soul,
+            Basic_spirit, Advanced_spirit, Ultimate_spirit, Broken_basic_spirit_power, Basic_spirit_power,
+            Broken_advanced_spirit_power, Advanced_spirit_power, Broken_ultimate_spirit_power, Ultimate_spirit_power,
+            Compressed_carbon, Bat_Spawn, Chicken_Spawn, Cow_Spawn, Endermite_Spawn, Mooshroom_Spawn, Ocelot_Spawn, Pig_Spawn,
+            Polar_Bear_Spawn, Rabbit_Spawn, Sheep_Spawn, Shulker_Spawn, Silverfish_Spawn, Squid_Spawn, Wolf_Spawn,
+            Cave_Spider_Spawn, Creeper_Spawn, Donkey_Spawn, Guardian_Spawn, Horse_Spawn, Husk_Spawn, Mule_Spawn, Skeleton_Spawn,
+            Skeleton_Horse_Spawn, Snow_Man_Spawn, Spider_Spawn, Villager_Spawn, Zombie_Spawn, Zombie_Horse_Spawn,
+            Basic_generator_upgrade, Advanced_generator_upgrade, Burning_carbon, Mefferite_nugget, Mefferite_ingot,
+            Ragmarite_nugget, Ragmarite_ingot, Alzanite_nugget, Alzanite_ingot, Foundry_upgrade, Medolite_nugget,
+            Medolite_ingot, Medolite_power, Enchantment_power;
+
+
 
     public static final Item Redstone_sword = new Redstonesword("Redstone_sword", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
     public static final Item Redstone_pickaxe = new Redstonepickaxe("Redstone_pickaxe", ToolMaterials.redstoneMat).setCreativeTab(PoppieCraftMod.PoppieArmor);
@@ -87,9 +96,11 @@ public class ModItems {
     public static final Item Emerald_axe = new Emeraldaxe("Emerald_axe", ToolMaterials.emeraldMat, 10.0f, -3.1f).setCreativeTab(PoppieCraftMod.PoppieArmor);
 
 
+
     public static void initItems() {
        Carbon_ingot = new ItemMod("Carbon_ingot");
         Molten_carbon = new ItemMod("Molten_carbon");
+        Compressed_carbon = new ItemMod( "Compressed_carbon" );
         Pironnite_fragment = new ItemMod("Pironnite_fragment");
         Pironnite_nugget = new ItemMod("Pironnite_nugget");
         Pironnite_ingot = new ItemMod("Pironnite_ingot");
@@ -112,10 +123,10 @@ public class ModItems {
         Jump_element = new ItemMod("Jump_element");
         Darkness_fragment = new ItemMod("Darkness_fragment");
         Darkness_element = new ItemMod("Darkness_element");
-        Steel_power = new ItemMod("Steel_power");
+        Steel_power = new FoundryPower("Steel_power");
         Loot_upgrade = new LootUpgrade("Loot_upgrade");
-        Generator_power = new ItemMod("Generator_power");
-        Obsidian_gem = new ItemMod("Obsidian_gem");
+        Generator_power = new ItemMod1Stack("Generator_power");
+        Obsidian_gem = new ItemModPoppieArmor("Obsidian_gem");
         Four_leaf_clover = new ItemModPoppieArmor("Four_leaf_clover");
         Coal_gem = new ItemModPoppieArmor("Coal_gem");
         Speedster_flesh = new ItemFoodMod("Speedster_flesh", 5, 4, true, new PotionEffect(Potion.getPotionById(1), 400, 2));
@@ -127,12 +138,71 @@ public class ModItems {
         Quartz_gem = new ItemModPoppieArmor("Quartz_gem");
         Glowstone_gem = new ItemModPoppieArmor("Glowstone_gem");
         Basic_soul = new Basic_soul("Basic_soul");
+        Advanced_soul = new Advanced_soul("Advanced_soul");
+        Ultimate_soul = new Ultimate_soul("Ultimate_soul");
+        Basic_spirit = new Basic_soul("Basic_spirit").setMaxStackSize( 1 );
+        Advanced_spirit = new Advanced_soul( "Advanced_spirit" ).setMaxStackSize( 1 );
+        Ultimate_spirit = new Ultimate_soul( "Ultimate_spirit" ).setMaxStackSize( 1 );
+        Broken_basic_spirit_power = new ItemMod1Stack("Broken_basic_spirit_power");
+        Basic_spirit_power = new ItemMod1Stack("Basic_spirit_power").setContainerItem(Broken_basic_spirit_power);
+        Broken_advanced_spirit_power = new ItemMod1Stack("Broken_advanced_spirit_power");
+        Advanced_spirit_power = new ItemMod1Stack("Advanced_spirit_power").setContainerItem(Broken_advanced_spirit_power);
+        Broken_ultimate_spirit_power = new ItemMod1Stack("Broken_ultimate_spirit_power");
+        Ultimate_spirit_power = new ItemMod1Stack("Ultimate_spirit_power").setContainerItem(Broken_ultimate_spirit_power);
+        Basic_generator_upgrade = new Generator_basic_upgrade( "Basic_generator_upgrade" );
+        Advanced_generator_upgrade = new ItemMod1Stack( "Advanced_generator_upgrade" );
+        Burning_carbon = new ItemMod( "Burning_carbon" );
+        Mefferite_nugget = new ItemMod( "Mefferite_nugget" );
+        Mefferite_ingot = new ItemMod( "Mefferite_ingot" );
+        Ragmarite_nugget = new ItemMod( "Ragmarite_nugget" );
+        Ragmarite_ingot = new ItemMod( "Ragmarite_ingot" );
+        Alzanite_nugget = new ItemMod( "Alzanite_nugget" );
+        Alzanite_ingot = new ItemMod( "Alzanite_ingot" );
+        Foundry_upgrade = new Foundry_upgrade( "Foundry_upgrade" );
+        Medolite_nugget = new ItemMod( "Medolite_nugget" );
+        Medolite_ingot = new ItemMod( "Medolite_ingot" );
+        Medolite_power = new FoundryPower( "Medolite_power" );
+        Enchantment_power = new ItemMod1Stack( "Enchantment_power" );
+
+        Bat_Spawn = new SpawnBat("Bat_spawn");
+        Chicken_Spawn = new SpawnChicken( "Chicken_spawn" );
+        Cow_Spawn = new SpawnCow( "Cow_spawn" );
+        Endermite_Spawn = new SpawnEndermite( "Endermite_spawn" );
+        Mooshroom_Spawn = new SpawnMooshroom( "Mooshroom_spawn" );
+        Ocelot_Spawn = new SpawnOcelot( "Ocelot_spawn" );
+        Pig_Spawn = new SpawnPig( "Pig_spawn" );
+        Polar_Bear_Spawn = new SpawnPolarBear( "Polar_Bear_spawn" );
+        Rabbit_Spawn = new SpawnRabbit( "Rabbit_spawn" );
+        Sheep_Spawn = new SpawnSheep( "Sheep_spawn" );
+        Shulker_Spawn = new SpawnShulker( "Shulker_spawn" );
+        Silverfish_Spawn = new SpawnSilverfish( "Silverfish_spawn" );
+        Squid_Spawn = new SpawnSquid( "Squid_spawn" );
+        Wolf_Spawn = new SpawnWolf( "Wolf_spawn" );
+        Cave_Spider_Spawn = new SpawnCaveSpider( "Cave_Spider_spawn" );
+        Creeper_Spawn = new SpawnCreeper( "Creeper_spawn" );
+        Donkey_Spawn = new SpawnDonkey( "Donkey_spawn" );
+        Guardian_Spawn = new SpawnGuardian( "Guardian_spawn" );
+        Horse_Spawn = new SpawnHorse( "Horse_spawn" );
+        Husk_Spawn = new SpawnHusk( "Husk_spawn" );
+        Mule_Spawn = new SpawnMule( "Mule_spawn" );
+        Skeleton_Spawn = new SpawnSkeleton( "Skeleton_spawn" );
+        Skeleton_Horse_Spawn = new SpawnSkeletonHorse( "Skeleton_Horse_spawn" );
+        Snow_Man_Spawn = new SpawnSnowMan( "Snow_Man_spawn" );
+        Spider_Spawn = new SpawnSpider( "Spider_spawn" );
+        Villager_Spawn = new SpawnVillager( "Villager_spawn" );
+        Zombie_Spawn = new SpawnZombie( "Zombie_spawn" );
+        Zombie_Horse_Spawn = new SpawnZombieHorse( "Zombie_Horse_spawn" );
+
     }
+
+
+
 
 
     public static void registerItems() {
         registerItem(Carbon_ingot);
         registerItem(Molten_carbon);
+        registerItem( Compressed_carbon );
         registerItem(Pironnite_fragment);
         registerItem(Pironnite_nugget);
         registerItem(Pironnite_ingot);
@@ -163,6 +233,61 @@ public class ModItems {
         registerItem(Darker_flesh);
         registerItem(Golden_feather);
         registerItem(Basic_soul);
+        registerItem(Advanced_soul);
+        registerItem(Ultimate_soul);
+        registerItem(Basic_spirit);
+        registerItem( Advanced_spirit );
+        registerItem( Ultimate_spirit );
+        registerItem( Broken_basic_spirit_power );
+        registerItem( Basic_spirit_power );
+        registerItem( Broken_advanced_spirit_power );
+        registerItem( Advanced_spirit_power );
+        registerItem( Broken_ultimate_spirit_power );
+        registerItem( Ultimate_spirit_power );
+        registerItem( Basic_generator_upgrade );
+        registerItem( Advanced_generator_upgrade );
+        registerItem( Burning_carbon );
+        registerItem( Mefferite_nugget );
+        registerItem( Mefferite_ingot );
+        registerItem( Ragmarite_nugget );
+        registerItem( Ragmarite_ingot );
+        registerItem( Alzanite_nugget );
+        registerItem( Alzanite_ingot );
+        registerItem( Foundry_upgrade );
+        registerItem( Medolite_nugget );
+        registerItem( Medolite_ingot );
+        registerItem( Medolite_power );
+        registerItem( Enchantment_power );
+
+        registerItem( Bat_Spawn );
+        registerItem( Chicken_Spawn );
+        registerItem( Cow_Spawn );
+        registerItem( Endermite_Spawn );
+        registerItem( Mooshroom_Spawn );
+        registerItem( Ocelot_Spawn );
+        registerItem( Pig_Spawn );
+        registerItem( Polar_Bear_Spawn );
+        registerItem( Rabbit_Spawn );
+        registerItem( Sheep_Spawn );
+        registerItem( Shulker_Spawn );
+        registerItem( Silverfish_Spawn);
+        registerItem( Squid_Spawn );
+        registerItem( Wolf_Spawn );
+        registerItem( Cave_Spider_Spawn );
+        registerItem( Creeper_Spawn );
+        registerItem( Donkey_Spawn );
+        registerItem( Guardian_Spawn );
+        registerItem( Horse_Spawn );
+        registerItem( Husk_Spawn );
+        registerItem( Mule_Spawn );
+        registerItem( Skeleton_Spawn );
+        registerItem( Skeleton_Horse_Spawn );
+        registerItem( Snow_Man_Spawn );
+        registerItem( Spider_Spawn );
+        registerItem( Villager_Spawn );
+        registerItem( Zombie_Spawn );
+        registerItem( Zombie_Horse_Spawn );
+
 
         GameRegistry.register(Redstone_gem);
         GameRegistry.register(Redstone_sword);
@@ -226,6 +351,7 @@ public class ModItems {
     public static void registerRenders() {
         registerRender(Carbon_ingot);
         registerRender(Molten_carbon);
+        registerRender( Compressed_carbon );
         registerRender(Pironnite_fragment);
         registerRender(Pironnite_nugget);
         registerRender(Pironnite_ingot);
@@ -246,6 +372,7 @@ public class ModItems {
         registerRenderMeta(Poppie_bottle, 2);
         for(int i = 0; i < EnumHandler.UpgradeTypes.values().length; i++) {
             registerRender(Loot_upgrade, i, "Loot_upgrade_" + EnumHandler.UpgradeTypes.values()[i].getName());
+            registerRender( Foundry_upgrade, i, "Foundry_upgrade_" + EnumHandler.UpgradeTypes.values()[i].getName() );
         }
         registerRender(Steel_piece);
         registerRender(Steel_nugget);
@@ -256,27 +383,77 @@ public class ModItems {
         registerRender(Jump_element);
         registerRender(Darkness_fragment);
         registerRender(Darkness_element);
-        registerRender(Steel_power);
+        for(int i = 0; i < 9; i++) {
+            registerRenderMeta( Steel_power, i );
+            registerRenderMeta( Medolite_power, i );
+        }
+
         registerRender(Four_leaf_clover);
         registerRender(Coal_gem);
         registerRender(Speedster_flesh);
         registerRender(Jumper_flesh);
         registerRender(Darker_flesh);
         registerRender(Golden_feather);
-        registerRenderMeta(Basic_soul, 0);
-        registerRenderMeta(Basic_soul, 1);
-        registerRenderMeta(Basic_soul, 2);
-        registerRenderMeta(Basic_soul, 3);
-        registerRenderMeta(Basic_soul, 4);
-        registerRenderMeta(Basic_soul, 5);
-        registerRenderMeta(Basic_soul, 6);
-        registerRenderMeta(Basic_soul, 7);
-        registerRenderMeta(Basic_soul, 8);
-        registerRenderMeta(Basic_soul, 9);
-        registerRenderMeta(Basic_soul, 10);
-        registerRenderMeta(Basic_soul, 11);
-        registerRenderMeta(Basic_soul, 12);
-        registerRenderMeta(Basic_soul, 13);
+
+        for(int i = 0; i < 14; i ++) {
+            registerRenderMeta( Basic_soul, i );
+            registerRenderMeta( Advanced_soul, i );
+            registerRenderMeta(Basic_spirit, i);
+            registerRenderMeta(Advanced_spirit, i);
+        }
+        for(int i = 0; i < 13; i++) {
+            registerRenderMeta( Ultimate_soul, i );
+            registerRenderMeta( Ultimate_spirit, i );
+        }
+
+        registerRender(Broken_basic_spirit_power);
+        registerRender( Basic_spirit_power );
+        registerRender( Broken_advanced_spirit_power );
+        registerRender( Advanced_spirit_power );
+        registerRender( Broken_ultimate_spirit_power );
+        registerRender( Ultimate_spirit_power );
+        registerRender( Basic_generator_upgrade );
+        registerRender( Advanced_generator_upgrade );
+        registerRender( Burning_carbon );
+        registerRender( Mefferite_nugget );
+        registerRender( Mefferite_ingot );
+        registerRender( Ragmarite_nugget );
+        registerRender( Ragmarite_ingot );
+        registerRender( Alzanite_nugget );
+        registerRender( Alzanite_ingot );
+        registerRender( Medolite_nugget );
+        registerRender( Medolite_ingot );
+        registerRender( Enchantment_power );
+
+        registerRender( Bat_Spawn );
+        registerRender( Chicken_Spawn );
+        registerRender( Cow_Spawn );
+        registerRender( Endermite_Spawn );
+        registerRender( Mooshroom_Spawn );
+        registerRender( Ocelot_Spawn );
+        registerRender( Pig_Spawn );
+        registerRender( Polar_Bear_Spawn );
+        registerRender( Rabbit_Spawn );
+        registerRender( Sheep_Spawn );
+        registerRender( Shulker_Spawn );
+        registerRender( Silverfish_Spawn);
+        registerRender( Squid_Spawn );
+        registerRender( Wolf_Spawn );
+        registerRender( Cave_Spider_Spawn );
+        registerRender( Creeper_Spawn );
+        registerRender( Donkey_Spawn );
+        registerRender( Guardian_Spawn );
+        registerRender( Horse_Spawn );
+        registerRender( Husk_Spawn );
+        registerRender( Mule_Spawn );
+        registerRender( Skeleton_Spawn );
+        registerRender( Skeleton_Horse_Spawn );
+        registerRender( Snow_Man_Spawn );
+        registerRender( Spider_Spawn );
+        registerRender( Villager_Spawn );
+        registerRender( Zombie_Spawn );
+        registerRender( Zombie_Horse_Spawn );
+
 
         registerRender(Redstone_gem);
         registerRender(Redstone_sword);

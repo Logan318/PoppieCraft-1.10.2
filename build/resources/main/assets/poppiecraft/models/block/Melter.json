@@ -1,8 +1,12 @@
 {
-    "parent": "block/orientable",
+    "parent": "block/cube",
     "textures": {
-        "top": "poppiecraft:blocks/Melter_top",
-        "front": "poppiecraft:blocks/Melter_front_off",
-        "side": "poppiecraft:blocks/Melter_side"
+        "particle": "poppiecraft:blocks/Melter_front_off",
+        "north": "poppiecraft:blocks/Melter_front_off",
+        "south": "poppiecraft:blocks/Melter_side",
+        "west": "poppiecraft:blocks/Melter_side",
+        "east": "poppiecraft:blocks/Melter_side",
+        "up": "poppiecraft:blocks/Melter_top",
+        "down": "poppiecraft:blocks/Melter_top"
     }
 }

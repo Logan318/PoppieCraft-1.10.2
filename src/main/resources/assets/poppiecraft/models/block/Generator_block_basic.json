@@ -3,9 +3,9 @@
     "textures": {
         "particle": "poppiecraft:blocks/Generator_block_basic",
         "north": "poppiecraft:blocks/Generator_block_basic_front",
-        "south": "poppiecraft:blocks/Generator_block_basic_front",
-        "east": "poppiecraft:blocks/Generator_block_basic_front",
-        "west": "poppiecraft:blocks/Generator_block_basic_front",
+        "south": "poppiecraft:blocks/Generator_block_basic",
+        "east": "poppiecraft:blocks/Generator_block_basic",
+        "west": "poppiecraft:blocks/Generator_block_basic",
         "up": "poppiecraft:blocks/Generator_block_basic",
         "down": "poppiecraft:blocks/Generator_block_basic"
 

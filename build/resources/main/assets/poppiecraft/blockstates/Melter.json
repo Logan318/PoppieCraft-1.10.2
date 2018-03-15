@@ -3,6 +3,9 @@
         "facing=north": { "model": "poppiercraft:Melter" },
         "facing=south": { "model": "poppiecraft:Melter", "y": 180 },
         "facing=west":  { "model": "poppiecraft:Melter", "y": 270 },
-        "facing=east":  { "model": "poppiecraft:Melter", "y": 90 }
+        "facing=east":  { "model": "poppiecraft:Melter", "y": 90 },
+        "facing=up":  { "model": "poppiecraft:Melter", "x": 270 },
+        "facing=down":  { "model": "poppiecraft:Melter", "x": 90 }
+
     }
 }

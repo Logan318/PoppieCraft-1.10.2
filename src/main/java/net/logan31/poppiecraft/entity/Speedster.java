@@ -4,6 +4,7 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Maps;
 import net.logan31.poppiecraft.Utils.References;
+import net.minecraft.block.Block;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.*;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -64,7 +65,6 @@ public class Speedster extends EntityMob {
         this.isImmuneToFire = true;
         this.setSize(0.6F, 1.95F);
         this.canDamagePlayer();
-        this.attackEntityAsMob(this);
         EntityPlayer attackingPlayer = this.attackingPlayer;
 
 
@@ -258,7 +258,6 @@ public class Speedster extends EntityMob {
 
         if (this.rand.nextFloat() < f * 0.05F)
         {
-            this.getEntityAttribute(SPAWN_REINFORCEMENTS_CHANCE).applyModifier(new AttributeModifier("Leader zombie bonus", this.rand.nextDouble() * 0.25D + 0.5D, 0));
             this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).applyModifier(new AttributeModifier("Leader zombie bonus", this.rand.nextDouble() * 3.0D + 1.0D, 2));
 
         }
@@ -293,4 +292,12 @@ public class Speedster extends EntityMob {
             this.isVillager = isVillagerZombie;
         }
     }
+
+
+    protected void playStepSound(BlockPos pos, Block blockIn)
+    {
+
+        System.out.println("print step sound");
+    }
+
 }

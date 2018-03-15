@@ -14,6 +14,7 @@ public class EnchantmentSoulStealer extends Enchantment {
         super(Rarity.UNCOMMON, EnumEnchantmentType.WEAPON, new EntityEquipmentSlot[]{});
         this.setName(name);
         this.setRegistryName(name);
+
     }
 
     @Override
@@ -23,7 +24,7 @@ public class EnchantmentSoulStealer extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 1;
+        return 3;
     }
 
 

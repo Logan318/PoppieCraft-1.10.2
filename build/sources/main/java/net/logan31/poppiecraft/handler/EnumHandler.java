@@ -8,8 +8,8 @@ import net.minecraft.util.IStringSerializable;
 public class EnumHandler {
     public static enum UpgradeTypes implements IStringSerializable {
         BASIC("basic", 0),
-        ADVANED("advanced", 0),
-        ULTIMATE("ultimate", 0);
+        ADVANCED("advanced", 1),
+        ULTIMATE("ultimate", 2);
 
         private int ID;
         private String name;
@@ -35,4 +35,6 @@ public class EnumHandler {
             return getName();
         }
     }
+
+
 }

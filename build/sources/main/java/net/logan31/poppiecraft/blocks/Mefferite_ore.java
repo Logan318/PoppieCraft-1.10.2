@@ -8,6 +8,7 @@ import net.minecraft.block.material.Material;
  * Created by johanjulien on 24/07/2017.
  */
 public class Mefferite_ore extends Block{
+
     public Mefferite_ore(String name) {
         super(Material.ROCK);
         this.setRegistryName(name);

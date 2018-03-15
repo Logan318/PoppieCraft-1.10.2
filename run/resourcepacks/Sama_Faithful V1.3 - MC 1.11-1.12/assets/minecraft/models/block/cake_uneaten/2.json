@@ -1,0 +1,6 @@
+{
+	"parent": "block/cake_uneaten",
+    "textures": {
+        "top": "ctm/cake_top/2"
+    }
+}
